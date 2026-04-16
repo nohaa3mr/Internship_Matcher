@@ -1,11 +1,13 @@
 using InternshipMatcher.API.Helpers;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Prometheus;
+using InternshipMatcher.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.RegisterDbConnection(builder.Configuration);
+builder.Services.AddControllers();
 builder.Services.SwaggerRegisteration();
 builder.Services.AddAuthAndAuthorizationWithJWT(builder.Configuration);
 builder.Services.AddResponseCompressionEnc();
@@ -33,7 +35,7 @@ else
 
 // 3. HTTPS
 app.UseHttpsRedirection();
-
+app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 // 4. Routing
 app.UseRouting();
 

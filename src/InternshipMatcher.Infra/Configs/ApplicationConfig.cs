@@ -5,29 +5,28 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace InternshipMatcher.Infra.Configs
-{
-    internal class ApplicationConfig :IEntityTypeConfiguration<Application>
-    {
-        public void Configure(EntityTypeBuilder<Application> builder)
-        {
-            builder.HasKey(a => a.ID);
-            builder.Property(a => a.StudentProfileID)
-                .IsRequired();
-            builder.Property(a => a.RecruiterProfileID)
-                .IsRequired();
-            builder.Property(a => a.ApplicationStatus)
-                .IsRequired();
-            builder.Property(a => a.AppliedAt)
-                .IsRequired();
-            builder.HasOne(x => x.StudentProfile)
-                .WithMany().HasForeignKey(x=>x.StudentProfileID);
-            builder.HasOne(x => x.Internship)
-                .WithMany(x=>x.Applications)
-                .HasForeignKey(x=>x.InternshipID);
-            builder.HasIndex(a => new { a.StudentProfileID, a.InternshipID })
-                .IsUnique();
+namespace InternshipMatcher.Infra.Configs;
 
-        }
+internal class ApplicationConfig :IEntityTypeConfiguration<ApplicationForm>
+{
+    public void Configure(EntityTypeBuilder<ApplicationForm> builder)
+    {
+        builder.HasKey(a => a.ID);
+        builder.Property(a => a.StudentProfileID)
+            .IsRequired();
+        builder.Property(a => a.RecruiterProfileID)
+            .IsRequired();
+        builder.Property(a => a.ApplicationStatus)
+            .IsRequired();
+        builder.Property(a => a.AppliedAt)
+            .IsRequired();
+        builder.HasOne(x => x.StudentProfile)
+            .WithMany().HasForeignKey(x=>x.StudentProfileID);
+        builder.HasOne(x => x.Internship)
+            .WithMany(x=>x.Applications)
+            .HasForeignKey(x=>x.InternshipID);
+        builder.HasIndex(a => new { a.StudentProfileID, a.InternshipID })
+            .IsUnique();
+
     }
 }

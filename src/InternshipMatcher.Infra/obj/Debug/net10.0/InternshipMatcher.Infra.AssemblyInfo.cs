@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InternshipMatcher.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1fd42f87ad7f11528aeb56a55014bf929088412")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+951f91ad6fee016c1783d52b3f367bf448c8563a")]
 [assembly: System.Reflection.AssemblyProductAttribute("InternshipMatcher.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InternshipMatcher.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

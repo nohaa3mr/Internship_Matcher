@@ -17,7 +17,7 @@ public class AppDbContext : DbContext, IDataProtectionKeyContext
     public DbSet<StudentProfile> StudentProfiles => Set<StudentProfile>();
     public DbSet<RecruiterProfile> RecruiterProfiles => Set<RecruiterProfile>();
     public DbSet<StudentSkill> StudentSkills => Set<StudentSkill>();
-    public DbSet<Application> Applications => Set<Application>();
+    public DbSet<ApplicationForm> Applications => Set<ApplicationForm>();
     public DbSet<Internship> Internships => Set<Internship>();
     public DbSet<InternshipSkill> InternshipSkills => Set<InternshipSkill>();
 
