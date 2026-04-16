@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/InternshipMatcher.API/InternshipMatcher.API.csproj" />
+    <Project Path="src/InternshipMatcher.Application/InternshipMatcher.Application.csproj" />
+    <Project Path="src/InternshipMatcher.Domain/InternshipMatcher.Domain.csproj" />
+    <Project Path="src/InternshipMatcher.Infra/InternshipMatcher.Infra.csproj" />
+  </Folder>
+</Solution>

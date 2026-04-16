@@ -1,0 +1,6 @@
+@InternshipMatcher.API_HostAddress = http://localhost:5119
+
+GET {{InternshipMatcher.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
