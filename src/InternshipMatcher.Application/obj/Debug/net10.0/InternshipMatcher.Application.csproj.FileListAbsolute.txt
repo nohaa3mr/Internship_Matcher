@@ -1,0 +1,16 @@
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\bin\Debug\net10.0\InternshipMatcher.Application.deps.json
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\bin\Debug\net10.0\InternshipMatcher.Application.dll
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\bin\Debug\net10.0\InternshipMatcher.Application.pdb
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\bin\Debug\net10.0\InternshipMatcher.Domain.dll
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\bin\Debug\net10.0\InternshipMatcher.Domain.pdb
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.AssemblyInfo.cs
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.sourcelink.json
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\Internsh.C01BF428.Up2Date
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.dll
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\refint\InternshipMatcher.Application.dll
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.pdb
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\ref\InternshipMatcher.Application.dll
