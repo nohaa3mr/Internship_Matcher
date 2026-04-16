@@ -3,44 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\data\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\data\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\data\\migrations\\20260416164223_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\data\\migrations\\20260416164223_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\data\\migrations\\20260416164223_init.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\data\\migrations\\20260416164223_init.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\configs\\recruiterprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\configs\\recruiterprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\configs\\studentprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\configs\\studentprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\helpers\\dicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\helpers\\dicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\internshipskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\internshipskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.application\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|solutionrelative:src\\internshipmatcher.application\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\middlewares\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\middlewares\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\configs\\recruiterprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\configs\\recruiterprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\configs\\studentprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|solutionrelative:src\\internshipmatcher.infra\\configs\\studentprofileconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\configs\\skillconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,32 +63,16 @@
       "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\internship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\internship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\studentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\studentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\enums\\applicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\enums\\applicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43330D9B-8FC2-508E-C675-1CC3D11BD260}|src\\InternshipMatcher.Domain\\InternshipMatcher.Domain.csproj|solutionrelative:src\\internshipmatcher.domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\internshipmatcher.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\internshipmatcher.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,64 +82,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{87654321-4321-4321-4321-987654321cba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\.gitignore",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\.gitignore",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\.gitignore",
-              "RelativeToolTip": "src\\InternshipMatcher.API\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-04-16T18:46:03.468Z",
+              "DocumentIndex": 17,
+              "Title": "InternshipMatcher.API",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\InternshipMatcher.API.csproj",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\InternshipMatcher.API.csproj",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\InternshipMatcher.API.csproj",
+              "RelativeToolTip": "src\\InternshipMatcher.API\\InternshipMatcher.API.csproj",
+              "ViewState": "AgIAACMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-16T21:07:34.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Data\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Data\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Data\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Infra\\Data\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAD4vxYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T18:35:02.427Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\appsettings.json",
+              "RelativeToolTip": "src\\InternshipMatcher.API\\appsettings.json",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T20:30:04.289Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20260416164223_Init.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowAsAAAAjAAAAAAAAAA==",
+              "Title": "IJWTService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Interfaces\\IJWTService.cs",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Interfaces\\IJWTService.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Interfaces\\IJWTService.cs",
+              "RelativeToolTip": "src\\InternshipMatcher.Application\\Interfaces\\IJWTService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T18:34:59.931Z"
+              "WhenOpened": "2026-04-16T20:25:24.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JWTService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Services\\JWTService.cs",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Services\\JWTService.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Services\\JWTService.cs",
+              "RelativeToolTip": "src\\InternshipMatcher.Infra\\Services\\JWTService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T20:23:54.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "20260416164223_Init.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.Designer.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.Designer.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.Designer.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Infra\\Data\\Migrations\\20260416164223_Init.Designer.cs",
-              "ViewState": "AgIAAE0BAAAAAAAAAAAAwFQBAAAUAAAAAAAAAA==",
+              "Title": "GlobalExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "src\\InternshipMatcher.API\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T18:34:34.293Z"
+              "WhenOpened": "2026-04-16T19:50:19.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "DIContainer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Helpers\\DIContainer.cs",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\Helpers\\DIContainer.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Helpers\\DIContainer.cs",
+              "RelativeToolTip": "src\\InternshipMatcher.API\\Helpers\\DIContainer.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAJYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T19:20:25.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "StudentProfile.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\StudentProfile.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\StudentProfile.cs",
@@ -171,23 +172,12 @@
               "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\StudentProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T16:40:50.065Z"
+              "WhenOpened": "2026-04-16T16:40:50.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\appsettings.json",
-              "RelativeToolTip": "src\\InternshipMatcher.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-16T15:57:20.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "SkillConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\SkillConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\SkillConfig.cs",
@@ -195,11 +185,12 @@
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\SkillConfig.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAADwvwcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:53:44.43Z"
+              "WhenOpened": "2026-04-16T15:53:44.43Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "ApplicationConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\ApplicationConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\ApplicationConfig.cs",
@@ -207,11 +198,12 @@
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\ApplicationConfig.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwBwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:46:48.048Z"
+              "WhenOpened": "2026-04-16T15:46:48.048Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RecruiterProfileConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\RecruiterProfileConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\RecruiterProfileConfig.cs",
@@ -219,11 +211,12 @@
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\RecruiterProfileConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:43:21.804Z"
+              "WhenOpened": "2026-04-16T15:43:21.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "StudentSkillConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\StudentSkillConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\StudentSkillConfig.cs",
@@ -231,11 +224,12 @@
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\StudentSkillConfig.cs",
               "ViewState": "AgIAAAAAAADwgsFgwOEcwAYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:41:27.55Z"
+              "WhenOpened": "2026-04-16T15:41:27.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "InternshipSkillConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\InternshipSkillConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\InternshipSkillConfig.cs",
@@ -243,7 +237,8 @@
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\InternshipSkillConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:37:49.662Z"
+              "WhenOpened": "2026-04-16T15:37:49.662Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -255,23 +250,25 @@
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\StudentProfileConfig.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAYwA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:33:14.354Z"
+              "WhenOpened": "2026-04-16T15:33:14.354Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "UserConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\UserConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\UserConfig.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\UserConfig.cs",
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\UserConfig.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABMAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwBMAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:23:53.194Z"
+              "WhenOpened": "2026-04-16T15:23:53.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "InternshipConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\InternshipConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\InternshipConfig.cs",
@@ -279,95 +276,25 @@
               "RelativeToolTip": "src\\InternshipMatcher.Infra\\Configs\\InternshipConfig.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAuwBIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T15:20:43.774Z"
+              "WhenOpened": "2026-04-16T15:20:43.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\DbContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\DbContext\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\DbContext\\AppDbContext.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Infra\\DbContext\\AppDbContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:56:53.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InternshipSkill.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\InternshipSkill.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\InternshipSkill.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\InternshipSkill.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\InternshipSkill.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwAgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:53:42.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ApplicationStatus.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Enums\\ApplicationStatus.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Enums\\ApplicationStatus.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Enums\\ApplicationStatus.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Domain\\Enums\\ApplicationStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:52:24.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "Application.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Application.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\Application.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Application.cs",
               "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\Application.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:49:40.693Z"
+              "WhenOpened": "2026-04-16T14:49:40.693Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Internship.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Internship.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\Internship.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Internship.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\Internship.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:47:52.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Skill.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Skill.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\Skill.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Skill.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\Skill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:45:08.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "StudentSkill.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\StudentSkill.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\StudentSkill.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\StudentSkill.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\StudentSkill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:43:42.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 16,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Enums\\UserRole.cs",
@@ -375,31 +302,21 @@
               "RelativeToolTip": "src\\InternshipMatcher.Domain\\Enums\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:40:25.88Z"
+              "WhenOpened": "2026-04-16T14:40:25.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\User.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\User.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\User.cs",
               "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\User.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAABYwBEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:35:52.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\BaseModel.cs",
-              "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\BaseModel.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\BaseModel.cs",
-              "RelativeToolTip": "src\\InternshipMatcher.Domain\\Models\\BaseModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:35:34.013Z"
+              "WhenOpened": "2026-04-16T14:35:52.393Z",
+              "EditorCaption": ""
             }
           ]
         }

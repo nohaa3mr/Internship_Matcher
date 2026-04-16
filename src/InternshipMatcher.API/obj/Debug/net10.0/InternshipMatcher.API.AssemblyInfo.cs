@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b8a73dd2-a4dd-4335-853a-96bcc54f07cf")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("InternshipMatcher.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9559eff092fa32a65637f6918360f4c97a0c1f65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1fd42f87ad7f11528aeb56a55014bf929088412")]
 [assembly: System.Reflection.AssemblyProductAttribute("InternshipMatcher.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InternshipMatcher.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

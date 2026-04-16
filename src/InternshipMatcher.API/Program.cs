@@ -1,41 +1,69 @@
+using InternshipMatcher.API.Helpers;
+using Swashbuckle.AspNetCore.SwaggerUI;
+using Prometheus;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
+builder.Services.RegisterDbConnection(builder.Configuration);
+builder.Services.SwaggerRegisteration();
+builder.Services.AddAuthAndAuthorizationWithJWT(builder.Configuration);
+builder.Services.AddResponseCompressionEnc();
+builder.Services.AddRequestErrorDetails();
+builder.Services.AddPipelineBehaviour();
+builder.Services.MediateR();
+builder.Services.AddCORS();
+builder.Host.Serilog(builder.Configuration);
+builder.Services.AddRateLimit();
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseHttpMetrics();
+app.UseResponseCompression();
+
+// 2. Exception Handling
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler();
+    app.UseStatusCodePages();
 }
 
+// 3. HTTPS
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+// 4. Routing
+app.UseRouting();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+// 5. CORS
+app.UseCors();
 
-app.Run();
+// 6. Auth
+app.UseAuthentication();
+app.UseAuthorization();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+// 7. Rate Limiting
+app.UseRateLimiter();
+
+// 8. Endpoints
+app.MapControllers();
+app.MapMetrics();
+
+// 9. Swagger — after routing and endpoints
+if (app.Environment.IsDevelopment())
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    app.UseSwagger();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Alert v1");
+        options.DisplayRequestDuration();
+        options.EnableTryItOutByDefault();
+        options.DocExpansion(DocExpansion.List);
+        options.EnableFilter();
+        options.EnableDeepLinking();
+    });
+    app.MapSwagger().AllowAnonymous();
 }
+app.Run();
