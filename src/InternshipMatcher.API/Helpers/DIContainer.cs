@@ -4,6 +4,7 @@ using InternshipMatcher.Application.Interfaces;
 using InternshipMatcher.Infra.DbContext;
 using InternshipMatcher.Infra.Services;
 using MediatR;
+using Microsoft.OpenApi;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.ResponseCompression;
@@ -91,22 +92,32 @@ public static class DIContainer
         Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
         return Services;
     }
-    public static IServiceCollection SwaggerRegisteration(this IServiceCollection services) 
-    {
-     services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen(options =>
+   
+        public static IServiceCollection SwaggerRegisteration(this IServiceCollection services)
         {
-            options.SwaggerDoc("v1", new OpenApiInfo
+            services.AddSwaggerGen(options =>
             {
-                Title = "APIPulse",
-                Version = "v1",
-                Description = "APIPulse SaaS API"
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "InternshipMatcher API",
+                    Version = "v1"
+                });
+
+                // JWT Auth in Swagger
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Enter your JWT token here. Example: eyJhbGci..."
+                });
             });
-            options.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
-            options.CustomSchemaIds(type => type.FullName);
-        });
-        return services;
-    }
+
+            return services;
+        }
+    
     public static IServiceCollection AddRateLimit(this IServiceCollection Services)
     {
         Services.AddRateLimiter(opt =>

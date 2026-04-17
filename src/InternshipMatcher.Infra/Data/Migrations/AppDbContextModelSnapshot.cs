@@ -22,7 +22,7 @@ namespace InternshipMatcher.Infra.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("InternshipMatcher.Domain.Models.Application", b =>
+            modelBuilder.Entity("InternshipMatcher.Domain.Models.ApplicationForm", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -348,7 +348,7 @@ namespace InternshipMatcher.Infra.Data.Migrations
                     b.ToTable("DataProtectionKeys");
                 });
 
-            modelBuilder.Entity("InternshipMatcher.Domain.Models.Application", b =>
+            modelBuilder.Entity("InternshipMatcher.Domain.Models.ApplicationForm", b =>
                 {
                     b.HasOne("InternshipMatcher.Domain.Models.Internship", "Internship")
                         .WithMany("Applications")

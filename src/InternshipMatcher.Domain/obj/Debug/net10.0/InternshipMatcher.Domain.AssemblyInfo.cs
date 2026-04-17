@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InternshipMatcher.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+951f91ad6fee016c1783d52b3f367bf448c8563a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8b90b265d5f7844c20c86884caa590afb1c4505")]
 [assembly: System.Reflection.AssemblyProductAttribute("InternshipMatcher.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InternshipMatcher.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

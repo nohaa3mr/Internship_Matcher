@@ -1,4 +1,5 @@
 ﻿using InternshipMatcher.Domain.Enums;
+using System.Text.Json.Serialization;
 
 namespace InternshipMatcher.Domain.Models;
 
@@ -10,6 +11,7 @@ public class User : BaseModel
     public string Phone { get; set; }
     public DateTime DateOfBirth { get; set; } = DateTime.Now;
     public string Password { get; set; }
+    [JsonIgnore]
     public string ConfirmPassword { get; set; }
     public string PasswordSalt { get; set; }
     public string PasswordHash { get; set; }

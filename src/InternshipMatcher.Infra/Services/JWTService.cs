@@ -19,7 +19,7 @@ namespace InternshipMatcher.Infra.Services
             this._config = config;
         }
 
-        public string GenerateAccessToken(Guid userID, string email,string roles)
+        public async Task<string> GenerateToken(Guid userID, string email)
         {
             var key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(_config["Jwt:SecretKey"]!));
@@ -30,7 +30,6 @@ namespace InternshipMatcher.Infra.Services
             {
             new Claim(ClaimTypes.NameIdentifier, userID.ToString()),
             new Claim(ClaimTypes.Email, email),
-            new Claim(ClaimTypes.Role, roles)
         };
 
             var token = new JwtSecurityToken(
@@ -41,16 +40,16 @@ namespace InternshipMatcher.Infra.Services
                 signingCredentials: credentials
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return  new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public string GenerateRefreshToken()
+        public async Task<string> GenerateRefreshToken()
         {
             var bytes = RandomNumberGenerator.GetBytes(64);
-            return Convert.ToBase64String(bytes);
+            return  await Task.FromResult(Convert.ToBase64String(bytes));
         }
 
-        public ClaimsPrincipal? ValidateExpiredToken(string token)
+        public async Task<ClaimsPrincipal?> ValidateExpiredToken(string token)
         {
             var handler = new JwtSecurityTokenHandler();
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:SecretKey"]));
@@ -66,7 +65,7 @@ namespace InternshipMatcher.Infra.Services
                 ValidateLifetime = false  // allow expired — we're refreshing
             };
 
-            try { return handler.ValidateToken(token, parameters, out _); }
+            try { return await Task.Run(() => handler.ValidateToken(token, parameters, out _)); }
             catch { return null; }
         }
     }    

@@ -80,6 +80,27 @@
           }
         }
       },
+      "Mapster/10.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Mapster.Core": "10.0.7"
+        },
+        "compile": {
+          "lib/net10.0/Mapster.dll": {}
+        },
+        "runtime": {
+          "lib/net10.0/Mapster.dll": {}
+        }
+      },
+      "Mapster.Core/10.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
+        }
+      },
       "MediatR/14.1.0": {
         "type": "package",
         "dependencies": {
@@ -158,7 +179,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/10.0.4": {
+      "Microsoft.AspNetCore.OpenApi/10.0.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "2.0.0"
@@ -920,10 +941,10 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
-      "Newtonsoft.Json/13.0.3": {
+      "Newtonsoft.Json/13.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         },
@@ -965,6 +986,42 @@
         "runtime": {
           "lib/netcoreapp3.1/Prometheus.AspNetCore.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Scalar.AspNetCore/2.14.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Scalar.AspNetCore.Swashbuckle/2.14.0": {
+        "type": "package",
+        "dependencies": {
+          "Scalar.AspNetCore": "2.14.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.Swashbuckle.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.Swashbuckle.dll": {
+            "related": ".xml"
           }
         },
         "frameworkReferences": [
@@ -1441,7 +1498,10 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "FluentValidation": "12.1.1",
-          "MediatR": "14.1.0"
+          "InternshipMatcher.Domain": "1.0.0",
+          "Mapster": "10.0.7",
+          "MediatR": "14.1.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
           "bin/placeholder/InternshipMatcher.Application.dll": {}
@@ -1569,6 +1629,35 @@
         "logo.png"
       ]
     },
+    "Mapster/10.0.7": {
+      "sha512": "bZgWXyTM21Bc6Xrvk2BzPCFTwnvyTNSO4fUli/DVm02Kya80r5sY9ackpsECVlUqbda7ck9hr/1oKrCyI8yXmw==",
+      "type": "package",
+      "path": "mapster/10.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net10.0/Mapster.dll",
+        "lib/net8.0/Mapster.dll",
+        "lib/net9.0/Mapster.dll",
+        "lib/netstandard2.0/Mapster.dll",
+        "mapster.10.0.7.nupkg.sha512",
+        "mapster.nuspec"
+      ]
+    },
+    "Mapster.Core/10.0.7": {
+      "sha512": "73Bd0aZ+t6DoG3X4FYDfOyVgvLxgUXJKIjrps3W1n7MR03DIWI+sL62VqQSPwuJdn7WJb8HYhkH/BNZ6ZlJydw==",
+      "type": "package",
+      "path": "mapster.core/10.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/Mapster.Core.dll",
+        "mapster.core.10.0.7.nupkg.sha512",
+        "mapster.core.nuspec"
+      ]
+    },
     "MediatR/14.1.0": {
       "sha512": "pdxza1pLqAk+06LV3THzNJrw5K5Ah6EC17TEkoC90gsAxwtXDJAQrGuDSDinHGgxWKWEn5ebqTNN3k1bLJOb0g==",
       "type": "package",
@@ -1660,10 +1749,10 @@
         "microsoft.aspnetcore.dataprotection.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/10.0.4": {
-      "sha512": "OsEhbmT4Xenukau5YCR867gr/HmuAJ9DqMBPQGTcmdNU/TqBqdcnB+yLNwD/mTdkHzLBB+XG7cI4H1L5B1jx+Q==",
+    "Microsoft.AspNetCore.OpenApi/10.0.6": {
+      "sha512": "WTAQe7MAbbKztRyeCRGZOqqlIqpMHDBz+jKo7LLY6hp4qRqn7iucR24u32KJVxV7mF3tSEfwXH96NgGSiDBw7A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/10.0.4",
+      "path": "microsoft.aspnetcore.openapi/10.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1674,7 +1763,7 @@
         "build/Microsoft.AspNetCore.OpenApi.targets",
         "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net10.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -3274,10 +3363,10 @@
         "readme.md"
       ]
     },
-    "Newtonsoft.Json/13.0.3": {
-      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+    "Newtonsoft.Json/13.0.4": {
+      "sha512": "pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.3",
+      "path": "newtonsoft.json/13.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3299,7 +3388,7 @@
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.13.0.4.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -3349,6 +3438,44 @@
         "lib/netstandard2.0/Prometheus.AspNetCore.xml",
         "prometheus-net.aspnetcore.5.0.0.nupkg.sha512",
         "prometheus-net.aspnetcore.nuspec"
+      ]
+    },
+    "Scalar.AspNetCore/2.14.0": {
+      "sha512": "YpcCrY+FuPrmFzThm4om8HZ0Lww9vlIQUzUcBpc2Hv4n+oY8SgvFebgBSQJgnaW6y/FgG5J6FU/71HRq/wy9uQ==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.14.0.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
+    "Scalar.AspNetCore.Swashbuckle/2.14.0": {
+      "sha512": "LnZYp3bEnsBziMdjbnKgR6ahd4tODQ825Dr27gTMFFYXb+80GYYErDDJErIye4qXxD4ihRerVXgyjhP46IWXyA==",
+      "type": "package",
+      "path": "scalar.aspnetcore.swashbuckle/2.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.Swashbuckle.dll",
+        "lib/net10.0/Scalar.AspNetCore.Swashbuckle.xml",
+        "lib/net8.0/Scalar.AspNetCore.Swashbuckle.dll",
+        "lib/net8.0/Scalar.AspNetCore.Swashbuckle.xml",
+        "lib/net9.0/Scalar.AspNetCore.Swashbuckle.dll",
+        "lib/net9.0/Scalar.AspNetCore.Swashbuckle.xml",
+        "scalar.aspnetcore.swashbuckle.2.14.0.nupkg.sha512",
+        "scalar.aspnetcore.swashbuckle.nuspec"
       ]
     },
     "Serilog/4.3.1": {
@@ -4046,8 +4173,11 @@
       "InternshipMatcher.Infra >= 1.0.0",
       "MediatR >= 14.1.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.6",
-      "Microsoft.AspNetCore.OpenApi >= 10.0.4",
+      "Microsoft.AspNetCore.OpenApi >= 10.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.6",
+      "Newtonsoft.Json >= 13.0.4",
+      "Scalar.AspNetCore >= 2.14.0",
+      "Scalar.AspNetCore.Swashbuckle >= 2.14.0",
       "Serilog >= 4.3.1",
       "Serilog.Enrichers.Environment >= 3.0.1",
       "Serilog.Extensions.Hosting >= 10.0.0",
@@ -4139,13 +4269,25 @@
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[10.0.4, )"
+            "version": "[10.0.6, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.6, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.4, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.14.0, )"
+          },
+          "Scalar.AspNetCore.Swashbuckle": {
+            "target": "Package",
+            "version": "[2.14.0, )"
           },
           "Serilog": {
             "target": "Package",

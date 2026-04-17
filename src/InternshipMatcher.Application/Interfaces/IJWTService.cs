@@ -7,8 +7,8 @@ namespace InternshipMatcher.Application.Interfaces
 {
     public interface IJWTService
     {
-        string GenerateAccessToken(Guid userID, string email, string roles);
-        string GenerateRefreshToken();
-        ClaimsPrincipal? ValidateExpiredToken(string token);
+        Task<string> GenerateToken(Guid userID, string email);
+        Task<string> GenerateRefreshToken();
+       Task< ClaimsPrincipal?> ValidateExpiredToken(string token);
     }
 }

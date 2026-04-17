@@ -118,3 +118,567 @@ SELECT @result
 2026-04-17 15:57:02.409 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
 2026-04-17 15:57:02.414 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 4.8996ms
 2026-04-17 15:57:02.539 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.2895ms
+2026-04-17 17:31:07.072 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 17:31:07.283 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 17:31:07.286 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 17:31:07.327 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 17:31:07.329 +02:00 [INF] Hosting environment: Development
+2026-04-17 17:31:07.333 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 17:31:32.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 17:31:32.748 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-17 17:31:32.771 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 212.7739ms
+2026-04-17 17:31:32.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 17:31:32.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 17:31:32.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 17:31:32.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 17:31:32.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 17:31:32.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 17:31:32.787 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 11.3129ms
+2026-04-17 17:31:32.793 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 17.1378ms
+2026-04-17 17:31:32.793 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 17.1378ms
+2026-04-17 17:31:32.794 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 17.7512ms
+2026-04-17 17:31:32.805 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 28.87ms
+2026-04-17 17:31:32.811 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 33.611ms
+2026-04-17 17:31:32.899 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 17:31:32.904 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 17:31:32.917 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 13.7708ms
+2026-04-17 17:31:33.024 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.3604ms
+2026-04-17 17:31:55.528 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 101
+2026-04-17 17:31:55.534 +02:00 [INF] CORS policy execution failed.
+2026-04-17 17:31:55.535 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 17:31:55.541 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 17:31:55.579 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 17:31:55.589 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 3.204ms
+2026-04-17 17:31:55.591 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 17:31:55.593 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InternshipMatcher.API.Common.ResponseStructure.BaseEndpointParameters' while attempting to activate 'InternshipMatcher.API.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-17 17:31:55.649 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 500 null application/problem+json; charset=utf-8 120.8484ms
+2026-04-17 17:35:01.581 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 17:35:01.776 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 17:35:01.779 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 17:35:01.823 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 17:35:01.824 +02:00 [INF] Hosting environment: Development
+2026-04-17 17:35:01.826 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 17:35:14.632 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 17:35:14.850 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 17:35:14.852 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 17:35:14.907 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 17:35:14.917 +02:00 [INF] Hosting environment: Development
+2026-04-17 17:35:14.921 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 17:35:24.906 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 17:35:25.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 153.8422ms
+2026-04-17 17:35:25.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 17:35:25.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 17:35:25.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 17:35:25.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 17:35:25.105 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 18.705ms
+2026-04-17 17:35:25.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 17:35:25.105 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 18.7004ms
+2026-04-17 17:35:25.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 17:35:25.108 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 21.4495ms
+2026-04-17 17:35:25.118 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 31.2585ms
+2026-04-17 17:35:25.133 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 46.159ms
+2026-04-17 17:35:25.139 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 52.2256ms
+2026-04-17 17:35:25.188 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 17:35:25.188 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 17:35:25.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 18.9ms
+2026-04-17 17:35:25.322 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.6593ms
+2026-04-17 17:35:37.817 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 101
+2026-04-17 17:35:37.823 +02:00 [INF] CORS policy execution failed.
+2026-04-17 17:35:37.824 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 17:35:37.830 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 17:35:37.854 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 17:35:37.873 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-17 17:35:37.953 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-17 17:35:37.965 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 99.0439ms
+2026-04-17 17:35:37.966 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 17:35:37.967 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 200 null application/json; charset=utf-8 150.6638ms
+2026-04-17 18:18:30.935 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 101
+2026-04-17 18:18:30.941 +02:00 [INF] CORS policy execution failed.
+2026-04-17 18:18:30.942 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 18:18:30.944 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:18:30.945 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 18:18:30.953 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-17 18:18:30.955 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 5.8088ms
+2026-04-17 18:18:30.957 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:18:30.958 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 200 null application/json; charset=utf-8 23.1125ms
+2026-04-17 18:18:49.200 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 18:18:49.405 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 18:18:49.407 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 18:18:49.453 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 18:18:49.454 +02:00 [INF] Hosting environment: Development
+2026-04-17 18:18:49.455 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 18:18:58.574 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 18:18:58.721 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 147.3761ms
+2026-04-17 18:18:58.749 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 18:18:58.753 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 18:18:58.753 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 18:18:58.753 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 18:18:58.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 18:18:58.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 18:18:58.765 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 10.9056ms
+2026-04-17 18:18:58.768 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 14.6295ms
+2026-04-17 18:18:58.768 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 18.7662ms
+2026-04-17 18:18:58.769 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 15.442ms
+2026-04-17 18:18:58.773 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 20.1859ms
+2026-04-17 18:18:58.778 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 23.7366ms
+2026-04-17 18:18:58.835 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 18:18:58.838 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 18:18:58.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 4.2003ms
+2026-04-17 18:18:58.947 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.492ms
+2026-04-17 18:19:02.159 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 18:19:02.168 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 8.774ms
+2026-04-17 18:19:02.192 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 18:19:02.195 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 18:19:02.195 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 18:19:02.195 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 18:19:02.195 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 18:19:02.195 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 3.5202ms
+2026-04-17 18:19:02.196 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 18:19:02.199 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 3.6484ms
+2026-04-17 18:19:02.201 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 6.4924ms
+2026-04-17 18:19:02.204 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 9.5161ms
+2026-04-17 18:19:02.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 12.2073ms
+2026-04-17 18:19:02.214 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 18.541ms
+2026-04-17 18:19:02.256 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 18:19:02.257 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 18:19:02.265 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 7.9907ms
+2026-04-17 18:19:02.268 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.6845ms
+2026-04-17 18:19:08.782 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 101
+2026-04-17 18:19:08.805 +02:00 [INF] CORS policy execution failed.
+2026-04-17 18:19:08.806 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 18:19:08.809 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:19:08.833 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 18:19:08.843 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-17 18:19:08.895 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-17 18:19:08.906 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 67.668ms
+2026-04-17 18:19:08.908 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:19:08.909 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 200 null application/json; charset=utf-8 127.0926ms
+2026-04-17 18:25:23.879 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 18:25:24.089 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 18:25:24.091 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 18:25:24.139 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 18:25:24.140 +02:00 [INF] Hosting environment: Development
+2026-04-17 18:25:24.141 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 18:25:35.825 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 18:25:35.975 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 152.9396ms
+2026-04-17 18:25:36.002 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 18:25:36.003 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 18:25:36.003 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 18:25:36.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 18:25:36.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 18:25:36.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 18:25:36.015 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 11.1359ms
+2026-04-17 18:25:36.019 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 16.8203ms
+2026-04-17 18:25:36.019 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 15.4828ms
+2026-04-17 18:25:36.020 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 16.1313ms
+2026-04-17 18:25:36.024 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 20.9253ms
+2026-04-17 18:25:36.030 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 25.6787ms
+2026-04-17 18:25:36.110 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 18:25:36.112 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 18:25:36.116 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 4.2946ms
+2026-04-17 18:25:36.177 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-17 18:25:36.217 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 500 null application/problem+json 107.0222ms
+2026-04-17 18:25:54.688 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 18:25:54.907 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 18:25:54.909 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 18:25:54.959 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 18:25:54.960 +02:00 [INF] Hosting environment: Development
+2026-04-17 18:25:54.962 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 18:26:08.053 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 18:26:08.201 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 149.511ms
+2026-04-17 18:26:08.224 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 18:26:08.224 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 18:26:08.224 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 18:26:08.224 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 18:26:08.225 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 18:26:08.225 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 18:26:08.241 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 16.0798ms
+2026-04-17 18:26:08.241 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 16.0794ms
+2026-04-17 18:26:08.241 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 15.6532ms
+2026-04-17 18:26:08.241 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 16.4625ms
+2026-04-17 18:26:08.244 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 19.1738ms
+2026-04-17 18:26:08.248 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 22.6033ms
+2026-04-17 18:26:08.303 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 18:26:08.309 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 18:26:08.313 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 3.8422ms
+2026-04-17 18:26:08.409 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.1379ms
+2026-04-17 18:26:33.824 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Login - application/json 65
+2026-04-17 18:26:33.834 +02:00 [INF] CORS policy execution failed.
+2026-04-17 18:26:33.835 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 18:26:33.844 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-17 18:26:33.873 +02:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel]] LoginUser(InternshipMatcher.API.Common.CommonViewModels.UserLoginRequestViewModel) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 18:26:33.884 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-17 18:26:33.929 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-17 18:26:33.952 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API) in 73.6715ms
+2026-04-17 18:26:33.954 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-17 18:26:33.958 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Login - 400 null application/problem+json; charset=utf-8 133.9564ms
+2026-04-17 18:29:03.930 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 18:29:04.133 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 18:29:04.136 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 18:29:04.185 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 18:29:04.187 +02:00 [INF] Hosting environment: Development
+2026-04-17 18:29:04.189 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 18:29:22.449 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 18:29:22.601 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 152.0883ms
+2026-04-17 18:29:22.627 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 18:29:22.627 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 18:29:22.627 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 18:29:22.627 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 18:29:22.628 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 18:29:22.628 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 18:29:22.636 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 8.5651ms
+2026-04-17 18:29:22.642 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 14.5283ms
+2026-04-17 18:29:22.642 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 14.9319ms
+2026-04-17 18:29:22.642 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 15.3267ms
+2026-04-17 18:29:22.646 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 18.8177ms
+2026-04-17 18:29:22.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 25.9745ms
+2026-04-17 18:29:22.723 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 18:29:22.726 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 18:29:22.732 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 5.4485ms
+2026-04-17 18:29:22.840 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.2203ms
+2026-04-17 18:31:15.248 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 18:31:15.451 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 18:31:15.454 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 18:31:15.509 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 18:31:15.510 +02:00 [INF] Hosting environment: Development
+2026-04-17 18:31:15.511 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 18:32:10.523 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 18:32:10.673 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 151.4851ms
+2026-04-17 18:32:10.698 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 18:32:10.700 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 18:32:10.700 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 18:32:10.701 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 18:32:10.701 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 18:32:10.701 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 18:32:10.711 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 10.4015ms
+2026-04-17 18:32:10.715 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 17.2397ms
+2026-04-17 18:32:10.715 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 15.0108ms
+2026-04-17 18:32:10.715 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 15.0672ms
+2026-04-17 18:32:10.720 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 17.8914ms
+2026-04-17 18:32:10.724 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 23.3621ms
+2026-04-17 18:32:10.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 18:32:10.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 18:32:10.807 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 13.7075ms
+2026-04-17 18:32:10.909 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.089ms
+2026-04-17 18:33:05.672 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 130
+2026-04-17 18:33:05.692 +02:00 [INF] CORS policy execution failed.
+2026-04-17 18:33:05.693 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 18:33:05.697 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:33:05.731 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 18:33:05.750 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-17 18:33:05.793 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-17 18:33:05.820 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 80.0251ms
+2026-04-17 18:33:05.822 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:33:05.823 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 400 null application/problem+json; charset=utf-8 150.7312ms
+2026-04-17 18:33:40.399 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 132
+2026-04-17 18:33:40.406 +02:00 [INF] CORS policy execution failed.
+2026-04-17 18:33:40.407 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 18:33:40.408 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:33:40.409 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 18:33:40.451 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-17 18:33:40.455 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 44.2862ms
+2026-04-17 18:33:40.457 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 18:33:40.458 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 200 null application/json; charset=utf-8 59.2113ms
+2026-04-17 18:35:11.507 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Login - application/json 111
+2026-04-17 18:35:11.523 +02:00 [INF] CORS policy execution failed.
+2026-04-17 18:35:11.527 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 18:35:11.533 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-17 18:35:11.561 +02:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel]] LoginUser(InternshipMatcher.API.Common.CommonViewModels.UserLoginRequestViewModel) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 18:35:11.578 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel, InternshipMatcher.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-17 18:35:11.594 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API) in 28.5471ms
+2026-04-17 18:35:11.602 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-17 18:35:11.604 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Login - 200 null application/json; charset=utf-8 96.9269ms
+2026-04-17 22:07:34.308 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 22:07:34.616 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 22:07:34.619 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 22:07:34.658 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 22:07:34.660 +02:00 [INF] Hosting environment: Development
+2026-04-17 22:07:34.661 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 22:07:46.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 22:07:46.336 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 193.7545ms
+2026-04-17 22:07:46.380 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 22:07:46.380 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 22:07:46.380 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 22:07:46.380 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 22:07:46.380 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 22:07:46.380 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 22:07:46.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 19.5986ms
+2026-04-17 22:07:46.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 19.8257ms
+2026-04-17 22:07:46.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 19.8022ms
+2026-04-17 22:07:46.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 19.8255ms
+2026-04-17 22:07:46.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 20.1428ms
+2026-04-17 22:07:46.413 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 33.6135ms
+2026-04-17 22:07:46.592 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 22:07:46.601 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 22:07:46.608 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 6.5149ms
+2026-04-17 22:07:46.726 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.4057ms
+2026-04-17 22:44:40.465 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 22:44:40.783 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 22:44:40.786 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 22:44:40.824 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 22:44:40.826 +02:00 [INF] Hosting environment: Development
+2026-04-17 22:44:40.827 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 22:45:10.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 22:45:11.065 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 197.4367ms
+2026-04-17 22:45:11.093 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 22:45:11.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 22:45:11.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 22:45:11.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 22:45:11.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 22:45:11.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 22:45:11.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 17.9954ms
+2026-04-17 22:45:11.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 18.3851ms
+2026-04-17 22:45:11.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 18.8444ms
+2026-04-17 22:45:11.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 22.3864ms
+2026-04-17 22:45:11.122 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 25.257ms
+2026-04-17 22:45:11.126 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 29.7649ms
+2026-04-17 22:45:11.210 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 22:45:11.210 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 22:45:11.222 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 11.4866ms
+2026-04-17 22:45:11.349 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.7794ms
+2026-04-17 22:46:09.560 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 129
+2026-04-17 22:46:09.570 +02:00 [INF] CORS policy execution failed.
+2026-04-17 22:46:09.571 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 22:46:09.579 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 22:46:09.613 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 22:46:09.636 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-17 22:46:09.702 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-17 22:46:09.712 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 91.5246ms
+2026-04-17 22:46:09.714 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 22:46:09.715 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 200 null application/json; charset=utf-8 156.3043ms
+2026-04-17 22:47:08.968 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/v1/internships - application/json 237
+2026-04-17 22:47:08.973 +02:00 [INF] CORS policy execution failed.
+2026-04-17 22:47:08.974 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 22:47:08.984 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-17 22:47:08.990 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-17 22:47:08.993 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/v1/internships - 401 0 null 24.1824ms
+2026-04-17 22:48:34.349 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/v1/internships - application/json 237
+2026-04-17 22:48:34.352 +02:00 [INF] CORS policy execution failed.
+2026-04-17 22:48:34.353 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 22:48:34.356 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-17 22:48:34.358 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-17 22:48:34.359 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/v1/internships - 401 0 null 10.6442ms
+2026-04-17 22:48:39.989 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/v1/internships - application/json 237
+2026-04-17 22:48:40.001 +02:00 [INF] CORS policy execution failed.
+2026-04-17 22:48:40.001 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 22:48:40.011 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-17 22:48:40.014 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-17 22:48:40.015 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/v1/internships - 401 0 null 26.577ms
+2026-04-17 22:53:16.158 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 22:53:16.398 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 22:53:16.399 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 22:53:16.430 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 22:53:16.431 +02:00 [INF] Hosting environment: Development
+2026-04-17 22:53:16.433 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 22:56:42.974 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 22:56:43.296 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 22:56:43.303 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 22:56:43.356 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 22:56:43.360 +02:00 [INF] Hosting environment: Development
+2026-04-17 22:56:43.361 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 22:56:43.420 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 22:56:43.845 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 426.5162ms
+2026-04-17 22:56:43.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 22:56:43.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 22:56:43.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 22:56:43.892 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 16.3995ms
+2026-04-17 22:56:43.900 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 22:56:43.895 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 19.654ms
+2026-04-17 22:56:43.892 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 16.3969ms
+2026-04-17 22:56:43.905 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 22:56:43.905 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 22:56:43.916 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 15.9965ms
+2026-04-17 22:56:43.929 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 23.6877ms
+2026-04-17 22:56:43.937 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 32.2393ms
+2026-04-17 22:56:44.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 22:56:44.077 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 22:56:44.093 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 15.9854ms
+2026-04-17 22:56:44.240 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 188.0268ms
+2026-04-17 22:57:56.568 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 22:57:56.878 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 22:57:56.884 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 22:57:56.924 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 22:57:56.925 +02:00 [INF] Hosting environment: Development
+2026-04-17 22:57:56.927 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 22:57:57.051 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 22:57:57.266 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 217.2296ms
+2026-04-17 22:57:57.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 22:57:57.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 22:57:57.297 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 22:57:57.313 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 17.0712ms
+2026-04-17 22:57:57.314 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 17.4213ms
+2026-04-17 22:57:57.320 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 22.8627ms
+2026-04-17 22:57:57.323 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 22:57:57.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 22:57:57.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 22:57:57.358 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 34.5863ms
+2026-04-17 22:57:57.368 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 42.3886ms
+2026-04-17 22:57:57.372 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 46.9114ms
+2026-04-17 22:57:57.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 22:57:57.425 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 22:57:57.427 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 1.908ms
+2026-04-17 22:57:57.577 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 156.0828ms
+2026-04-17 22:59:03.217 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 22:59:03.491 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 22:59:03.493 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 22:59:03.531 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 22:59:03.532 +02:00 [INF] Hosting environment: Development
+2026-04-17 22:59:03.533 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 22:59:03.656 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 22:59:03.835 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 180.1954ms
+2026-04-17 22:59:03.865 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 22:59:03.865 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 22:59:03.866 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 22:59:03.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 15.1224ms
+2026-04-17 22:59:03.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 15.1083ms
+2026-04-17 22:59:03.885 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 19.5354ms
+2026-04-17 22:59:03.893 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 22:59:03.893 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 22:59:03.893 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 22:59:03.905 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 12.5143ms
+2026-04-17 22:59:03.917 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 23.603ms
+2026-04-17 22:59:03.923 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 29.9724ms
+2026-04-17 22:59:03.996 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 22:59:04.002 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 22:59:04.005 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 3.5013ms
+2026-04-17 22:59:04.173 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 177.1444ms
+2026-04-17 23:00:21.758 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 23:00:22.040 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 23:00:22.042 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 23:00:22.087 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 23:00:22.089 +02:00 [INF] Hosting environment: Development
+2026-04-17 23:00:22.090 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 23:00:22.152 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 23:00:22.377 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 227.5531ms
+2026-04-17 23:00:22.396 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 23:00:22.396 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 23:00:22.396 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 23:00:22.410 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 14.0066ms
+2026-04-17 23:00:22.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 13.9791ms
+2026-04-17 23:00:22.415 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 18.5854ms
+2026-04-17 23:00:22.417 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 23:00:22.419 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 23:00:22.420 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 23:00:22.436 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 18.8503ms
+2026-04-17 23:00:22.441 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 21.5575ms
+2026-04-17 23:00:22.447 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 27.6272ms
+2026-04-17 23:00:22.500 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 23:00:22.504 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 23:00:22.507 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 2.9273ms
+2026-04-17 23:00:22.649 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 149.3325ms
+2026-04-17 23:00:39.817 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 23:00:40.190 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 23:00:40.192 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 23:00:40.234 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 23:00:40.237 +02:00 [INF] Hosting environment: Development
+2026-04-17 23:00:40.238 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 23:00:40.408 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 23:00:40.589 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 183.8716ms
+2026-04-17 23:00:40.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 23:00:40.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 23:00:40.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 23:00:40.627 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 17.6102ms
+2026-04-17 23:00:40.627 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 17.5989ms
+2026-04-17 23:00:40.630 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 21.4561ms
+2026-04-17 23:00:40.639 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 23:00:40.639 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 23:00:40.642 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 23:00:40.649 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 10.3389ms
+2026-04-17 23:00:40.667 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 28.4028ms
+2026-04-17 23:00:40.684 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 41.9442ms
+2026-04-17 23:00:40.898 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 23:00:40.898 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 23:00:40.905 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 6.736ms
+2026-04-17 23:00:41.052 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.8303ms
+2026-04-17 23:01:11.614 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 23:01:11.621 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 7.391ms
+2026-04-17 23:01:11.644 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 23:01:11.646 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 23:01:11.644 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 23:01:11.644 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 23:01:11.646 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 23:01:11.647 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 2.5393ms
+2026-04-17 23:01:11.647 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 23:01:11.649 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 3.5504ms
+2026-04-17 23:01:11.652 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 7.442ms
+2026-04-17 23:01:11.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 9.4657ms
+2026-04-17 23:01:11.657 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 10.3886ms
+2026-04-17 23:01:11.662 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 15.7124ms
+2026-04-17 23:01:11.707 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 23:01:11.708 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 23:01:11.716 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 7.8858ms
+2026-04-17 23:01:11.723 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.2605ms
+2026-04-17 23:01:26.306 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 23:01:26.312 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 6.0811ms
+2026-04-17 23:01:26.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 23:01:26.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 23:01:26.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 23:01:26.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 23:01:26.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 23:01:26.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 23:01:26.339 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 2.7632ms
+2026-04-17 23:01:26.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 5.3707ms
+2026-04-17 23:01:26.343 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 7.2645ms
+2026-04-17 23:01:26.347 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 10.7713ms
+2026-04-17 23:01:26.349 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 12.7366ms
+2026-04-17 23:01:26.351 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 15.3272ms
+2026-04-17 23:01:26.389 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 23:01:26.390 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 23:01:26.398 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 7.4823ms
+2026-04-17 23:01:26.401 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.3532ms
+2026-04-17 23:01:51.558 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 127
+2026-04-17 23:01:51.566 +02:00 [INF] CORS policy execution failed.
+2026-04-17 23:01:51.568 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-17 23:01:51.571 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 23:01:51.597 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-17 23:01:51.608 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-17 23:01:51.621 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 17.6322ms
+2026-04-17 23:01:51.623 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-17 23:01:51.625 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InternshipMatcher.Application.Interfaces.IGeneralRepository`1[InternshipMatcher.Domain.Models.User]' while attempting to activate 'InternshipMatcher.API.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method13(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-17 23:01:51.675 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 500 null application/problem+json; charset=utf-8 117.8283ms

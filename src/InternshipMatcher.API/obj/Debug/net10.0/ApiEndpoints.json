@@ -16,6 +16,58 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "InternshipMatcher.API.Controllers.AuthController",
+    "Method": "LoginUser",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "InternshipMatcher.API.Common.CommonViewModels.UserLoginRequestViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "InternshipMatcher.API.Common.ResponseStructure.Result\u00601[[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "InternshipMatcher.API.Controllers.AuthController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Auth/Registeration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "InternshipMatcher.API.Common.ResponseStructure.Result\u00601[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "InternshipMatcher.API.Controllers.TestController",
     "Method": "Ping",
     "RelativePath": "Test/ping",
@@ -34,5 +86,37 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapInternships\u003Eb__0_0",
+    "RelativePath": "v1/internships/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vm",
+        "Type": "InternshipMatcher.Application.Features.Internships.ViewModels.AddInternshipRequestViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "InternshipMatcher.Application.Features.Internships.ViewModels.AddInternshipResponseViewModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "AddInternship"
   }
 ]

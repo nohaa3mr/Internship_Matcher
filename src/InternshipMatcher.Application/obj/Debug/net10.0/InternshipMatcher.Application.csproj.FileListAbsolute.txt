@@ -11,3 +11,6 @@ C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj
 C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\refint\InternshipMatcher.Application.dll
 C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\InternshipMatcher.Application.pdb
 C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\ref\InternshipMatcher.Application.dll
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\bin\Debug\net10.0\InternshipMatcher.Domain.dll
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\bin\Debug\net10.0\InternshipMatcher.Domain.pdb
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\obj\Debug\net10.0\Internsh.C01BF428.Up2Date

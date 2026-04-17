@@ -1,6 +1,9 @@
+using InternshipMatcher.API.Common.ResponseStructure;
 using InternshipMatcher.API.Helpers;
 using InternshipMatcher.API.Middlewares;
+using InternshipMatcher.API.MinimalAPIs;
 using InternshipMatcher.Application.Interfaces;
+using InternshipMatcher.Infra.Services;
 using Prometheus;
 using Serilog;
 using Swashbuckle.AspNetCore.SwaggerUI;
@@ -17,6 +20,8 @@ builder.Services.AddRequestErrorDetails();
 builder.Services.AddPipelineBehaviour();
 builder.Services.MediateR();
 builder.Services.AddCORS();
+builder.Services.AddScoped<BaseEndpointParameters>();
+builder.Services.AddScoped(typeof(IGeneralRepository<>), typeof(GeneralRepository<>));
 builder.Host.Serilog(builder.Configuration);
 Serilog.Debugging.SelfLog.Enable(msg =>
 {
@@ -24,8 +29,6 @@ Serilog.Debugging.SelfLog.Enable(msg =>
 });
 builder.Services.AddRateLimit();
 builder.Services.AddHttpClient<IAIService, AIService>(); 
-Log.Information("TEST LOG - should create table");
-Log.Error("TEST ERROR LOG");
 var app = builder.Build();
 
 app.UseHttpMetrics();
@@ -76,4 +79,5 @@ if (app.Environment.IsDevelopment())
     });
     app.MapSwagger().AllowAnonymous();
 }
+app.MapAllEndpoints();
 app.Run();
