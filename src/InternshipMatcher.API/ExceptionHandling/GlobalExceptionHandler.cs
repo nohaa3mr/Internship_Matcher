@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace InternshipMatcher.API.Middlewares
 {
-    public class GlobalExceptionHandlerMiddleware(IProblemDetailsService problemDetails) : IExceptionHandler
+    public class GlobalExceptionHandler(IProblemDetailsService problemDetails) : IExceptionHandler
     {
         private readonly IProblemDetailsService problemDetails = problemDetails;
 

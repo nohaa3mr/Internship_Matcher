@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "ContainingType": "InternshipMatcher.API.Controllers.AIController",
+    "Method": "GetMatchScore",
+    "RelativePath": "api/AI/match-score",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "InternshipMatcher.Application.Requests.MatchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InternshipMatcher.API.Controllers.TestController",
+    "Method": "Ping",
+    "RelativePath": "Test/ping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InternshipMatcher.API.Controllers.TestController",
+    "Method": "PingAuth",
+    "RelativePath": "Test/ping-auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

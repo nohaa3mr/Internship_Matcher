@@ -147,15 +147,10 @@ public static class DIContainer
     }
     public static IHostBuilder Serilog(this IHostBuilder host, IConfiguration configuration)
     {
-        host.UseSerilog((ctx, cfg) => cfg
-            .ReadFrom.Configuration(configuration)  
-            .Enrich.FromLogContext()
-            .Enrich.WithMachineName()
-            .WriteTo.Console(new CompactJsonFormatter())
-            .WriteTo.File("logs/app-.log", rollingInterval: RollingInterval.Day)
-            .WriteTo.ApplicationInsights(
-                ctx.Configuration["ApplicationInsights:ConnectionString"],
-                TelemetryConverter.Traces)
+        host.UseSerilog((ctx, cfg) =>
+            cfg.ReadFrom.Configuration(configuration)
+               .Enrich.FromLogContext()
+               .Enrich.WithMachineName()
         );
 
         return host;

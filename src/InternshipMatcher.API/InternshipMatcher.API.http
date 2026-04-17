@@ -1,6 +1,12 @@
 @InternshipMatcher.API_HostAddress = http://localhost:5119
 
-GET {{InternshipMatcher.API_HostAddress}}/weatherforecast/
+GET {{InternshipMatcher.API_HostAddress}}/test/ping
 Accept: application/json
 
 ###
+POST {{InternshipMatcher.API_HostAddress}}/api/AI/match-score
+Content-Type: application/json
+{
+  "Skills": "aspnet , sql",
+  "Description": "looking for backend developer with .NET and Docker"
+}

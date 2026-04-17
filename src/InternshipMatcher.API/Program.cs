@@ -1,7 +1,9 @@
 using InternshipMatcher.API.Helpers;
-using Swashbuckle.AspNetCore.SwaggerUI;
-using Prometheus;
 using InternshipMatcher.API.Middlewares;
+using InternshipMatcher.Application.Interfaces;
+using Prometheus;
+using Serilog;
+using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +18,14 @@ builder.Services.AddPipelineBehaviour();
 builder.Services.MediateR();
 builder.Services.AddCORS();
 builder.Host.Serilog(builder.Configuration);
+Serilog.Debugging.SelfLog.Enable(msg =>
+{
+    Console.WriteLine(msg);
+});
 builder.Services.AddRateLimit();
+builder.Services.AddHttpClient<IAIService, AIService>(); 
+Log.Information("TEST LOG - should create table");
+Log.Error("TEST ERROR LOG");
 var app = builder.Build();
 
 app.UseHttpMetrics();
@@ -35,7 +44,6 @@ else
 
 // 3. HTTPS
 app.UseHttpsRedirection();
-app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 // 4. Routing
 app.UseRouting();
 

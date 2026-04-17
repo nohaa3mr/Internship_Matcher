@@ -1,0 +1,120 @@
+2026-04-17 15:32:09.833 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-17 15:32:09.951 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-17 15:32:09.978 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-17 15:32:10.070 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-17 15:32:10.082 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-17 15:32:10.084 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-17 15:32:10.089 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-17 15:32:10.100 +02:00 [INF] No migrations were applied. The database is already up to date.
+2026-04-17 15:32:10.104 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-17 15:49:55.409 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 15:49:55.713 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 15:49:55.716 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 15:49:55.783 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 15:49:55.786 +02:00 [INF] Hosting environment: Development
+2026-04-17 15:49:55.788 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 15:50:59.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:00.132 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 244.8458ms
+2026-04-17 15:51:00.142 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:01.914 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:01.935 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 20.164ms
+2026-04-17 15:51:01.941 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:02.997 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:03.014 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 16.6652ms
+2026-04-17 15:51:03.018 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:07.180 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:07.196 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 16.4602ms
+2026-04-17 15:51:07.202 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:07.551 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:07.562 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 11.4353ms
+2026-04-17 15:51:07.567 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:23.457 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:23.483 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 25.7671ms
+2026-04-17 15:51:23.497 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:32.743 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:32.764 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 21.1575ms
+2026-04-17 15:51:32.770 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:33.361 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:51:33.369 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 8.0403ms
+2026-04-17 15:51:33.381 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:51:52.118 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 15:51:52.568 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 15:51:52.572 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 15:51:52.652 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 15:51:52.654 +02:00 [INF] Hosting environment: Development
+2026-04-17 15:51:52.656 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 15:52:00.201 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-17 15:52:00.453 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 259.2755ms
+2026-04-17 15:52:00.502 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-17 15:52:12.272 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger.html - null null
+2026-04-17 15:52:12.313 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger.html - 404 null null 40.7537ms
+2026-04-17 15:52:12.326 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/swagger.html, Response status code: 404
+2026-04-17 15:52:18.491 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger.index - null null
+2026-04-17 15:52:18.552 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger.index - 404 null null 60.8103ms
+2026-04-17 15:52:18.576 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/swagger.index, Response status code: 404
+2026-04-17 15:52:24.473 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger - null null
+2026-04-17 15:52:24.494 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger - 301 null null 20.8243ms
+2026-04-17 15:52:24.504 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 15:52:24.733 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-17 15:52:24.744 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 240.4011ms
+2026-04-17 15:52:24.785 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 15:52:24.792 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 15:52:24.792 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 15:52:24.799 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 15:52:24.792 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 15:52:24.807 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 15:52:24.858 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 200 152 text/css 66.7132ms
+2026-04-17 15:52:24.859 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 64.0845ms
+2026-04-17 15:52:24.961 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 155.0388ms
+2026-04-17 15:52:24.977 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 200 26479 text/css 192.031ms
+2026-04-17 15:52:24.978 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 200 76613 text/javascript 185.6725ms
+2026-04-17 15:52:24.990 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 200 418181 text/javascript 193.6092ms
+2026-04-17 15:52:25.329 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 15:52:25.357 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 15:52:25.362 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 200 628 image/png 5.7557ms
+2026-04-17 15:52:25.524 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.3492ms
+2026-04-17 15:56:59.821 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-17 15:57:00.134 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-17 15:57:00.137 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-17 15:57:00.229 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-17 15:57:00.230 +02:00 [INF] Hosting environment: Development
+2026-04-17 15:57:00.236 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-17 15:57:01.742 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-17 15:57:02.047 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-17 15:57:02.066 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 324.3944ms
+2026-04-17 15:57:02.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-17 15:57:02.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-17 15:57:02.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-17 15:57:02.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-17 15:57:02.084 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-17 15:57:02.085 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-17 15:57:02.101 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 17.5418ms
+2026-04-17 15:57:02.101 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 17.6853ms
+2026-04-17 15:57:02.102 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 18.6269ms
+2026-04-17 15:57:02.106 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 21.7112ms
+2026-04-17 15:57:02.110 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 26.4856ms
+2026-04-17 15:57:02.138 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 16526 application/javascript; charset=utf-8 53.2633ms
+2026-04-17 15:57:02.388 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-17 15:57:02.409 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-17 15:57:02.414 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 4.8996ms
+2026-04-17 15:57:02.539 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.2895ms

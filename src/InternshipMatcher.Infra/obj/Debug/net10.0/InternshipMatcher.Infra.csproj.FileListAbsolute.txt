@@ -16,3 +16,5 @@ C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\obj\Debug
 C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\obj\Debug\net10.0\ref\InternshipMatcher.Infra.dll
 C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\bin\Debug\net10.0\InternshipMatcher.Application.dll
 C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\bin\Debug\net10.0\InternshipMatcher.Application.pdb
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\bin\Debug\net10.0\InternshipMatcher.Infra.runtimeconfig.json
+C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\obj\Debug\net10.0\InternshipMatcher.Infra.genruntimeconfig.cache
