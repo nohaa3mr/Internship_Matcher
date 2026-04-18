@@ -7,19 +7,22 @@ using InternshipMatcher.Infra.Services;
 using Prometheus;
 using Serilog;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.RegisterDbConnection(builder.Configuration);
 builder.Services.AddControllers();
-builder.Services.SwaggerRegisteration();
+builder.Services.SwaggerRegistration();
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 builder.Services.AddAuthAndAuthorizationWithJWT(builder.Configuration);
 builder.Services.AddResponseCompressionEnc();
 builder.Services.AddRequestErrorDetails();
 builder.Services.AddPipelineBehaviour();
 builder.Services.MediateR();
 builder.Services.AddCORS();
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<BaseEndpointParameters>();
 builder.Services.AddScoped(typeof(IGeneralRepository<>), typeof(GeneralRepository<>));
 builder.Host.Serilog(builder.Configuration);
@@ -48,20 +51,13 @@ else
 // 3. HTTPS
 app.UseHttpsRedirection();
 // 4. Routing
-app.UseRouting();
-
-// 5. CORS
-app.UseCors();
-
-// 6. Auth
-app.UseAuthentication();
-app.UseAuthorization();
-
+app.UseRouting();         // 1
+app.UseCors("AllowAll"); // 2 ← before auth
+app.UseAuthentication(); // 3
+app.UseAuthorization();  // 4
+app.MapControllers();    // 5
 // 7. Rate Limiting
 app.UseRateLimiter();
-
-// 8. Endpoints
-app.MapControllers();
 app.MapMetrics();
 
 // 9. Swagger — after routing and endpoints

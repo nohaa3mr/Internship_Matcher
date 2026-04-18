@@ -7,6 +7,7 @@
         {
             var api = app.MapGroup("/v1");
 
+            api.MapGroup("/Recruiters").MapRecruiters();
             api.MapGroup("/internships").MapInternships();
 
             return app;

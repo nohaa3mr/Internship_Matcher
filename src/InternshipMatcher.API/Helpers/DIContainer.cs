@@ -10,12 +10,13 @@ using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi;
 using Serilog;
 using Serilog.Formatting.Compact;
 using System.IO.Compression;
 using System.Text;
 using System.Threading.RateLimiting;
+using InternshipMatcher.Application;
+using Microsoft.OpenApi.Models;
 
 namespace InternshipMatcher.API.Helpers;
 
@@ -43,6 +44,9 @@ public static class DIContainer
       });
         Services.AddAuthorization();
         Services.AddScoped<IJWTService, JWTService>();
+        Services.AddScoped<IPasswordHasher, PasswordHasherService>();
+        Services.AddScoped<IEmailHasher  , EmailHasherService>();
+        Services.AddScoped<IUserService  ,  UserService>();
 
         return Services;
 
@@ -84,7 +88,7 @@ public static class DIContainer
     public static IServiceCollection MediateR(this IServiceCollection Services)
     {
         Services.AddMediatR(cfg =>
-            cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+            cfg.RegisterServicesFromAssembly(typeof(ApplicationMarker).Assembly));
         return Services;
     }
     public static IServiceCollection RegisterDbConnection(this IServiceCollection Services , IConfiguration configuration)
@@ -92,32 +96,46 @@ public static class DIContainer
         Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
         return Services;
     }
-   
-        public static IServiceCollection SwaggerRegisteration(this IServiceCollection services)
-        {
-            services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Title = "InternshipMatcher API",
-                    Version = "v1"
-                });
 
-                // JWT Auth in Swagger
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                {
-                    Name = "Authorization",
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "Bearer",
-                    BearerFormat = "JWT",
-                    In = ParameterLocation.Header,
-                    Description = "Enter your JWT token here. Example: eyJhbGci..."
-                });
+    public static IServiceCollection SwaggerRegistration(this IServiceCollection services)
+    {
+        services.AddSwaggerGen(options =>
+        {
+            options.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Title = "InternshipMatcher API",
+                Version = "v1"
             });
 
-            return services;
-        }
-    
+            var bearerScheme = new OpenApiSecurityScheme
+            {
+                Name = "Authorization",
+                Description = "Enter your JWT token here. Example: Bearer eyJhbGci...",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.Http,
+                Scheme = "bearer",
+                BearerFormat = "JWT"
+            };
+
+            options.AddSecurityDefinition("Bearer", bearerScheme);
+
+            options.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference 
+                        { Type = ReferenceType.SecurityScheme, 
+                            
+                         Id = "Bearer" }
+                    },
+                    new List<string>()
+                }
+            });
+        });
+
+        return services;
+    }
     public static IServiceCollection AddRateLimit(this IServiceCollection Services)
     {
         Services.AddRateLimiter(opt =>
@@ -170,14 +188,15 @@ public static class DIContainer
     {
         services.AddCors(options =>
         {
-            options.AddDefaultPolicy(policy =>
+            options.AddPolicy("AllowAll", policy =>
             {
-                policy.WithOrigins("https://localhost:7111")
+                policy.AllowAnyOrigin()
                       .AllowAnyMethod()
                       .AllowAnyHeader();
             });
         });
 
+  
         return services;
     }
         

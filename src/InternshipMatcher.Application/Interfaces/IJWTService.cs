@@ -9,6 +9,7 @@ namespace InternshipMatcher.Application.Interfaces
     {
         Task<string> GenerateToken(Guid userID, string email);
         Task<string> GenerateRefreshToken();
-       Task< ClaimsPrincipal?> ValidateExpiredToken(string token);
+        ClaimsPrincipal GetPrincipalFromToken(string token);       // for valid tokens
+        Task<ClaimsPrincipal?> ValidateExpiredToken(string token); // for refresh flow
     }
 }

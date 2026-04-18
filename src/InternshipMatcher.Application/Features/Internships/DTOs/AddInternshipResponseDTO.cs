@@ -10,6 +10,6 @@
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public Guid RecruiterProfileID { get; set; }
-        public List<int> SkillIDs { get; set; } = new List<int>();
+        public List<Guid> SkillIDs { get; set; } = new List<Guid>();
     }
 }

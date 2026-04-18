@@ -1,0 +1,1020 @@
+2026-04-18 17:00:23.091 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-18 17:00:23.553 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-18 17:00:23.557 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-18 17:00:23.632 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-18 17:00:23.634 +02:00 [INF] Hosting environment: Development
+2026-04-18 17:00:23.637 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-18 17:01:03.705 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-18 17:01:03.874 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 170.9194ms
+2026-04-18 17:01:03.879 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-18 17:01:07.358 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-18 17:01:07.421 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 62.5429ms
+2026-04-18 17:01:07.445 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-18 17:01:07.450 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-18 17:01:07.451 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-18 17:01:07.451 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-18 17:01:07.451 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-18 17:01:07.452 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-18 17:01:07.462 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 11.5703ms
+2026-04-18 17:01:07.463 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 11.6293ms
+2026-04-18 17:01:07.465 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 14.1032ms
+2026-04-18 17:01:07.465 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 20.4544ms
+2026-04-18 17:01:07.477 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 25.389ms
+2026-04-18 17:01:07.465 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 13.7834ms
+2026-04-18 17:01:07.638 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-18 17:01:07.751 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.6038ms
+2026-04-18 17:01:46.924 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 170
+2026-04-18 17:01:46.930 +02:00 [INF] CORS policy execution failed.
+2026-04-18 17:01:46.932 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 17:01:46.936 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 17:01:46.962 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-18 17:01:46.978 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-18 17:01:48.424 +02:00 [ERR] Failed executing DbCommand (45ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 255), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 255), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [ConfirmPassword], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [PasswordHash], [PasswordSalt], [Phone], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-04-18 17:01:48.463 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'FirstName', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9504460c-4fb5-4b0a-8362-1a095d06739b
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'FirstName', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9504460c-4fb5-4b0a-8362-1a095d06739b
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-18 17:01:48.477 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 1506.1445ms
+2026-04-18 17:01:48.480 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 17:01:48.484 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'FirstName', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9504460c-4fb5-4b0a-8362-1a095d06739b
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at InternshipMatcher.Infra.Services.GeneralRepository`1.AddAsync(T entity, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Services\GeneralRepository.cs:line 19
+   at InternshipMatcher.API.Controllers.AuthController.RegisterUser(UserRegisterationReqVM user) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\Controllers\AuthController.cs:line 29
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 17:01:48.565 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 500 null application/problem+json; charset=utf-8 1641.3187ms
+2026-04-18 17:02:53.125 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-18 17:02:53.343 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-18 17:02:53.345 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-18 17:02:53.376 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-18 17:02:53.377 +02:00 [INF] Hosting environment: Development
+2026-04-18 17:02:53.378 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-18 17:03:01.255 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-18 17:03:01.395 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 141.0993ms
+2026-04-18 17:03:01.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-18 17:03:01.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-18 17:03:01.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-18 17:03:01.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-18 17:03:01.422 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-18 17:03:01.422 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-18 17:03:01.435 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 13.6872ms
+2026-04-18 17:03:01.437 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 15.6344ms
+2026-04-18 17:03:01.437 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 15.7742ms
+2026-04-18 17:03:01.437 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 16.0361ms
+2026-04-18 17:03:01.442 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 20.059ms
+2026-04-18 17:03:01.442 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 20.5266ms
+2026-04-18 17:03:01.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-18 17:03:01.538 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-18 17:03:01.545 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 6.7054ms
+2026-04-18 17:03:01.646 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.3077ms
+2026-04-18 17:03:27.486 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 215
+2026-04-18 17:03:27.493 +02:00 [INF] CORS policy execution failed.
+2026-04-18 17:03:27.495 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 17:03:27.501 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 17:03:27.523 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-18 17:03:27.535 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-18 17:03:28.664 +02:00 [ERR] Failed executing DbCommand (31ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 255), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 255), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [ConfirmPassword], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [PasswordHash], [PasswordSalt], [Phone], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-04-18 17:03:28.689 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'PasswordHash', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c1fcd632-ad29-44e5-b904-4cc3a3194575
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'PasswordHash', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c1fcd632-ad29-44e5-b904-4cc3a3194575
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-18 17:03:28.704 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 1175.7262ms
+2026-04-18 17:03:28.707 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 17:03:28.709 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'PasswordHash', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c1fcd632-ad29-44e5-b904-4cc3a3194575
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at InternshipMatcher.Infra.Services.GeneralRepository`1.AddAsync(T entity, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Services\GeneralRepository.cs:line 19
+   at InternshipMatcher.API.Controllers.AuthController.RegisterUser(UserRegisterationReqVM user) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\Controllers\AuthController.cs:line 29
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 17:03:28.788 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 500 null application/problem+json; charset=utf-8 1301.8846ms
+2026-04-18 17:06:16.332 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-18 17:06:16.375 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-18 17:06:16.403 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-18 17:06:16.494 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-18 17:06:16.503 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-18 17:06:16.504 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-18 17:06:16.510 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-18 17:06:16.520 +02:00 [INF] Applying migration '20260418150554_Modify'.
+2026-04-18 17:06:16.574 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var nvarchar(max);
+SELECT @var = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'ConfirmPassword');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT ' + @var + ';');
+ALTER TABLE [Users] DROP COLUMN [ConfirmPassword];
+2026-04-18 17:06:16.576 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260418150554_Modify', N'10.0.6');
+2026-04-18 17:06:16.582 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-18 17:23:00.584 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-18 17:23:00.628 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-18 17:23:00.655 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-18 17:23:00.732 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-18 17:23:00.741 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-18 17:23:00.742 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-18 17:23:00.747 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-18 17:23:00.755 +02:00 [INF] Applying migration '20260418152245_Modify02'.
+2026-04-18 17:23:00.796 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var nvarchar(max);
+SELECT @var = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'Password');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT ' + @var + ';');
+ALTER TABLE [Users] DROP COLUMN [Password];
+2026-04-18 17:23:00.802 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260418152245_Modify02', N'10.0.6');
+2026-04-18 17:23:00.807 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-18 17:38:40.537 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-18 17:38:40.922 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-18 17:38:40.926 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-18 17:38:40.976 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-18 17:38:40.979 +02:00 [INF] Hosting environment: Development
+2026-04-18 17:38:40.982 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-18 17:39:48.509 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-18 17:39:48.849 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 344.2841ms
+2026-04-18 17:39:48.913 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-18 17:39:48.913 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-18 17:39:48.913 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-18 17:39:48.913 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-18 17:39:48.914 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-18 17:39:48.915 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-18 17:39:48.939 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 26.4828ms
+2026-04-18 17:39:48.939 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 26.3183ms
+2026-04-18 17:39:48.941 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 28.1304ms
+2026-04-18 17:39:48.944 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 29.556ms
+2026-04-18 17:39:48.950 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 34.8601ms
+2026-04-18 17:39:48.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 41.0907ms
+2026-04-18 17:39:49.111 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-18 17:39:49.111 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-18 17:39:49.124 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 13.1715ms
+2026-04-18 17:39:49.307 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.6148ms
+2026-04-18 17:41:00.511 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/Registeration - application/json 216
+2026-04-18 17:41:00.534 +02:00 [INF] CORS policy execution failed.
+2026-04-18 17:41:00.539 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 17:41:00.552 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 17:41:00.606 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-18 17:41:00.629 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-18 17:41:02.823 +02:00 [ERR] Failed executing DbCommand (52ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [PasswordHash], [PasswordSalt], [Phone], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2026-04-18 17:41:02.867 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'PasswordHash', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:22c9c8e7-0fe1-433e-a128-57fdd1553668
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'PasswordHash', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:22c9c8e7-0fe1-433e-a128-57fdd1553668
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-18 17:41:02.889 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 2272.968ms
+2026-04-18 17:41:02.893 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 17:41:02.899 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'PasswordHash', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:22c9c8e7-0fe1-433e-a128-57fdd1553668
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at InternshipMatcher.Infra.Services.GeneralRepository`1.AddAsync(T entity, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Services\GeneralRepository.cs:line 19
+   at InternshipMatcher.API.Controllers.AuthController.RegisterUser(UserRegisterationReqVM user) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\Controllers\AuthController.cs:line 29
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 17:41:03.002 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/Registeration - 500 null application/problem+json; charset=utf-8 2490.6522ms
+2026-04-18 18:20:15.136 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-18 18:20:15.481 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-18 18:20:15.483 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-18 18:20:15.531 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-18 18:20:15.535 +02:00 [INF] Hosting environment: Development
+2026-04-18 18:20:15.536 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-18 18:20:31.979 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/ - null null
+2026-04-18 18:20:32.137 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/ - 301 null null 159.9963ms
+2026-04-18 18:20:32.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-18 18:20:32.243 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 99.8897ms
+2026-04-18 18:20:32.286 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-18 18:20:32.292 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-18 18:20:32.292 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-18 18:20:32.292 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-18 18:20:32.292 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-18 18:20:32.292 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-18 18:20:32.310 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 18.3297ms
+2026-04-18 18:20:32.316 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 24.214ms
+2026-04-18 18:20:32.316 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 30.8916ms
+2026-04-18 18:20:32.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 24.9286ms
+2026-04-18 18:20:32.321 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 29.5465ms
+2026-04-18 18:20:32.331 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 38.8627ms
+2026-04-18 18:20:32.613 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-18 18:20:32.641 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-18 18:20:32.657 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 15.9522ms
+2026-04-18 18:20:32.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 238.1098ms
+2026-04-18 18:20:47.142 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 216
+2026-04-18 18:20:47.161 +02:00 [INF] CORS policy execution failed.
+2026-04-18 18:20:47.171 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 18:20:47.187 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:20:47.232 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-18 18:20:47.253 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-18 18:20:48.764 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 1522.6597ms
+2026-04-18 18:20:48.770 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:20:48.773 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid role
+   at InternshipMatcher.API.Controllers.AuthController.RegisterUser(UserRegisterationReqVM user) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\Controllers\AuthController.cs:line 50
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 18:20:48.874 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 500 null application/problem+json; charset=utf-8 1731.2771ms
+2026-04-18 18:21:14.082 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 216
+2026-04-18 18:21:14.097 +02:00 [INF] CORS policy execution failed.
+2026-04-18 18:21:14.101 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 18:21:14.106 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:21:14.111 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-18 18:21:14.966 +02:00 [ERR] Failed executing DbCommand (59ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [PasswordHash], [PasswordSalt], [Phone], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2026-04-18 18:21:15.004 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'RefreshToken', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b6c554b8-9dfc-4997-be33-644f09d73085
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'RefreshToken', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b6c554b8-9dfc-4997-be33-644f09d73085
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-18 18:21:15.035 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 918.0403ms
+2026-04-18 18:21:15.039 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:21:15.047 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'RefreshToken', table 'Internship_Matcher_DB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b6c554b8-9dfc-4997-be33-644f09d73085
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at InternshipMatcher.Infra.Services.GeneralRepository`1.AddAsync(T entity, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Services\GeneralRepository.cs:line 19
+   at InternshipMatcher.API.Controllers.AuthController.RegisterUser(UserRegisterationReqVM user) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\Controllers\AuthController.cs:line 54
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 18:21:15.136 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 500 null application/problem+json; charset=utf-8 1053.9149ms
+2026-04-18 18:22:04.127 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-18 18:22:04.491 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-18 18:22:04.493 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-18 18:22:04.544 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-18 18:22:04.547 +02:00 [INF] Hosting environment: Development
+2026-04-18 18:22:04.549 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-18 18:22:04.741 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-18 18:22:05.003 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-18 18:22:05.018 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 278.4035ms
+2026-04-18 18:22:05.035 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-18 18:22:05.036 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-18 18:22:05.036 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-18 18:22:05.058 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 22.8346ms
+2026-04-18 18:22:05.062 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 26.4049ms
+2026-04-18 18:22:05.067 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-18 18:22:05.067 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-18 18:22:05.071 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 34.7405ms
+2026-04-18 18:22:05.075 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-18 18:22:05.095 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 28.6531ms
+2026-04-18 18:22:05.099 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 32.055ms
+2026-04-18 18:22:05.124 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 48.6744ms
+2026-04-18 18:22:05.252 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-18 18:22:05.257 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-18 18:22:05.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 5.2784ms
+2026-04-18 18:22:05.437 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 185.5041ms
+2026-04-18 18:22:20.271 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-18 18:22:20.575 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-18 18:22:20.583 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-18 18:22:20.634 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-18 18:22:20.643 +02:00 [INF] Hosting environment: Development
+2026-04-18 18:22:20.647 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-18 18:22:20.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-18 18:22:20.832 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 150.2799ms
+2026-04-18 18:22:20.859 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-18 18:22:20.859 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-18 18:22:20.859 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-18 18:22:20.883 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 23.8958ms
+2026-04-18 18:22:20.883 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 23.8995ms
+2026-04-18 18:22:20.887 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 27.8744ms
+2026-04-18 18:22:20.895 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-18 18:22:20.896 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-18 18:22:20.897 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-18 18:22:20.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 32.6765ms
+2026-04-18 18:22:20.928 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 31.3797ms
+2026-04-18 18:22:20.942 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 45.2721ms
+2026-04-18 18:22:20.992 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-18 18:22:20.995 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-18 18:22:20.999 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 3.4479ms
+2026-04-18 18:22:21.105 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.2534ms
+2026-04-18 18:22:36.257 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-18 18:22:36.272 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 304 null null 15.6922ms
+2026-04-18 18:22:36.313 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.css - null null
+2026-04-18 18:22:36.313 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - null null
+2026-04-18 18:22:36.315 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - null null
+2026-04-18 18:22:36.315 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-18 18:22:36.315 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-18 18:22:36.315 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-18 18:22:36.323 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.css - 304 null null 9.7732ms
+2026-04-18 18:22:36.327 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui.css - 304 null null 14.2145ms
+2026-04-18 18:22:36.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-bundle.js - 304 null null 16.8175ms
+2026-04-18 18:22:36.382 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/swagger-ui-standalone-preset.js - 304 null null 67.1094ms
+2026-04-18 18:22:36.390 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 304 null null 74.4656ms
+2026-04-18 18:22:36.399 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 83.6409ms
+2026-04-18 18:22:36.470 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-18 18:22:36.481 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - null null
+2026-04-18 18:22:36.489 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/favicon-32x32.png - 304 null null 8.0078ms
+2026-04-18 18:22:36.501 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.0304ms
+2026-04-18 18:22:41.257 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 216
+2026-04-18 18:22:41.309 +02:00 [INF] CORS policy execution failed.
+2026-04-18 18:22:41.314 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 18:22:41.320 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:22:41.365 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-18 18:22:41.386 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-18 18:22:42.846 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 1471.7103ms
+2026-04-18 18:22:42.849 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:22:42.851 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid role
+   at InternshipMatcher.API.Controllers.AuthController.RegisterUser(UserRegisterationReqVM user) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\Controllers\AuthController.cs:line 50
+   at lambda_method9(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 18:22:42.964 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 500 null application/problem+json; charset=utf-8 1706.8521ms
+2026-04-18 18:23:05.486 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 216
+2026-04-18 18:23:05.499 +02:00 [INF] CORS policy execution failed.
+2026-04-18 18:23:05.501 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 18:23:05.503 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:23:05.504 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-18 18:23:06.330 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [PasswordHash], [PasswordSalt], [Phone], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2026-04-18 18:23:06.429 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-18 18:23:06.440 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 932.1005ms
+2026-04-18 18:23:06.449 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-18 18:23:06.471 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 200 null application/json; charset=utf-8 984.9799ms
+2026-04-18 18:24:32.007 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/v1/internships - application/json 317
+2026-04-18 18:24:32.018 +02:00 [INF] CORS policy execution failed.
+2026-04-18 18:24:32.021 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 18:24:32.040 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-18 18:24:32.054 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-18 18:24:32.059 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/v1/internships - 401 0 null 51.6135ms
+2026-04-18 18:28:41.080 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/v1/internships - application/json 317
+2026-04-18 18:28:41.092 +02:00 [INF] CORS policy execution failed.
+2026-04-18 18:28:41.095 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-18 18:28:41.106 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-18 18:28:41.110 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-18 18:28:41.115 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/v1/internships - 401 0 null 34.2004ms
+2026-04-18 18:34:28.103 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7102/v1/internships - application/json 327
+2026-04-18 18:34:28.186 +02:00 [INF] Executing endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:34:28.370 +02:00 [INF] Executed endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:34:28.373 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+ ---> Mapster.CompileException: Error while compiling
+source=System.Collections.Generic.List`1[System.Guid]
+destination=System.Collections.Generic.List`1[System.Int32]
+type=Map
+ ---> Mapster.CompileException: Error while compiling
+source=System.Guid
+destination=System.Int32
+type=Map
+ ---> System.InvalidOperationException: Cannot convert immutable type, please consider using 'MapWith' method to create mapping
+   at Mapster.Adapters.PrimitiveAdapter.ConvertType(Expression source, Type destinationType, CompileArgument arg)
+   at Mapster.Adapters.PrimitiveAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateInlineMapExpression(Type sourceType, Type destinationType, MapType mapType, CompileContext context, MemberMapping mapping)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpressionCore(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, Expression destination)
+   at Mapster.Adapters.CollectionAdapter.CreateListSet(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.CollectionAdapter.CreateBlockExpression(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateBlockExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+   at Mapster.TypeAdapterConfig.<GetMapFunction>b__63_0(TypeTuple tuple)
+   at Mapster.TypeAdapterConfig.<>c__DisplayClass60_0`1.<AddToHash>b__0(TypeTuple types)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+   at Mapster.TypeAdapterConfig.GetMapFunction(Type sourceType, Type destinationType)
+   at Mapster.TypeAdapterConfig.GetMapFunction[TSource,TDestination]()
+   at Mapster.TypeAdapter`2..cctor()
+   --- End of inner exception stack trace ---
+   at lambda_method143(Closure, Object)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+   at InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints.<>c.<<MapInternships>b__0_0>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\InternshipsEndpoints.cs:line 15
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 18:34:28.416 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7102/v1/internships - 500 null application/problem+json 313.5252ms
+2026-04-18 18:35:28.878 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7102/v1/internships - application/json 279
+2026-04-18 18:35:28.893 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-04-18 18:35:28.903 +02:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-04-18 18:35:28.907 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-18 18:35:28.913 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-18 18:35:28.922 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7102/v1/internships - 401 0 null 44.1292ms
+2026-04-18 18:35:42.213 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7102/v1/internships - application/json 279
+2026-04-18 18:35:42.227 +02:00 [INF] Executing endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:35:42.236 +02:00 [INF] Executed endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:35:42.239 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+ ---> Mapster.CompileException: Error while compiling
+source=System.Collections.Generic.List`1[System.Guid]
+destination=System.Collections.Generic.List`1[System.Int32]
+type=Map
+ ---> Mapster.CompileException: Error while compiling
+source=System.Guid
+destination=System.Int32
+type=Map
+ ---> System.InvalidOperationException: Cannot convert immutable type, please consider using 'MapWith' method to create mapping
+   at Mapster.Adapters.PrimitiveAdapter.ConvertType(Expression source, Type destinationType, CompileArgument arg)
+   at Mapster.Adapters.PrimitiveAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateInlineMapExpression(Type sourceType, Type destinationType, MapType mapType, CompileContext context, MemberMapping mapping)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpressionCore(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, Expression destination)
+   at Mapster.Adapters.CollectionAdapter.CreateListSet(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.CollectionAdapter.CreateBlockExpression(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateBlockExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+   at Mapster.TypeAdapterConfig.<GetMapFunction>b__63_0(TypeTuple tuple)
+   at Mapster.TypeAdapterConfig.<>c__DisplayClass60_0`1.<AddToHash>b__0(TypeTuple types)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+   at Mapster.TypeAdapterConfig.GetMapFunction(Type sourceType, Type destinationType)
+   at Mapster.TypeAdapterConfig.GetMapFunction[TSource,TDestination]()
+   at Mapster.TypeAdapter`2..cctor()
+   --- End of inner exception stack trace ---
+   at lambda_method143(Closure, Object)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+   at InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints.<>c.<<MapInternships>b__0_0>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\InternshipsEndpoints.cs:line 15
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 18:35:42.264 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7102/v1/internships - 500 null application/problem+json 50.7157ms
+2026-04-18 18:36:06.626 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7102/v1/internships - application/json 327
+2026-04-18 18:36:06.634 +02:00 [INF] Executing endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:36:06.646 +02:00 [INF] Executed endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:36:06.651 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+ ---> Mapster.CompileException: Error while compiling
+source=System.Collections.Generic.List`1[System.Guid]
+destination=System.Collections.Generic.List`1[System.Int32]
+type=Map
+ ---> Mapster.CompileException: Error while compiling
+source=System.Guid
+destination=System.Int32
+type=Map
+ ---> System.InvalidOperationException: Cannot convert immutable type, please consider using 'MapWith' method to create mapping
+   at Mapster.Adapters.PrimitiveAdapter.ConvertType(Expression source, Type destinationType, CompileArgument arg)
+   at Mapster.Adapters.PrimitiveAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateInlineMapExpression(Type sourceType, Type destinationType, MapType mapType, CompileContext context, MemberMapping mapping)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpressionCore(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, Expression destination)
+   at Mapster.Adapters.CollectionAdapter.CreateListSet(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.CollectionAdapter.CreateBlockExpression(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateBlockExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+   at Mapster.TypeAdapterConfig.<GetMapFunction>b__63_0(TypeTuple tuple)
+   at Mapster.TypeAdapterConfig.<>c__DisplayClass60_0`1.<AddToHash>b__0(TypeTuple types)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+   at Mapster.TypeAdapterConfig.GetMapFunction(Type sourceType, Type destinationType)
+   at Mapster.TypeAdapterConfig.GetMapFunction[TSource,TDestination]()
+   at Mapster.TypeAdapter`2..cctor()
+   --- End of inner exception stack trace ---
+   at lambda_method143(Closure, Object)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+   at InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints.<>c.<<MapInternships>b__0_0>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\InternshipsEndpoints.cs:line 15
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 18:36:06.676 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7102/v1/internships - 500 null application/problem+json 49.3596ms
+2026-04-18 18:38:17.611 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7102/v1/internships - application/json 329
+2026-04-18 18:38:17.625 +02:00 [INF] Executing endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:38:17.631 +02:00 [INF] Executed endpoint 'HTTP: POST /v1/internships/'
+2026-04-18 18:38:17.637 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+ ---> Mapster.CompileException: Error while compiling
+source=System.Collections.Generic.List`1[System.Guid]
+destination=System.Collections.Generic.List`1[System.Int32]
+type=Map
+ ---> Mapster.CompileException: Error while compiling
+source=System.Guid
+destination=System.Int32
+type=Map
+ ---> System.InvalidOperationException: Cannot convert immutable type, please consider using 'MapWith' method to create mapping
+   at Mapster.Adapters.PrimitiveAdapter.ConvertType(Expression source, Type destinationType, CompileArgument arg)
+   at Mapster.Adapters.PrimitiveAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateInlineMapExpression(Type sourceType, Type destinationType, MapType mapType, CompileContext context, MemberMapping mapping)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpressionCore(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, MemberMapping mapping, Expression destination)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptExpression(Expression source, Type destinationType, CompileArgument arg, Expression destination)
+   at Mapster.Adapters.CollectionAdapter.CreateListSet(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.CollectionAdapter.CreateBlockExpression(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateBlockExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+   at Mapster.TypeAdapterConfig.<GetMapFunction>b__63_0(TypeTuple tuple)
+   at Mapster.TypeAdapterConfig.<>c__DisplayClass60_0`1.<AddToHash>b__0(TypeTuple types)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+   at Mapster.TypeAdapterConfig.GetMapFunction(Type sourceType, Type destinationType)
+   at Mapster.TypeAdapterConfig.GetMapFunction[TSource,TDestination]()
+   at Mapster.TypeAdapter`2..cctor()
+   --- End of inner exception stack trace ---
+   at lambda_method143(Closure, Object)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+   at InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints.<>c.<<MapInternships>b__0_0>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\InternshipsEndpoints.cs:line 15
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-18 18:38:17.659 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7102/v1/internships - 500 null application/problem+json 48.5356ms

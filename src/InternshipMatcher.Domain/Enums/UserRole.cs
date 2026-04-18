@@ -2,6 +2,6 @@
 
 public enum UserRole
 {
-    Student,
-    Recruiter
+    Student =1,
+    Recruiter=2
 }

@@ -13,10 +13,11 @@ public class GeneralRepository<T>(AppDbContext context) : IGeneralRepository<T> 
     private readonly AppDbContext _context = context;
     private readonly DbSet<T> _dbSet = context.Set<T>();
 
-    public async Task<bool> AddAsync(T entity, CancellationToken cancellationToken = default)
+    public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default)
     {
         await _dbSet.AddAsync(entity, cancellationToken);
-       return await _context.SaveChangesAsync(cancellationToken) > 0;
+        await _context.SaveChangesAsync(cancellationToken);
+        return entity;
     }
 
     public async Task DeleteAsync(Guid id, CancellationToken cancellationToken = default)

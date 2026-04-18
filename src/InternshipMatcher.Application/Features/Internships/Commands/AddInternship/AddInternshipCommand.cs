@@ -28,7 +28,7 @@ namespace InternshipMatcher.Application.Features.Internships.Commands.AddInterns
             }
             var internship = request.DTO.Adapt<Internship>();
              var addedIndternship = await _repository.AddAsync(internship);
-            if(addedIndternship )
+            if(addedIndternship != null)
             {    var responseDTO = internship.Adapt<AddInternshipResponseDTO>();
                 return Result<AddInternshipResponseDTO>.Success(responseDTO, "Internship added successfully");
             }

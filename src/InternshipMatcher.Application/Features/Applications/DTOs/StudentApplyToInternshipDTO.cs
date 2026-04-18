@@ -6,7 +6,8 @@ namespace InternshipMatcher.Application.Features.Applications.DTOs
 {
     public class StudentApplyToInternshipDTO
     {
-        public int StudentProfileID { get; set; }
-        public int InternshipID { get; set; }
+        public Guid StudentProfileID { get; set; }
+        public Guid InternshipID { get; set; }
+        public object Description { get; internal set; }
     }
 }
