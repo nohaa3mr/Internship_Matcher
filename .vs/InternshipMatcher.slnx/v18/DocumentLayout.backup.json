@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.application\\features\\applications\\commands\\studentapplytointernshiporchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|solutionrelative:src\\internshipmatcher.application\\features\\applications\\commands\\studentapplytointernshiporchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\minimalapis\\internshipsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\minimalapis\\internshipsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.application\\features\\internships\\queries\\getinternshipsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|solutionrelative:src\\internshipmatcher.application\\features\\internships\\queries\\getinternshipsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.application\\features\\recruiters\\addrecruitercommand\\addrecruiterprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|solutionrelative:src\\internshipmatcher.application\\features\\recruiters\\addrecruitercommand\\addrecruiterprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\minimalapis\\recruitersendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\minimalapis\\recruitersendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.application\\features\\recruiters\\addrecruitercommand\\addrecruiterprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|solutionrelative:src\\internshipmatcher.application\\features\\recruiters\\addrecruitercommand\\addrecruiterprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\helpers\\dicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\helpers\\dicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D2C8BEE-242F-9EB9-AABE-EDBB0F53EF3F}|src\\InternshipMatcher.Application\\InternshipMatcher.Application.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.application\\features\\recruiters\\viewmodels\\createrecruiterprofileresponseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -93,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\internshipmatcher.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\internshipmatcher.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.api\\minimalapis\\internshipsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F72EF1DF-FF6A-5A9A-BA7A-2DF690A9F260}|src\\InternshipMatcher.API\\InternshipMatcher.API.csproj|solutionrelative:src\\internshipmatcher.api\\minimalapis\\internshipsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC111E5-4D7D-6BBE-AE73-9710E8A4C96A}|src\\InternshipMatcher.Infra\\InternshipMatcher.Infra.csproj|c:\\users\\hp\\source\\repos\\internshipmatcher\\src\\internshipmatcher.infra\\configs\\userconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -178,11 +186,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Program.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\Program.cs",
@@ -196,7 +204,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "StudentApplyToInternshipOrchestrator.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Applications\\Commands\\StudentApplyToInternshipOrchestrator.cs",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Features\\Applications\\Commands\\StudentApplyToInternshipOrchestrator.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Applications\\Commands\\StudentApplyToInternshipOrchestrator.cs",
+              "RelativeToolTip": "src\\InternshipMatcher.Application\\Features\\Applications\\Commands\\StudentApplyToInternshipOrchestrator.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:02:48.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetInternshipsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Internships\\Queries\\GetInternshipsQuery.cs",
+              "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Features\\Internships\\Queries\\GetInternshipsQuery.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Internships\\Queries\\GetInternshipsQuery.cs",
+              "RelativeToolTip": "src\\InternshipMatcher.Application\\Features\\Internships\\Queries\\GetInternshipsQuery.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T19:57:42.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "CreateRecruiterProfileRequestViewModel.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Recruiters\\ViewModels\\CreateRecruiterProfileRequestViewModel.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Features\\Recruiters\\ViewModels\\CreateRecruiterProfileRequestViewModel.cs",
@@ -209,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CreateRecruiterProfileResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Recruiters\\DTOs\\CreateRecruiterProfileResponseDTO.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Features\\Recruiters\\DTOs\\CreateRecruiterProfileResponseDTO.cs",
@@ -222,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "RecruiterProfile.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\RecruiterProfile.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\RecruiterProfile.cs",
@@ -235,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "CreateRecruiterProfileResponseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Recruiters\\ViewModels\\CreateRecruiterProfileResponseViewModel.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Features\\Recruiters\\ViewModels\\CreateRecruiterProfileResponseViewModel.cs",
@@ -248,20 +282,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "RecruitersEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\MinimalAPIs\\RecruitersEndpoints.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\MinimalAPIs\\RecruitersEndpoints.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\MinimalAPIs\\RecruitersEndpoints.cs*",
-              "RelativeToolTip": "src\\InternshipMatcher.API\\MinimalAPIs\\RecruitersEndpoints.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\MinimalAPIs\\RecruitersEndpoints.cs",
+              "RelativeToolTip": "src\\InternshipMatcher.API\\MinimalAPIs\\RecruitersEndpoints.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T18:05:04.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Services\\UserService.cs",
@@ -274,20 +308,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddRecruiterProfileCommand.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Recruiters\\AddRecruiterCommand\\AddRecruiterProfileCommand.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Features\\Recruiters\\AddRecruiterCommand\\AddRecruiterProfileCommand.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Recruiters\\AddRecruiterCommand\\AddRecruiterProfileCommand.cs",
               "RelativeToolTip": "src\\InternshipMatcher.Application\\Features\\Recruiters\\AddRecruiterCommand\\AddRecruiterProfileCommand.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T16:51:32.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ApplicationMarker.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\ApplicationMarker.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\ApplicationMarker.cs",
@@ -300,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "GeneralRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Services\\GeneralRepository.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Services\\GeneralRepository.cs",
@@ -313,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "IJWTService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Interfaces\\IJWTService.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Interfaces\\IJWTService.cs",
@@ -326,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "IEmailHasher.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Interfaces\\IEmailHasher.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Interfaces\\IEmailHasher.cs",
@@ -339,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Interfaces\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Interfaces\\IPasswordHasher.cs",
@@ -352,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "PasswordHasherService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Services\\PasswordHasherService.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Services\\PasswordHasherService.cs",
@@ -365,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Enums\\UserRole.cs",
@@ -378,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "20260418150554_Modify.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Data\\Migrations\\20260418150554_Modify.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Data\\Migrations\\20260418150554_Modify.cs",
@@ -391,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "UserRegisterationReqVM.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Common\\CommonViewModels\\UserRegisterationReqVM.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Common\\CommonViewModels\\UserRegisterationReqVM.cs",
@@ -404,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "DIContainer.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Helpers\\DIContainer.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\Helpers\\DIContainer.cs",
@@ -417,20 +451,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 1,
               "Title": "InternshipsEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\MinimalAPIs\\InternshipsEndpoints.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\MinimalAPIs\\InternshipsEndpoints.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\MinimalAPIs\\InternshipsEndpoints.cs",
               "RelativeToolTip": "src\\InternshipMatcher.API\\MinimalAPIs\\InternshipsEndpoints.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T20:04:10.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AddInternshipRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Features\\Internships\\DTOs\\AddInternshipRequestDTO.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Features\\Internships\\DTOs\\AddInternshipRequestDTO.cs",
@@ -443,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "JWTService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Services\\JWTService.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Services\\JWTService.cs",
@@ -456,20 +490,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "src\\InternshipMatcher.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACgAAABAVVVI/oQvwBUAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T14:20:29.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "MatchRequest.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Requests\\MatchRequest.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Requests\\MatchRequest.cs",
@@ -482,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "AIController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Controllers\\AIController.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\Controllers\\AIController.cs",
@@ -495,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "AIService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Services\\AIService.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Services\\AIService.cs",
@@ -508,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "IAIService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Application\\Interfaces\\IAIService.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Application\\Interfaces\\IAIService.cs",
@@ -521,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "InternshipMatcher.API.http",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\InternshipMatcher.API.http",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\InternshipMatcher.API.http",
@@ -534,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Test.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\Controllers\\Test.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\Controllers\\Test.cs",
@@ -547,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Skill.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Skill.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\Skill.cs",
@@ -560,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Internship.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\Internship.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\Internship.cs",
@@ -573,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "GlobalExceptionHandler.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.API\\ExceptionHandling\\GlobalExceptionHandler.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.API\\ExceptionHandling\\GlobalExceptionHandler.cs",
@@ -586,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "StudentProfile.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\StudentProfile.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\StudentProfile.cs",
@@ -599,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "SkillConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\SkillConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\SkillConfig.cs",
@@ -612,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "ApplicationConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\ApplicationConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\ApplicationConfig.cs",
@@ -625,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "RecruiterProfileConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\RecruiterProfileConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\RecruiterProfileConfig.cs",
@@ -638,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "StudentSkillConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\StudentSkillConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\StudentSkillConfig.cs",
@@ -651,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "InternshipSkillConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\InternshipSkillConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\InternshipSkillConfig.cs",
@@ -664,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "StudentProfileConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\StudentProfileConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\StudentProfileConfig.cs",
@@ -677,7 +711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "UserConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\UserConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\UserConfig.cs",
@@ -690,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "InternshipConfig.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Infra\\Configs\\InternshipConfig.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Infra\\Configs\\InternshipConfig.cs",
@@ -703,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "ApplicationForm.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\ApplicationForm.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\ApplicationForm.cs",
@@ -716,7 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\InternshipMatcher\\src\\InternshipMatcher.Domain\\Models\\User.cs",
               "RelativeDocumentMoniker": "src\\InternshipMatcher.Domain\\Models\\User.cs",

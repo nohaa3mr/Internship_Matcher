@@ -10,6 +10,7 @@ public class Result<T> where T : class
     public string Message { get; private set; } = string.Empty;
     public T? Data { get; private set; }
     public List<string> Errors { get; private set; } = new();
+    public string Description { get; internal set; }
 
     private Result() { }
 

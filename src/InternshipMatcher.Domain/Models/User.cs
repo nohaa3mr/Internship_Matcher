@@ -15,4 +15,5 @@ public class User : BaseModel
     public bool RememberMe { get; set; } = true;
     public string RefreshToken { get; set; } = string.Empty;
     public UserRole Role { get; set; } = UserRole.Student;
+    public string Skills { get; set; }
 }

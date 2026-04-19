@@ -6,7 +6,7 @@ namespace InternshipMatcher.Domain.Models;
 
 public abstract class BaseModel
 {
-    public Guid ID { get; protected set; }
+    public Guid ID { get;  set; }
     public bool IsDeleted { get; set; } = false;
     public bool IsActive { get; set; } = true;
     protected BaseModel () { }

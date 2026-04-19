@@ -9,5 +9,6 @@
         public object StartDate { get; internal set; }
         public object EndDate { get; internal set; }
         public object RecruiterProfileID { get; internal set; }
+        public object CompanyName { get; internal set; }
     }
 }
