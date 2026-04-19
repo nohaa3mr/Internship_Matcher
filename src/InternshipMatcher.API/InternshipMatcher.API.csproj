@@ -1,13 +1,41 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>b8a73dd2-a4dd-4335-853a-96bcc54f07cf</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.4" />
+	  <PackageReference Include="FluentValidation" Version="12.1.1" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+	  <PackageReference Include="MediatR" Version="14.1.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+	  <PackageReference Include="Scalar.AspNetCore" Version="2.14.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.9.0" />
+	  <PackageReference Include="Serilog" Version="4.3.1" />
+	  <PackageReference Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+	  <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+	  <PackageReference Include="Serilog.Formatting.Compact" Version="3.0.0" />
+	  <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
+	  <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="5.0.0" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+	  <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+	  <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="9.0.3" />
+	  <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />
+    <!-- Prometheus middleware for ASP.NET Core -->
+    <PackageReference Include="prometheus-net.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InternshipMatcher.Application\InternshipMatcher.Application.csproj" />
+    <ProjectReference Include="..\InternshipMatcher.Infra\InternshipMatcher.Infra.csproj" />
   </ItemGroup>
 
 </Project>

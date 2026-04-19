@@ -1,41 +1,79 @@
+using InternshipMatcher.API.Common.ResponseStructure;
+using InternshipMatcher.API.Helpers;
+using InternshipMatcher.API.Middlewares;
+using InternshipMatcher.API.MinimalAPIs;
+using InternshipMatcher.Application.Interfaces;
+using InternshipMatcher.Infra.Services;
+using Prometheus;
+using Serilog;
+using Swashbuckle.AspNetCore.SwaggerUI;
+using System.IdentityModel.Tokens.Jwt;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
+builder.Services.RegisterDbConnection(builder.Configuration);
+builder.Services.AddControllers();
+builder.Services.SwaggerRegistration();
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+builder.Services.AddAuthAndAuthorizationWithJWT(builder.Configuration);
+builder.Services.AddResponseCompressionEnc();
+builder.Services.AddRequestErrorDetails();
+builder.Services.AddPipelineBehaviour();
+builder.Services.MediateR();
+builder.Services.AddCORS();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<BaseEndpointParameters>();
+builder.Services.AddScoped(typeof(IGeneralRepository<>), typeof(GeneralRepository<>));
+builder.Host.Serilog(builder.Configuration);
+Serilog.Debugging.SelfLog.Enable(msg =>
+{
+    Console.WriteLine(msg);
+});
+builder.Services.AddRateLimit();
+builder.Services.AddHttpClient<IAIService, AIService>(); 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseHttpMetrics();
+app.UseResponseCompression();
+
+// 2. Exception Handling
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler();
+    app.UseStatusCodePages();
 }
 
+// 3. HTTPS
 app.UseHttpsRedirection();
+// 4. Routing
+app.UseRouting();         // 1
+app.UseCors("AllowAll"); // 2 ← before auth
+app.UseAuthentication(); // 3
+app.UseAuthorization();  // 4
+app.MapControllers();    // 5
+// 7. Rate Limiting
+app.UseRateLimiter();
+app.MapMetrics();
 
-var summaries = new[]
+// 9. Swagger — after routing and endpoints
+if (app.Environment.IsDevelopment())
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
-app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    app.UseSwagger();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Alert v1");
+        options.DisplayRequestDuration();
+        options.EnableTryItOutByDefault();
+        options.DocExpansion(DocExpansion.List);
+        options.EnableFilter();
+        options.EnableDeepLinking();
+    });
+    app.MapSwagger().AllowAnonymous();
 }
+app.MapAllEndpoints();
+app.Run();
