@@ -3,15 +3,17 @@ using  InternshipMatcher.Application.Features.Recruiters.ViewModels;
 using Mapster;
 using InternshipMatcher.Application.Features.Recruiters.DTOs;
 using InternshipMatcher.Application.Features.Recruiters.AddRecruiterCommand;
+using Microsoft.AspNetCore.Mvc.Filters;
+using InternshipMatcher.Domain.Enums;
 
 
 namespace InternshipMatcher.API.MinimalAPIs
 {
     public static class RecruitersEndpoints
     {
-        public static RouteGroupBuilder MapRecruiters(this RouteGroupBuilder group)
+        public static RouteGroupBuilder MapRecruiters(this RouteGroupBuilder group )
         {
-            group.MapPost("/Recruiters", async (CreateRecruiterProfileRequestViewModel viewModel, IMediator mediator) =>
+            group.MapPost("/Recruiters", async (CreateRecruiterProfileRequestViewModel viewModel, IMediator mediator ) =>
             {
                 var request = viewModel.Adapt<CreateRecruiterProfileRequestDTO>();
                 var result = await mediator.Send(new CreateRecruiterProfileCommand(request));
@@ -22,8 +24,9 @@ namespace InternshipMatcher.API.MinimalAPIs
                 return Results.Ok(result);
 
 
-            }).RequireAuthorization()
-            ;            return group;
+            }); 
+
+            return group;
         }
     }
 }

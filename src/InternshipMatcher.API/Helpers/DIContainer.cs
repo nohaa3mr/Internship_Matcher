@@ -186,17 +186,10 @@ public static class DIContainer
     }
     public static IServiceCollection AddCORS(this IServiceCollection services)
     {
-        services.AddCors(options =>
-        {
-            options.AddPolicy("AllowAll", policy =>
-            {
-                policy.AllowAnyOrigin()
-                      .AllowAnyMethod()
-                      .AllowAnyHeader();
-            });
-        });
+        services.AddCors(o => o.AddDefaultPolicy(p =>
+        p.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyMethod()));
 
-  
+
         return services;
     }
         

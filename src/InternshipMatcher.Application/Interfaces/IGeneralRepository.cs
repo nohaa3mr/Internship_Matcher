@@ -9,6 +9,7 @@ public interface IGeneralRepository<T> where T : BaseModel
     Task UpdateAsync(T entity, CancellationToken cancellationToken = default);
     Task DeleteAsync(Guid id, CancellationToken cancellationToken = default);
     Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
+    Task<bool> IsExist(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);
     Task<T?> GetByPredicateAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);
     Task<IQueryable<T>> GetAllAsync(CancellationToken cancellationToken = default);
     Task<List<T>> GetAllByPredicateAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);

@@ -8,7 +8,7 @@ namespace InternshipMatcher.Application.Features.Applications.DTOs
         {
             public Guid StudentProfileID { get; set; }
             public Guid InternshipID { get; set; }
-            public string? CoverLetter { get; set; } 
-        public List<string> Skills { get; set; }
+            public string? CoverLetter { get; set; }
+            public List<string> Skills { get; set; }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using InternshipMatcher.API.Common.CommonViewModels;
 using InternshipMatcher.API.Common.ResponseStructure;
-using InternshipMatcher.Application;
 using InternshipMatcher.Application.Interfaces;
 using InternshipMatcher.Domain.Enums;
 using InternshipMatcher.Domain.Models;
@@ -18,13 +17,12 @@ public class AuthController : BaseEndpoint<UserRegisterationReqVM, Registeration
     private readonly IEmailHasher _emailHasher;
     private readonly IJWTService _jwtService;
 
-    public AuthController(BaseEndpointParameters parameters, IGeneralRepository<User> repository  
-        ,IPasswordHasher  passwordHasher, IEmailHasher emailHasher, IJWTService jwtService) : base(parameters)
+    public AuthController(BaseEndpointParameters parameters, IGeneralRepository<User> repository ,IPasswordHasher  passwordHasher, IEmailHasher emailHasher, IJWTService jwtService) : base(parameters)
     {
-        this._repository = repository;
-        this._passwordHasher = passwordHasher;
-        this._emailHasher = emailHasher;
-        this._jwtService = jwtService;
+      _repository = repository;
+        _passwordHasher = passwordHasher;
+        _emailHasher = emailHasher;
+        _jwtService = jwtService;
     }
 
     [HttpPost("registration")]
@@ -32,53 +30,105 @@ public class AuthController : BaseEndpoint<UserRegisterationReqVM, Registeration
     {
         if (user == null)
             return Result<RegisterationResponseViewModel>.Failure("Invalid user data");
+            var existingUser = await _repository.GetByPredicateAsync(u => u.Email == user.Email);
+        if(existingUser != null)
+            return Result<RegisterationResponseViewModel>.Failure("User already exists");
 
-        var (passwordHash, passwordSalt) = _passwordHasher.Hash(user.Password);
+        var passwordHash = _passwordHasher.Hash(user.Password);
 
-        var newUser = new User
+        if (user.Role == UserRole.Student.ToString())
         {
-            Email = user.Email,
-            FirstName = user.FirstName,
-            LastName = user.LastName,
-            Phone = user.PhoneNumber,
-            PasswordHash = passwordHash,
-            PasswordSalt = passwordSalt,
-            Role = user.Role switch
+            var newUser = new User
             {
-                "Recruiter" => UserRole.Recruiter,
-                "Student" => UserRole.Student,
-                _ => throw new ArgumentException("Invalid role")
-            }
-        };
+                ID = Guid.NewGuid(),
+                Email = user.Email,
+                Password = passwordHash,
+                Role = UserRole.Student,
+                RefreshToken = await _jwtService.GenerateRefreshToken(),
+                
+            };
 
-        var addedUser = await _repository.AddAsync(newUser);
-        if (addedUser == null)
-            return Result<RegisterationResponseViewModel>.Failure("Failed to register user");
+            var studentProfile = new StudentProfile
+            {
+                ID = Guid.NewGuid(),
+                FullName = $"{user.FirstName} {user.LastName}",
+                UserID = newUser.ID,  
+                User = newUser,
+            };
 
-        var token = await _jwtService.GenerateToken(addedUser.ID, addedUser.Email);
+            var createdUser = await _repository.AddAsync(newUser);
+            if(createdUser is null)
+                return Result<RegisterationResponseViewModel>.Failure("Failed to create user");
+            return Result<RegisterationResponseViewModel>.Success(new RegisterationResponseViewModel
+            {
+                ID = createdUser.ID,
+                Email = createdUser.Email,
+                accessToken = await _jwtService.GenerateToken(createdUser.ID, createdUser.Email),
+                refreshToken = createdUser.RefreshToken,
+                IsRegistered = true,
+                UserRole = createdUser.Role.ToString(),
+                UserName = studentProfile.FullName
 
-        return Result<RegisterationResponseViewModel>.Success(new RegisterationResponseViewModel
+            }, "User registered successfully");
+
+
+        }
+        else if (user.Role == UserRole.Recruiter.ToString())
         {
-            Token = token,
-            UserName = addedUser.Email.Split('@')[0]
-        });
-    }
-    [HttpPost("Login")]
+            var newUser = new User
+            {
+                ID = Guid.NewGuid(),
+                Email = user.Email,
+                Password = passwordHash,
+                Role = UserRole.Recruiter,
+                RefreshToken = await _jwtService.GenerateRefreshToken(),
+            };
+            var recruiterProfile = new RecruiterProfile
+            {
+                ID = Guid.NewGuid(),
+                CompanyName = $"{user.FirstName} {user.LastName}",
+                UserID = newUser.ID,  
+                User = newUser,
+            };
+            var createdUser = await _repository.AddAsync(newUser);
+            if(createdUser is null)
+                return Result<RegisterationResponseViewModel>.Failure("Failed to create user");
+            return Result<RegisterationResponseViewModel>.Success(new RegisterationResponseViewModel
+            {
+                ID = createdUser.ID,
+                Email = createdUser.Email,
+                accessToken = await _jwtService.GenerateToken(createdUser.ID, createdUser.Email),
+                refreshToken = createdUser.RefreshToken,
+                IsRegistered = true,
+                UserRole = createdUser.Role.ToString(),
+                UserName = recruiterProfile.FullName,  
+            }, "User registered successfully");
+        }
+        else
+        {
+            return Result<RegisterationResponseViewModel>.Failure("Invalid user role");
+        }
 
-    public async Task<Result<UserLoginResponseViewModel>> LoginUser(UserLoginRequestViewModel user)
+
+
+
+    }
+    [HttpPost("login")]
+
+    public async Task<Result<UserLoginResponseViewModel>> LoginUser(UserLoginRequestViewModel request)
     {
-        var User = user.Adapt<User>();
-       var existingUser = await _repository.GetByPredicateAsync(u => u.Email == User.Email &&  _passwordHasher.Verify(user.Password, u.PasswordHash, u.PasswordSalt)==true);
+        var User = request.Adapt<User>();
+       var existingUser = await _repository.GetByPredicateAsync(u => u.Email == User.Email &&  _passwordHasher.Verify(request.Password,User.Password));
         if (existingUser == null)
         {
             return Result<UserLoginResponseViewModel>.Failure("Invalid email or password");
         }
-        var token = await JwtService.GenerateToken(user.ID, user.Email);
+        var token = await JwtService.GenerateToken(request.ID, request.Email);
         return Result<UserLoginResponseViewModel>.Success(new UserLoginResponseViewModel
         {
             Token = token,
-            Email = user.Email ,
-            Password = user.Password,
+            Email = request.Email ,
+            Password = request.Password,
             RefreshToken = await JwtService.GenerateRefreshToken(),
         });
     }

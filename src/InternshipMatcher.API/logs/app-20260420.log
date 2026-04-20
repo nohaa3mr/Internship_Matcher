@@ -36,3 +36,158 @@ VALUES (N'20260420131659_Modifications', N'10.0.6');
 DECLARE @result int;
 EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
 SELECT @result
+2026-04-20 15:45:49.340 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 15:45:49.692 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 15:45:49.694 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 15:45:49.824 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 15:45:49.826 +02:00 [INF] Hosting environment: Development
+2026-04-20 15:45:49.827 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 16:15:44.451 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 16:15:44.683 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 16:15:44.684 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 16:15:44.811 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 16:15:44.813 +02:00 [INF] Hosting environment: Development
+2026-04-20 16:15:44.813 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 16:26:47.912 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/login - null null
+2026-04-20 16:26:47.944 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/login - 307 0 null 33.9433ms
+2026-04-20 16:27:13.025 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - null null
+2026-04-20 16:27:13.031 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - 307 0 null 5.6685ms
+2026-04-20 16:40:34.719 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - null null
+2026-04-20 16:40:34.723 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - 307 0 null 3.8259ms
+2026-04-20 18:04:40.423 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 18:04:40.870 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 18:04:40.873 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 18:04:41.127 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 18:04:41.129 +02:00 [INF] Hosting environment: Development
+2026-04-20 18:04:41.131 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 18:07:01.927 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - null null
+2026-04-20 18:07:01.981 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - 307 0 null 57.0395ms
+2026-04-20 18:07:09.688 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - null null
+2026-04-20 18:07:09.707 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - 307 0 null 19.1765ms
+2026-04-20 18:08:15.755 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - null null
+2026-04-20 18:08:15.772 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - 307 0 null 18.0467ms
+2026-04-20 18:09:01.401 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-20 18:09:01.640 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 238.9702ms
+2026-04-20 18:09:01.649 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-20 18:09:04.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-20 18:09:04.757 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 16.9493ms
+2026-04-20 18:09:04.763 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-20 18:09:08.436 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-20 18:09:08.580 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-20 18:09:08.586 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 149.5741ms
+2026-04-20 18:09:08.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-20 18:09:08.628 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-20 18:09:08.644 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 15.6861ms
+2026-04-20 18:09:08.658 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 32.7411ms
+2026-04-20 18:09:08.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-20 18:09:08.784 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.8456ms
+2026-04-20 18:10:02.788 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 120
+2026-04-20 18:10:02.801 +02:00 [INF] CORS policy execution failed.
+2026-04-20 18:10:02.803 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-20 18:10:02.810 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:10:02.863 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 18:10:02.895 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-20 18:10:05.041 +02:00 [ERR] Failed executing DbCommand (57ms) [Parameters=[@user_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[PasswordSalt], [u].[Phone], [u].[RefreshToken], [u].[RememberMe], [u].[Role], [u].[Skills]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @user_Email
+2026-04-20 18:10:05.077 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Password'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:8e1d1946-f770-45e1-97bd-3a3c8541b406
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Password'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:8e1d1946-f770-45e1-97bd-3a3c8541b406
+Error Number:207,State:1,Class:16
+2026-04-20 18:10:05.099 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 2224.7728ms
+2026-04-20 18:10:05.102 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:10:05.109 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Password'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at InternshipMatcher.Infra.Services.GeneralRepository`1.GetByPredicateAsync(Expression`1 predicate, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Services\GeneralRepository.cs:line 62
+   at InternshipMatcher.API.Controllers.AuthController.RegisterUser(UserRegisterationReqVM user) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\Controllers\AuthController.cs:line 35
+   at lambda_method15(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:8e1d1946-f770-45e1-97bd-3a3c8541b406
+Error Number:207,State:1,Class:16
+2026-04-20 18:10:05.211 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 500 null application/problem+json; charset=utf-8 2423.2615ms
+2026-04-20 18:10:30.656 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 18:10:31.039 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 18:10:31.042 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 18:10:31.105 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 18:10:31.134 +02:00 [INF] Hosting environment: Development
+2026-04-20 18:10:31.156 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 18:10:31.220 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-20 18:10:31.480 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-20 18:10:31.499 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 281.2816ms
+2026-04-20 18:10:31.512 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-20 18:10:31.512 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-20 18:10:31.584 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 71.7599ms
+2026-04-20 18:10:31.587 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 74.3949ms
+2026-04-20 18:10:32.142 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-20 18:10:32.181 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.1096ms
+2026-04-20 18:11:19.035 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 18:11:19.487 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 18:11:19.491 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 18:11:19.750 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 18:11:19.758 +02:00 [INF] Hosting environment: Development
+2026-04-20 18:11:19.760 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 18:11:19.767 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-20 18:11:20.029 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-20 18:11:20.043 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 278.099ms
+2026-04-20 18:11:20.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-20 18:11:20.055 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-20 18:11:20.070 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 16.3188ms
+2026-04-20 18:11:20.078 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 22.8804ms
+2026-04-20 18:11:20.245 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-20 18:11:20.276 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.0815ms

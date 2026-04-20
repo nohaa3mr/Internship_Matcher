@@ -11,7 +11,7 @@ public class UserConfig : IEntityTypeConfiguration<User>
         builder.Property(u => u.Email)
             .IsRequired()
             .HasMaxLength(255);
-        builder.Property(u => u.PasswordHash)
+        builder.Property(u => u.Password)
             .IsRequired()
             .HasMaxLength(255);
         builder.HasOne<StudentProfile>().WithOne(sp => sp.User)

@@ -83,6 +83,13 @@ public class GeneralRepository<T>(AppDbContext context) : IGeneralRepository<T> 
             .ToListAsync(cancellationToken);
     }
 
+    public async Task<bool> IsExist(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
+    {
+        return await _dbSet
+                  .Where(e => !e.IsDeleted && e.IsActive)
+                  .FirstOrDefaultAsync(predicate, cancellationToken) != null;
+    }
+
     public async Task<bool> IsExistsAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await _dbSet

@@ -1,4 +1,5 @@
 ﻿using InternshipMatcher.API.Common.ResponseStructure;
+using InternshipMatcher.API.MinimalAPIs;
 using InternshipMatcher.Application.Features.Internships.DTOs;
 using InternshipMatcher.Application.Interfaces;
 using InternshipMatcher.Domain.Models;
@@ -26,9 +27,10 @@ namespace InternshipMatcher.Application.Features.Internships.Queries
                 Title = i.Title,
                 Description = i.Description,
                 Location = i.Location,
+                CompanyName = i.CompanyName,
                 StartDate = i.StartDate,
                 EndDate = i.EndDate,
-                RecruiterProfileID = i.RecruiterProfileID
+                PostedAt = i.PostedAt
             }).ToList();
             return Result<List<InternshipDTO>>.Success(internshipDTOs);
         }

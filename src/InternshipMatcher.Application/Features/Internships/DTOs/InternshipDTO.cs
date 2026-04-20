@@ -1,14 +1,13 @@
-﻿namespace InternshipMatcher.Application.Features.Internships.DTOs
+﻿namespace InternshipMatcher.Application.Features.Internships.DTOs;
+
+public class InternshipDTO
 {
-    public class InternshipDTO
-    {
-        public object ID { get; internal set; }
-        public object Title { get; internal set; }
-        public object Description { get; internal set; }
-        public object Location { get; internal set; }
-        public object StartDate { get; internal set; }
-        public object EndDate { get; internal set; }
-        public object RecruiterProfileID { get; internal set; }
-        public object CompanyName { get; internal set; }
-    }
+    public Guid ID { get;  set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public string Location { get;  set; }
+    public DateTime PostedAt { get; set; }
+    public DateTime StartDate { get;  set; }
+    public DateTime EndDate { get;  set; }
+    public string CompanyName { get;  set; }
 }

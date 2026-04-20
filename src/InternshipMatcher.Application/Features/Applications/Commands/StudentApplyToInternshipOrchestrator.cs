@@ -34,10 +34,10 @@ public class StudentApplyToInternshipOrchestratorHandler : IRequestHandler<Stude
             return Result<StudentApplyToInternshipResponseDTO>.Failure("Internship not found");
 
         // 3. Run AI matching using DB data
-        var aiResult = await _aiService.GetMatchScoreAsync(
-            studentProfile.Skills,
-            internship.Description
-        );
+        //var aiResult = await _aiService.GetMatchScoreAsync(
+        //    studentProfile.Skills,
+        //    internship.Description
+        //);
 
         // 4. Create application
         var application = new ApplicationForm
@@ -46,7 +46,7 @@ public class StudentApplyToInternshipOrchestratorHandler : IRequestHandler<Stude
             StudentProfileID = request.DTO.StudentProfileID,
             InternshipID = request.DTO.InternshipID,
             CoverLetter = request.DTO.CoverLetter,
-            MatchScore = aiResult.Score
+          //  MatchScore = aiResult.Score
         };
 
         var added = await _appRepo.AddAsync(application);

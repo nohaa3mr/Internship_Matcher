@@ -1,4 +1,5 @@
-﻿using InternshipMatcher.Application.Features.Internships.Commands.AddInternship;
+﻿using Azure;
+using InternshipMatcher.Application.Features.Internships.Commands.AddInternship;
 using InternshipMatcher.Application.Features.Internships.DTOs;
 using InternshipMatcher.Application.Features.Internships.Queries;
 using InternshipMatcher.Application.Features.Internships.ViewModels;
@@ -41,7 +42,8 @@ public static class InternshipsEndpoints
                     errors = result.Errors
                 });
 
-            return Results.Ok(result.Data.Adapt<List<InternshipDTO>>());
+            return Results.Ok(result.Data.Adapt<Paged<InternshipDTO>>(
+                ));
         });
 
         group.MapGet("/{id:guid}", async (Guid id, IMediator mediator) =>

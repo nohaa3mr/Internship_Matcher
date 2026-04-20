@@ -1,13 +1,10 @@
 using InternshipMatcher.API.Common.ResponseStructure;
 using InternshipMatcher.API.Helpers;
-using InternshipMatcher.API.Middlewares;
 using InternshipMatcher.API.MinimalAPIs;
 using InternshipMatcher.Application.Interfaces;
 using InternshipMatcher.Infra.Services;
 using Prometheus;
-using Serilog;
 using Swashbuckle.AspNetCore.SwaggerUI;
-using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.RegisterDbConnection(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.SwaggerRegistration();
-JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 builder.Services.AddAuthAndAuthorizationWithJWT(builder.Configuration);
 builder.Services.AddResponseCompressionEnc();
 builder.Services.AddRequestErrorDetails();
@@ -52,7 +48,7 @@ else
 app.UseHttpsRedirection();
 // 4. Routing
 app.UseRouting();         // 1
-app.UseCors("AllowAll"); // 2 ← before auth
+app.UseCors(); // 2 ← before auth
 app.UseAuthentication(); // 3
 app.UseAuthorization();  // 4
 app.MapControllers();    // 5

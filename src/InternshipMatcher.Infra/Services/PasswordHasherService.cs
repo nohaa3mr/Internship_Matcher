@@ -9,55 +9,39 @@ namespace InternshipMatcher.Infra.Services
 
     public class PasswordHasherService : IPasswordHasher
     {
-        private const int SaltSize = 32;        // 256-bit salt
-        private const int HashSize = 32;        // 256-bit hash
-        private const int Iterations = 600_000;   // OWASP 2023 recommendation
+        private const int SaltSize = 32;        
+        private const int HashSize = 32;        
+        private const int Iterations = 600_000;  
         private static readonly HashAlgorithmName Algorithm = HashAlgorithmName.SHA256;
 
-        public (string Hash, string Salt) Hash(string password)
+        public string  Hash(string password)
         {
-            if (string.IsNullOrWhiteSpace(password))
-                throw new ArgumentException("Password cannot be null or empty.", nameof(password));
-
-            byte[] saltBytes = RandomNumberGenerator.GetBytes(SaltSize);
-
-            byte[] hashBytes = Rfc2898DeriveBytes.Pbkdf2(
+            byte[] salt = RandomNumberGenerator.GetBytes(SaltSize); 
+            byte[] Hash = Rfc2898DeriveBytes.Pbkdf2(
                 password,
-                saltBytes,
+                salt,
                 Iterations,
                 Algorithm,
                 HashSize
             );
-
-            return (
-                Hash: Convert.ToBase64String(hashBytes),
-                Salt: Convert.ToBase64String(saltBytes)
-            );
+            return $"{Convert.ToBase64String(Hash)}.{Convert.ToBase64String(salt)}";
         }
 
-        public bool Verify(string password, string hash, string salt)
+        public bool Verify(string RequestPassword, string HashPassword)
         {
-            if (string.IsNullOrWhiteSpace(password))
-                throw new ArgumentException("Password cannot be null or empty.", nameof(password));
-
-            if (string.IsNullOrWhiteSpace(hash))
-                throw new ArgumentException("Hash cannot be null or empty.", nameof(hash));
-
-            if (string.IsNullOrWhiteSpace(salt))
-                throw new ArgumentException("Salt cannot be null or empty.", nameof(salt));
-
-            byte[] saltBytes = Convert.FromBase64String(salt);
-            byte[] expectedBytes = Convert.FromBase64String(hash);
-
-            byte[] actualBytes = Rfc2898DeriveBytes.Pbkdf2(
-                password,
-                saltBytes,
+            var parts = HashPassword.Split('.', 2);
+            if (parts.Length != 2)
+                return false;
+            byte[] salt = Convert.FromHexString(parts[1]);
+            byte[] hash = Convert.FromHexString(parts[0]);
+            byte[] inputHash = Rfc2898DeriveBytes.Pbkdf2(
+                RequestPassword,
+                salt,
                 Iterations,
                 Algorithm,
                 HashSize
             );
-
-            return CryptographicOperations.FixedTimeEquals(actualBytes, expectedBytes);
+            return CryptographicOperations.FixedTimeEquals(hash, inputHash);
         }
     }
 }

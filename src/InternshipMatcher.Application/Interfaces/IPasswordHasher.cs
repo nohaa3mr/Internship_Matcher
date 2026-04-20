@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace InternshipMatcher.Application.Interfaces;
 
-namespace InternshipMatcher.Application.Interfaces
+public interface IPasswordHasher
 {
-    public interface IPasswordHasher
-    {
-     public (string Hash, string Salt) Hash(string password);
-     public bool Verify(string password, string hash, string salt);
-    }
+ public string Hash(string password);
+ public bool Verify(string InputPassword, string hashPassword);
 }

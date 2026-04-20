@@ -1,0 +1,409 @@
+2026-04-20 18:11:22.638 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-20 18:11:22.710 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-20 18:11:22.753 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-20 18:11:22.861 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-20 18:11:22.874 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-20 18:11:22.875 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-20 18:11:22.884 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-20 18:11:22.897 +02:00 [INF] Applying migration '20260420161036_Modifications02'.
+2026-04-20 18:11:23.259 +02:00 [INF] Executed DbCommand (342ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Users].[PasswordHash]', N'Password', 'COLUMN';
+2026-04-20 18:11:23.261 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260420161036_Modifications02', N'10.0.6');
+2026-04-20 18:11:23.267 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-20 18:13:40.282 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-20 18:13:40.324 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-20 18:13:40.345 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-20 18:13:40.422 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-20 18:13:40.430 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-20 18:13:40.431 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-20 18:13:40.435 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-20 18:13:40.444 +02:00 [INF] Applying migration '20260420161314_Modifications03'.
+2026-04-20 18:13:40.512 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var nvarchar(max);
+SELECT @var = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'PasswordSalt');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT ' + @var + ';');
+ALTER TABLE [Users] DROP COLUMN [PasswordSalt];
+2026-04-20 18:13:40.529 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var1 nvarchar(max);
+SELECT @var1 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'Phone');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT ' + @var1 + ';');
+ALTER TABLE [Users] DROP COLUMN [Phone];
+2026-04-20 18:13:40.565 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var2 nvarchar(max);
+SELECT @var2 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'Skills');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT ' + @var2 + ';');
+ALTER TABLE [Users] DROP COLUMN [Skills];
+2026-04-20 18:13:40.567 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260420161314_Modifications03', N'10.0.6');
+2026-04-20 18:13:40.570 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-20 18:13:59.450 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 18:13:59.794 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 18:13:59.796 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 18:13:59.842 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 18:13:59.845 +02:00 [INF] Hosting environment: Development
+2026-04-20 18:13:59.847 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 18:15:20.988 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-20 18:15:21.246 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-20 18:15:21.260 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 274.5302ms
+2026-04-20 18:15:21.283 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-20 18:15:21.283 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-20 18:15:21.297 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 14.9945ms
+2026-04-20 18:15:21.297 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 14.7497ms
+2026-04-20 18:15:21.358 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-20 18:15:21.392 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.4656ms
+2026-04-20 18:15:27.641 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 110
+2026-04-20 18:15:27.649 +02:00 [INF] CORS policy execution failed.
+2026-04-20 18:15:27.651 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-20 18:15:27.684 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:15:27.730 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 18:15:27.748 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-20 18:15:29.086 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 18:15:29.126 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 1382.8122ms
+2026-04-20 18:15:29.131 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:15:29.144 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 400 null application/problem+json; charset=utf-8 1503.0785ms
+2026-04-20 18:15:43.792 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 109
+2026-04-20 18:15:43.800 +02:00 [INF] CORS policy execution failed.
+2026-04-20 18:15:43.807 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-20 18:15:43.814 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:15:43.819 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 18:15:44.684 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[@user_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @user_Email
+2026-04-20 18:15:45.200 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2026-04-20 18:15:45.266 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-20 18:15:45.282 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 1453.6576ms
+2026-04-20 18:15:45.291 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:15:45.306 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 200 null application/json; charset=utf-8 1512.9211ms
+2026-04-20 18:17:36.680 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 18:17:37.026 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 18:17:37.028 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 18:17:37.270 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 18:17:37.272 +02:00 [INF] Hosting environment: Development
+2026-04-20 18:17:37.273 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 18:17:48.870 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-20 18:17:49.134 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-20 18:17:49.150 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 282.5922ms
+2026-04-20 18:17:49.163 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-20 18:17:49.165 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-20 18:17:49.177 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 13.4571ms
+2026-04-20 18:17:49.189 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 22.6008ms
+2026-04-20 18:17:49.243 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-20 18:17:49.281 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.8221ms
+2026-04-20 18:17:53.322 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/Auth/registration - application/json 109
+2026-04-20 18:17:53.331 +02:00 [INF] CORS policy execution failed.
+2026-04-20 18:17:53.341 +02:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-20 18:17:53.355 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:17:53.393 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 18:17:53.414 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-20 18:17:55.472 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[@user_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @user_Email
+2026-04-20 18:17:55.614 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-20 18:17:55.631 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 2227.6501ms
+2026-04-20 18:17:55.636 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:17:55.654 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/Auth/registration - 200 null application/json; charset=utf-8 2332.4476ms
+2026-04-20 18:20:21.741 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - null null
+2026-04-20 18:20:21.756 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - 307 0 null 15.7098ms
+2026-04-20 18:20:26.820 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - null null
+2026-04-20 18:20:26.844 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/registration - 307 0 null 24.3358ms
+2026-04-20 18:20:38.589 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/login - null null
+2026-04-20 18:20:38.608 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/login - 307 0 null 18.5247ms
+2026-04-20 18:20:39.779 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5119/api/auth/login - null null
+2026-04-20 18:20:39.792 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5119/api/auth/login - 307 0 null 13.8477ms
+2026-04-20 18:25:20.358 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 18:25:20.367 +02:00 [INF] CORS policy execution successful.
+2026-04-20 18:25:20.374 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 15.2636ms
+2026-04-20 18:25:20.380 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 124
+2026-04-20 18:25:20.386 +02:00 [INF] CORS policy execution successful.
+2026-04-20 18:25:20.387 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:25:20.389 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 18:25:20.531 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 18:25:20.557 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 165.2595ms
+2026-04-20 18:25:20.561 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:25:20.564 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 184.6025ms
+2026-04-20 18:33:04.714 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 18:33:04.719 +02:00 [INF] CORS policy execution successful.
+2026-04-20 18:33:04.724 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 10.1599ms
+2026-04-20 18:33:04.727 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 124
+2026-04-20 18:33:04.732 +02:00 [INF] CORS policy execution successful.
+2026-04-20 18:33:04.734 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:33:04.735 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 18:33:04.777 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 18:33:04.781 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 39.878ms
+2026-04-20 18:33:04.785 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:33:04.789 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 61.4221ms
+2026-04-20 18:33:12.840 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 18:33:12.867 +02:00 [INF] CORS policy execution successful.
+2026-04-20 18:33:12.871 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 30.6153ms
+2026-04-20 18:33:12.875 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 124
+2026-04-20 18:33:12.883 +02:00 [INF] CORS policy execution successful.
+2026-04-20 18:33:12.885 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:33:12.889 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 18:33:12.895 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 18:33:12.898 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 4.7897ms
+2026-04-20 18:33:12.907 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 18:33:12.910 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 34.1843ms
+2026-04-20 19:04:39.184 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 19:04:39.194 +02:00 [INF] CORS policy execution successful.
+2026-04-20 19:04:39.195 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 11.5177ms
+2026-04-20 19:04:39.198 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 19:04:39.204 +02:00 [INF] CORS policy execution successful.
+2026-04-20 19:04:39.209 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 19:04:39.212 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 19:04:39.215 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 19:04:39.218 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 4.1879ms
+2026-04-20 19:04:39.219 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 19:04:39.225 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 27.5506ms
+2026-04-20 20:48:36.598 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 20:48:37.084 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 20:48:37.087 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 20:48:37.338 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 20:48:37.341 +02:00 [INF] Hosting environment: Development
+2026-04-20 20:48:37.343 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 20:49:01.732 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 20:49:01.815 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:01.834 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 103.6627ms
+2026-04-20 20:49:01.843 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:49:01.858 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:01.932 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:01.976 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:49:02.000 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-20 20:49:03.558 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:49:03.596 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 1608.955ms
+2026-04-20 20:49:03.598 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:03.609 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 1766.4824ms
+2026-04-20 20:49:06.526 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:49:06.546 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:06.551 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:06.556 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:49:06.696 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:49:06.700 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 141.1779ms
+2026-04-20 20:49:06.706 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:06.709 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 183.2969ms
+2026-04-20 20:49:43.251 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 20:49:43.264 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:43.267 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 16.236ms
+2026-04-20 20:49:43.275 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:49:43.294 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:43.306 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:43.309 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:49:43.369 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:49:43.376 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 63.8073ms
+2026-04-20 20:49:43.381 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:43.383 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 108.0578ms
+2026-04-20 20:49:45.087 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:49:45.104 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:45.109 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:45.113 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:49:45.123 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:49:45.127 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 5.3341ms
+2026-04-20 20:49:45.129 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:45.131 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 44.1129ms
+2026-04-20 20:49:45.256 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:49:45.260 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:45.262 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:45.263 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:49:45.267 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:49:45.270 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 4.5011ms
+2026-04-20 20:49:45.273 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:45.274 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 18.3969ms
+2026-04-20 20:49:45.421 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:49:45.431 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:49:45.435 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:45.439 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:49:45.449 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:49:45.457 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 9.4174ms
+2026-04-20 20:49:45.462 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:49:45.471 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 49.7884ms
+2026-04-20 20:52:27.901 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 20:52:27.908 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:52:27.911 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 10.0178ms
+2026-04-20 20:52:27.913 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:52:27.927 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:52:27.930 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:52:27.936 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:52:27.944 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:52:27.947 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 6.3065ms
+2026-04-20 20:52:27.956 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:52:27.959 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 45.6693ms
+2026-04-20 20:52:30.525 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 20:52:30.552 +02:00 [INF] CORS policy execution successful.
+2026-04-20 20:52:30.556 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:52:30.558 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 20:52:30.563 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-20 20:52:30.575 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 14.5139ms
+2026-04-20 20:52:30.586 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 20:52:30.592 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 400 null application/problem+json; charset=utf-8 67.0324ms
+2026-04-20 21:12:45.467 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-20 21:12:45.833 +02:00 [INF] Now listening on: https://localhost:7102
+2026-04-20 21:12:45.835 +02:00 [INF] Now listening on: http://localhost:5119
+2026-04-20 21:12:45.993 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 21:12:45.994 +02:00 [INF] Hosting environment: Development
+2026-04-20 21:12:45.995 +02:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-20 21:13:02.966 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 21:13:03.042 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:13:03.058 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 97.0754ms
+2026-04-20 21:13:03.066 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 115
+2026-04-20 21:13:03.085 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:13:03.133 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 21:13:03.170 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 21:13:03.191 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-20 21:13:05.106 +02:00 [INF] Executed DbCommand (44ms) [Parameters=[@user_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @user_Email
+2026-04-20 21:13:05.575 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2026-04-20 21:13:05.640 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-20 21:13:05.675 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 2492.7703ms
+2026-04-20 21:13:05.678 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 21:13:05.692 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/login - null null
+2026-04-20 21:13:05.698 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 200 null application/json; charset=utf-8 2631.1908ms
+2026-04-20 21:13:05.701 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:13:05.705 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/login - 204 null null 12.7223ms
+2026-04-20 21:13:05.707 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/login - application/json 62
+2026-04-20 21:13:05.718 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:13:05.721 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-20 21:13:05.736 +02:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel]] LoginUser(InternshipMatcher.API.Common.CommonViewModels.UserLoginRequestViewModel) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 21:13:06.266 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE 0 = 1
+2026-04-20 21:13:06.271 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-20 21:13:06.278 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API) in 535.0667ms
+2026-04-20 21:13:06.283 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-20 21:13:06.287 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/login - 200 null application/json; charset=utf-8 579.4042ms
+2026-04-20 21:13:58.738 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-20 21:13:58.890 +02:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-20 21:13:58.901 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 162.3188ms
+2026-04-20 21:13:58.939 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-20 21:13:58.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-20 21:13:58.950 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 11.561ms
+2026-04-20 21:13:58.972 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14947 application/javascript; charset=utf-8 28.9615ms
+2026-04-20 21:13:59.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-20 21:13:59.164 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.081ms
+2026-04-20 21:15:27.739 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-20 21:15:27.745 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:15:27.746 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 6.8244ms
+2026-04-20 21:15:27.752 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 117
+2026-04-20 21:15:27.757 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:15:27.763 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 21:15:27.766 +02:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel]] RegisterUser(InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 21:15:27.835 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@user_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @user_Email
+2026-04-20 21:15:27.860 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-20 21:15:27.866 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API) in 96.3436ms
+2026-04-20 21:15:27.869 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.RegisterUser (InternshipMatcher.API)'
+2026-04-20 21:15:27.871 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 200 null application/json; charset=utf-8 119.5362ms
+2026-04-20 21:15:27.877 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/login - null null
+2026-04-20 21:15:27.892 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:15:27.894 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/login - 204 null null 16.7726ms
+2026-04-20 21:15:27.898 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/login - application/json 62
+2026-04-20 21:15:27.903 +02:00 [INF] CORS policy execution successful.
+2026-04-20 21:15:27.906 +02:00 [INF] Executing endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-20 21:15:27.908 +02:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel]] LoginUser(InternshipMatcher.API.Common.CommonViewModels.UserLoginRequestViewModel) on controller InternshipMatcher.API.Controllers.AuthController (InternshipMatcher.API).
+2026-04-20 21:15:27.917 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE 0 = 1
+2026-04-20 21:15:27.922 +02:00 [INF] Executing ObjectResult, writing value of type 'InternshipMatcher.API.Common.ResponseStructure.Result`1[[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-20 21:15:27.924 +02:00 [INF] Executed action InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API) in 14.192ms
+2026-04-20 21:15:27.928 +02:00 [INF] Executed endpoint 'InternshipMatcher.API.Controllers.AuthController.LoginUser (InternshipMatcher.API)'
+2026-04-20 21:15:27.932 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/login - 200 null application/json; charset=utf-8 33.623ms
+2026-04-20 22:18:18.158 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-20 22:18:18.205 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-20 22:18:18.235 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-20 22:18:18.314 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-20 22:18:18.325 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-20 22:18:18.326 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-20 22:18:18.333 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-20 22:18:18.342 +02:00 [INF] Applying migration '20260420201803_Modifications04'.
+2026-04-20 22:18:18.383 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Internships] ADD [PostedAt] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2026-04-20 22:18:18.387 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260420201803_Modifications04', N'10.0.6');
+2026-04-20 22:18:18.393 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
