@@ -43,6 +43,18 @@ public static class InternshipsEndpoints
 
             return Results.Ok(result.Data.Adapt<List<InternshipDTO>>());
         });
+
+        group.MapGet("/{id:guid}", async (Guid id, IMediator mediator) =>
+        {
+            var result = await mediator.Send(new GetInternshipByIDQuery(id));
+            if (!result.IsSuccess)
+                return Results.BadRequest(new
+                {
+                    message = result.Message,
+                    errors = result.Errors
+                });
+            return Results.Ok(result.Data);
+        }).WithName("getInternshipById");
         return group;
     }
 }

@@ -46,6 +46,9 @@ namespace InternshipMatcher.Infra.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<double>("MatchScore")
+                        .HasColumnType("float");
+
                     b.Property<Guid>("RecruiterProfileID")
                         .HasColumnType("uniqueidentifier");
 
@@ -67,6 +70,10 @@ namespace InternshipMatcher.Infra.Data.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -315,6 +322,10 @@ namespace InternshipMatcher.Infra.Data.Migrations
 
                     b.Property<int>("Role")
                         .HasColumnType("int");
+
+                    b.Property<string>("Skills")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 

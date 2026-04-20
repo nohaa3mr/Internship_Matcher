@@ -15,6 +15,6 @@ namespace InternshipMatcher.Domain.Models
         public RecruiterProfile RecruiterProfile { get; set; }
         public ICollection<ApplicationForm> Applications { get; set; } = new HashSet<ApplicationForm>();
         public ICollection<InternshipSkill> InternshipSkills { get; set; } = new List<InternshipSkill>();
-        public object CompanyName { get; set; }
+        public string CompanyName { get; set; }
     }
 }
