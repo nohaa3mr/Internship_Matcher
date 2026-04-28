@@ -36,103 +36,7 @@
         }
       }
     },
-    "/api/Auth/registration": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRegisterationReqVM"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRegisterationReqVM"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRegisterationReqVM"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/RegisterationResponseViewModelResult"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/RegisterationResponseViewModelResult"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/RegisterationResponseViewModelResult"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Auth/login": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLoginRequestViewModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLoginRequestViewModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLoginRequestViewModel"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserLoginResponseViewModelResult"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserLoginResponseViewModelResult"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserLoginResponseViewModelResult"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/v1/Recruiters/Recruiters": {
+    "/api/Recruiters/Recruiters": {
       "post": {
         "tags": [
           "InternshipMatcher.API"
@@ -154,7 +58,7 @@
         }
       }
     },
-    "/v1/internships": {
+    "/api/internships": {
       "post": {
         "tags": [
           "InternshipMatcher.API"
@@ -194,7 +98,7 @@
         }
       }
     },
-    "/v1/internships/internships": {
+    "/api/internships/internships": {
       "get": {
         "tags": [
           "InternshipMatcher.API"
@@ -206,7 +110,7 @@
         }
       }
     },
-    "/v1/internships/{id}": {
+    "/api/internships/{id}": {
       "get": {
         "tags": [
           "InternshipMatcher.API"
@@ -226,6 +130,93 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/register": {
+      "post": {
+        "tags": [
+          "InternshipMatcher.API"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRegisterationReqVM"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterationResponseViewModelResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "tags": [
+          "InternshipMatcher.API"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLoginRequestViewModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserLoginResponseViewModelResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/refresh-token": {
+      "post": {
+        "tags": [
+          "InternshipMatcher.API"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRefreshRequestViewModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenRefreshResponseViewModelResult"
+                }
+              }
+            }
           }
         }
       }
@@ -447,13 +438,11 @@
         "type": "object",
         "properties": {
           "isSuccess": {
-            "type": "boolean",
-            "readOnly": true
+            "type": "boolean"
           },
           "message": {
             "type": "string",
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           },
           "data": {
             "$ref": "#/components/schemas/RegisterationResponseViewModel"
@@ -463,13 +452,62 @@
             "items": {
               "type": "string"
             },
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           },
           "description": {
             "type": "string",
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TokenRefreshRequestViewModel": {
+        "type": "object",
+        "properties": {
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TokenRefreshResponseViewModel": {
+        "type": "object",
+        "properties": {
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TokenRefreshResponseViewModelResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/TokenRefreshResponseViewModel"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -477,10 +515,6 @@
       "UserLoginRequestViewModel": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "email": {
             "type": "string",
             "nullable": true
@@ -510,10 +544,6 @@
           "refreshToken": {
             "type": "string",
             "nullable": true
-          },
-          "refreshTokenExpiryTime": {
-            "type": "string",
-            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -522,13 +552,11 @@
         "type": "object",
         "properties": {
           "isSuccess": {
-            "type": "boolean",
-            "readOnly": true
+            "type": "boolean"
           },
           "message": {
             "type": "string",
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           },
           "data": {
             "$ref": "#/components/schemas/UserLoginResponseViewModel"
@@ -538,13 +566,11 @@
             "items": {
               "type": "string"
             },
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           },
           "description": {
             "type": "string",
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           }
         },
         "additionalProperties": false

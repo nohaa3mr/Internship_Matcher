@@ -27,16 +27,10 @@ namespace InternshipMatcher.Application.Features.Internships.Commands.AddInterns
                 return Result<AddInternshipResponseDTO>.Failure("Request cannot be null", errors: new List<string> { "Request cannot be null" });
             }
             var internship = request.DTO.Adapt<Internship>();
-             var addedIndternship = await _repository.AddAsync(internship);
-            if(addedIndternship != null)
-            {    var responseDTO = internship.Adapt<AddInternshipResponseDTO>();
+              await _repository.AddAsync(internship);
+               var responseDTO = internship.Adapt<AddInternshipResponseDTO>();
                 return Result<AddInternshipResponseDTO>.Success(responseDTO, "Internship added successfully");
-            }
             
-            else
-            {
-                return Result<AddInternshipResponseDTO>.Failure("Failed to add internship", errors: new List<string> { "Failed to add internship" });
-            }
         }
     }
 

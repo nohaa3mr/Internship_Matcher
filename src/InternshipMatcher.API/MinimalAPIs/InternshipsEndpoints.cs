@@ -1,10 +1,13 @@
 ﻿using Azure;
+using InternshipMatcher.API.Common.ResponseStructure;
 using InternshipMatcher.Application.Features.Internships.Commands.AddInternship;
+using InternshipMatcher.Application.Features.Internships.Commands.UpdateInternship;
 using InternshipMatcher.Application.Features.Internships.DTOs;
 using InternshipMatcher.Application.Features.Internships.Queries;
 using InternshipMatcher.Application.Features.Internships.ViewModels;
 using Mapster;
 using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 namespace InternshipMatcher.API.MinimalAPIs;
 
@@ -57,6 +60,14 @@ public static class InternshipsEndpoints
                 });
             return Results.Ok(result.Data);
         }).WithName("getInternshipById");
+
+        group.MapPut("/update-internship/{ID : guid}", async (IMediator mediator , [FromBody] UpdateInternshipRequestViewModel model ) =>
+        {
+            var request =await mediator.Send(new UpdateInternshipCommand(model.ID));
+            return Result<UpdateInternshipResponseViewModel>.Success();
+
+        }).RequireAuthorization().WithName("update-internship").Produces<UpdateInternshipResponseViewModel>(StatusCodes.Status202Accepted).ProducesProblem(StatusCodes.Status304NotModified);
+
         return group;
     }
 }

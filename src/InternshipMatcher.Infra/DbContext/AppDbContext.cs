@@ -1,8 +1,10 @@
 ﻿namespace InternshipMatcher.Infra.DbContext;
 
+using InternshipMatcher.Domain.Enums;
 using InternshipMatcher.Domain.Models;
 using Microsoft.AspNetCore.DataProtection.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 public class AppDbContext : DbContext, IDataProtectionKeyContext
 {
@@ -12,6 +14,15 @@ public class AppDbContext : DbContext, IDataProtectionKeyContext
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+
+        modelBuilder.Entity<User>()
+      .Property(x => x.Role)
+      .HasConversion(new EnumToStringConverter<UserRole>());
+
+        modelBuilder.Entity<ApplicationForm>()
+            .Property(x => x.ApplicationStatus)
+            .HasConversion(new EnumToStringConverter<ApplicationStatus>());
+
     }
     public DbSet<User> Users => Set<User>();
     public DbSet<StudentProfile> StudentProfiles => Set<StudentProfile>();
@@ -20,6 +31,6 @@ public class AppDbContext : DbContext, IDataProtectionKeyContext
     public DbSet<ApplicationForm> Applications => Set<ApplicationForm>();
     public DbSet<Internship> Internships => Set<Internship>();
     public DbSet<InternshipSkill> InternshipSkills => Set<InternshipSkill>();
-
+    public DbSet<StudentApplication> StudentApplications => Set<StudentApplication>();
     public DbSet<DataProtectionKey> DataProtectionKeys => Set<DataProtectionKey>();
 }

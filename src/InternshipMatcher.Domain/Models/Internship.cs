@@ -13,9 +13,10 @@ namespace InternshipMatcher.Domain.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public Guid RecruiterProfileID { get; set; }
+        public string CompanyName { get; set; }
         public RecruiterProfile RecruiterProfile { get; set; }
         public ICollection<ApplicationForm> Applications { get; set; } = new HashSet<ApplicationForm>();
         public ICollection<InternshipSkill> InternshipSkills { get; set; } = new List<InternshipSkill>();
-        public string CompanyName { get; set; }
+        public int ApplicantsCount { get; set; }
     }
 }

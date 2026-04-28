@@ -1,0 +1,23 @@
+2026-04-27 21:29:03.687 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-27 21:29:03.804 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-27 21:29:03.851 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-27 21:29:19.762 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-27 21:29:20.134 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-27 21:29:20.139 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-27 21:29:20.190 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-27 21:29:20.200 +03:00 [INF] Hosting environment: Development
+2026-04-27 21:29:20.201 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-27 21:29:20.249 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-27 21:29:20.453 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-27 21:29:20.461 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 212.6374ms
+2026-04-27 21:29:20.488 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-27 21:29:20.489 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-27 21:29:20.500 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 10.4686ms
+2026-04-27 21:29:20.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 13.9244ms
+2026-04-27 21:29:20.690 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-27 21:29:20.713 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.6828ms

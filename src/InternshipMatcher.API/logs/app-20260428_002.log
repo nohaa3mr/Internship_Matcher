@@ -1,0 +1,272 @@
+2026-04-28 18:29:33.660 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:29:33.707 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-28 18:29:33.762 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-28 18:29:33.847 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-28 18:29:33.859 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:29:33.860 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 18:29:33.866 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 18:29:33.877 +03:00 [INF] Applying migration '20260428152912_AddNewCoulmnIntoUsers01'.
+2026-04-28 18:29:33.934 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var nvarchar(max);
+SELECT @var = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'Role');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT ' + @var + ';');
+ALTER TABLE [Users] ALTER COLUMN [Role] nvarchar(max) NOT NULL;
+2026-04-28 18:29:33.963 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var1 nvarchar(max);
+SELECT @var1 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Applications]') AND [c].[name] = N'ApplicationStatus');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Applications] DROP CONSTRAINT ' + @var1 + ';');
+ALTER TABLE [Applications] ALTER COLUMN [ApplicationStatus] nvarchar(max) NOT NULL;
+2026-04-28 18:29:33.967 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260428152912_AddNewCoulmnIntoUsers01', N'10.0.7');
+2026-04-28 18:29:33.978 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-28 18:29:54.431 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 18:29:54.867 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 18:29:54.872 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 18:29:55.101 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 18:29:55.103 +03:00 [INF] Hosting environment: Development
+2026-04-28 18:29:55.108 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 18:30:55.365 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 18:30:55.486 +03:00 [INF] CORS policy execution failed.
+2026-04-28 18:30:55.490 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 18:30:55.550 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 18:30:55.588 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 18:30:57.927 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[@hashed='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @hashed
+2026-04-28 18:30:57.999 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 18:30:58.023 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 200 null application/json; charset=utf-8 2659.3059ms
+2026-04-28 18:44:08.411 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:44:08.453 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-28 18:44:08.487 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-28 18:44:08.577 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-28 18:44:08.586 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:44:08.587 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 18:44:08.594 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 18:44:08.603 +03:00 [INF] Applying migration '20260428154342_AddNewTable'.
+2026-04-28 18:44:08.616 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260428154342_AddNewTable', N'10.0.7');
+2026-04-28 18:44:08.624 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-28 18:46:32.875 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:46:32.921 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-28 18:46:32.956 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-28 18:46:33.035 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-28 18:46:33.045 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:46:33.047 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 18:46:33.052 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 18:46:33.062 +03:00 [INF] Applying migration '20260428154529_AddNewTableee'.
+2026-04-28 18:46:33.140 +03:00 [ERR] Failed executing DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [StudentApplications] (
+    [ID] uniqueidentifier NOT NULL,
+    [UserID] uniqueidentifier NOT NULL,
+    [StudentProfileID] uniqueidentifier NOT NULL,
+    [InternshipID] uniqueidentifier NOT NULL,
+    [ApplicationFormID] uniqueidentifier NOT NULL,
+    [AppliedAt] datetime2 NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_StudentApplications] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_StudentApplications_Applications_ApplicationFormID] FOREIGN KEY ([ApplicationFormID]) REFERENCES [Applications] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_StudentApplications_Internships_InternshipID] FOREIGN KEY ([InternshipID]) REFERENCES [Internships] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_StudentApplications_StudentProfiles_StudentProfileID] FOREIGN KEY ([StudentProfileID]) REFERENCES [StudentProfiles] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_StudentApplications_Users_UserID] FOREIGN KEY ([UserID]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+);
+2026-04-28 18:47:44.496 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:47:44.542 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-28 18:47:44.577 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-28 18:47:44.665 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-28 18:47:44.675 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:47:44.676 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 18:47:44.680 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 18:47:44.692 +03:00 [INF] Applying migration '20260428154529_AddNewTableee'.
+2026-04-28 18:47:44.753 +03:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [StudentApplications] (
+    [ID] uniqueidentifier NOT NULL,
+    [UserID] uniqueidentifier NOT NULL,
+    [StudentProfileID] uniqueidentifier NOT NULL,
+    [InternshipID] uniqueidentifier NOT NULL,
+    [ApplicationFormID] uniqueidentifier NOT NULL,
+    [AppliedAt] datetime2 NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_StudentApplications] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_StudentApplications_Applications_ApplicationFormID] FOREIGN KEY ([ApplicationFormID]) REFERENCES [Applications] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_StudentApplications_Internships_InternshipID] FOREIGN KEY ([InternshipID]) REFERENCES [Internships] ([ID]),
+    CONSTRAINT [FK_StudentApplications_StudentProfiles_StudentProfileID] FOREIGN KEY ([StudentProfileID]) REFERENCES [StudentProfiles] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_StudentApplications_Users_UserID] FOREIGN KEY ([UserID]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+);
+2026-04-28 18:48:06.251 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:48:06.303 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-28 18:48:06.331 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-28 18:48:06.440 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-28 18:48:06.455 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:48:06.457 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 18:48:06.462 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 18:48:06.476 +03:00 [INF] Applying migration '20260428154529_AddNewTableee'.
+2026-04-28 18:48:06.545 +03:00 [ERR] Failed executing DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [StudentApplications] (
+    [ID] uniqueidentifier NOT NULL,
+    [UserID] uniqueidentifier NOT NULL,
+    [StudentProfileID] uniqueidentifier NOT NULL,
+    [InternshipID] uniqueidentifier NOT NULL,
+    [ApplicationFormID] uniqueidentifier NOT NULL,
+    [AppliedAt] datetime2 NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_StudentApplications] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_StudentApplications_Applications_ApplicationFormID] FOREIGN KEY ([ApplicationFormID]) REFERENCES [Applications] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_StudentApplications_Internships_InternshipID] FOREIGN KEY ([InternshipID]) REFERENCES [Internships] ([ID]),
+    CONSTRAINT [FK_StudentApplications_StudentProfiles_StudentProfileID] FOREIGN KEY ([StudentProfileID]) REFERENCES [StudentProfiles] ([ID]),
+    CONSTRAINT [FK_StudentApplications_Users_UserID] FOREIGN KEY ([UserID]) REFERENCES [Users] ([ID]) ON DELETE CASCADE
+);
+2026-04-28 18:49:27.450 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:49:27.536 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 18:49:27.556 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 18:50:39.624 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:50:39.669 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-28 18:50:39.700 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-28 18:50:39.781 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-28 18:50:39.792 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 18:50:39.793 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 18:50:39.798 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 18:50:39.808 +03:00 [INF] Applying migration '20260428155013_AddNewTableee'.
+2026-04-28 18:50:39.831 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [StudentApplications] (
+    [ID] uniqueidentifier NOT NULL,
+    [UserID] uniqueidentifier NOT NULL,
+    [StudentProfileID] uniqueidentifier NOT NULL,
+    [InternshipID] uniqueidentifier NOT NULL,
+    [ApplicationFormID] uniqueidentifier NOT NULL,
+    [AppliedAt] datetime2 NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_StudentApplications] PRIMARY KEY ([ID])
+);
+2026-04-28 18:50:39.833 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260428155013_AddNewTableee', N'10.0.7');
+2026-04-28 18:50:39.839 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result

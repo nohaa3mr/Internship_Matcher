@@ -3,9 +3,9 @@ using System;
 using System.Linq.Expressions;
 namespace InternshipMatcher.Application.Interfaces;
 
-public interface IGeneralRepository<T> where T : BaseModel
+public interface IGeneralRepository<T> where T : BaseModel  
 {
-    Task<T> AddAsync(T entity, CancellationToken cancellationToken = default);
+    Task AddAsync(T entity, CancellationToken cancellationToken = default);
     Task UpdateAsync(T entity, CancellationToken cancellationToken = default);
     Task DeleteAsync(Guid id, CancellationToken cancellationToken = default);
     Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);

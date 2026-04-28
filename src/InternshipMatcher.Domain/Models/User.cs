@@ -12,5 +12,6 @@ public class User : BaseModel
     public string Password { get; set; }
     public bool RememberMe { get; set; } = true;
     public string RefreshToken { get; set; } = string.Empty;
-    public UserRole Role { get; set; } 
+    public UserRole Role { get; set; }
+    public DateTime RefreshTokenExpiryTime { get; set; }
 }

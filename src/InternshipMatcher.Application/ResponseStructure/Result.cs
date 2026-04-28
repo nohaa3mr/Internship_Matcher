@@ -6,11 +6,12 @@ namespace InternshipMatcher.API.Common.ResponseStructure;
 
 public class Result<T> where T : class
 {
-    public bool IsSuccess { get; private set; }
-    public string Message { get; private set; } = string.Empty;
-    public T? Data { get; private set; }
-    public List<string> Errors { get; private set; } = new();
-    public string Description { get; internal set; }
+    public bool IsSuccess { get;  set; }
+    public string Message { get;  set; } = string.Empty;
+    public T? Data { get;  set; }
+    public List<string> Errors { get;  set; } = new();
+    public string Description { get;  set; }
+    public int ApplicantsCount { get; internal set; }
 
     private Result() { }
 

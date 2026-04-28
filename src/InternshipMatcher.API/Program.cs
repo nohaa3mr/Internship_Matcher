@@ -1,5 +1,6 @@
 using InternshipMatcher.API.Common.ResponseStructure;
 using InternshipMatcher.API.Helpers;
+using InternshipMatcher.API.Middlewares;
 using InternshipMatcher.API.MinimalAPIs;
 using InternshipMatcher.Application.Interfaces;
 using InternshipMatcher.Infra.Services;
@@ -17,6 +18,7 @@ builder.Services.AddResponseCompressionEnc();
 builder.Services.AddRequestErrorDetails();
 builder.Services.AddPipelineBehaviour();
 builder.Services.MediateR();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddCORS();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<BaseEndpointParameters>();
@@ -32,7 +34,6 @@ var app = builder.Build();
 
 app.UseHttpMetrics();
 app.UseResponseCompression();
-
 // 2. Exception Handling
 if (app.Environment.IsDevelopment())
 {

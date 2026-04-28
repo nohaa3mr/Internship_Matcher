@@ -7,5 +7,6 @@
         public string CompanyDescription { get; set; }
         public string CompanyWebsite { get; set; }
         public string? Position { get; set; }
+        public Guid UserID { get; internal set; }
     }
 }

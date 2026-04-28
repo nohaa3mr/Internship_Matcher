@@ -16,15 +16,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InternshipMatcher.API.Controllers.AuthController",
-    "Method": "LoginUser",
-    "RelativePath": "api/Auth/login",
+    "ContainingType": "InternshipMatcher.API.MinimalAPIs.UserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUsersEndpoints\u003Eb__0_1",
+    "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
-    "IsController": true,
+    "IsController": false,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
+        "Name": "model",
         "Type": "InternshipMatcher.API.Common.CommonViewModels.UserLoginRequestViewModel",
         "IsRequired": true
       }
@@ -33,24 +33,46 @@
       {
         "Type": "InternshipMatcher.API.Common.ResponseStructure.Result\u00601[[InternshipMatcher.API.Common.CommonViewModels.UserLoginResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "InternshipMatcher.API.Controllers.AuthController",
-    "Method": "RegisterUser",
-    "RelativePath": "api/Auth/registration",
+    "ContainingType": "InternshipMatcher.API.MinimalAPIs.UserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUsersEndpoints\u003Eb__0_2",
+    "RelativePath": "api/auth/refresh-token",
     "HttpMethod": "POST",
-    "IsController": true,
+    "IsController": false,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
+        "Name": "model",
+        "Type": "InternshipMatcher.API.MinimalAPIs.TokenRefreshRequestViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "InternshipMatcher.API.Common.ResponseStructure.Result\u00601[[InternshipMatcher.Application.Features.Users.RefreshToken.TokenRefreshResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "InternshipMatcher.API.MinimalAPIs.UserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUsersEndpoints\u003Eb__0_0",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
         "Type": "InternshipMatcher.API.Common.CommonViewModels.UserRegisterationReqVM",
         "IsRequired": true
       }
@@ -59,38 +81,16 @@
       {
         "Type": "InternshipMatcher.API.Common.ResponseStructure.Result\u00601[[InternshipMatcher.API.Common.CommonViewModels.RegisterationResponseViewModel, InternshipMatcher.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "InternshipMatcher.API.Controllers.TestController",
-    "Method": "Ping",
-    "RelativePath": "Test/ping",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "InternshipMatcher.API.Controllers.TestController",
-    "Method": "PingAuth",
-    "RelativePath": "Test/ping-auth",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints\u002B\u003C\u003Ec",
     "Method": "\u003CMapInternships\u003Eb__0_0",
-    "RelativePath": "v1/internships/",
+    "RelativePath": "api/internships/",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
@@ -122,7 +122,7 @@
   {
     "ContainingType": "InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints\u002B\u003C\u003Ec",
     "Method": "\u003CMapInternships\u003Eb__0_2",
-    "RelativePath": "v1/internships/{id:guid}",
+    "RelativePath": "api/internships/{id:guid}",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -145,7 +145,7 @@
   {
     "ContainingType": "InternshipMatcher.API.MinimalAPIs.InternshipsEndpoints\u002B\u003C\u003Ec",
     "Method": "\u003CMapInternships\u003Eb__0_1",
-    "RelativePath": "v1/internships/internships",
+    "RelativePath": "api/internships/internships",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -161,7 +161,7 @@
   {
     "ContainingType": "InternshipMatcher.API.MinimalAPIs.RecruitersEndpoints\u002B\u003C\u003Ec",
     "Method": "\u003CMapRecruiters\u003Eb__0_0",
-    "RelativePath": "v1/Recruiters/Recruiters",
+    "RelativePath": "api/Recruiters/Recruiters",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
@@ -179,5 +179,25 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "InternshipMatcher.API.Controllers.TestController",
+    "Method": "Ping",
+    "RelativePath": "Test/ping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InternshipMatcher.API.Controllers.TestController",
+    "Method": "PingAuth",
+    "RelativePath": "Test/ping-auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

@@ -4,7 +4,7 @@ namespace InternshipMatcher.API.Common.CommonViewModels
 {
     public class RegisterationResponseViewModel
     {
-        public Guid ID { get; set; } = Guid.NewGuid();
+        public Guid ID { get; set; } 
         public string accessToken { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }

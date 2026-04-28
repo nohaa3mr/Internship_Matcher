@@ -9,5 +9,6 @@ namespace InternshipMatcher.Application.Features.Students.DTOs
         public string University { get; set; } = string.Empty;
         public string CVPath { get; set; }
         public ICollection<StudentSkillDTO> StudentSkills { get; set; } = new List<StudentSkillDTO>();
+        public Guid UserID { get; internal set; }
     }
 }

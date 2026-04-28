@@ -83,6 +83,7 @@ public static class DIContainer
 
        Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
         Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(BehaviourValidation<,>));
+        Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehavior<,>));
         return Services;
     }
     public static IServiceCollection MediateR(this IServiceCollection Services)

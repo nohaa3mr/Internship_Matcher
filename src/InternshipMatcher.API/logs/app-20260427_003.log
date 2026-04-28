@@ -1,0 +1,72 @@
+2026-04-27 21:31:41.146 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-27 21:31:41.196 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-27 21:31:41.229 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-27 21:31:41.344 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-27 21:31:41.353 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-27 21:31:41.354 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-27 21:31:41.360 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-27 21:31:41.370 +03:00 [INF] Applying migration '20260427183123_Testing'.
+2026-04-27 21:31:41.499 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var nvarchar(max);
+SELECT @var = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[RecruiterProfiles]') AND [c].[name] = N'CompanyName');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [RecruiterProfiles] DROP CONSTRAINT ' + @var + ';');
+ALTER TABLE [RecruiterProfiles] ALTER COLUMN [CompanyName] nvarchar(max) NOT NULL;
+2026-04-27 21:31:41.504 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260427183123_Testing', N'10.0.7');
+2026-04-27 21:31:41.517 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-04-27 21:35:34.523 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-27 21:35:34.895 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-27 21:35:34.897 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-27 21:35:35.128 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-27 21:35:35.130 +03:00 [INF] Hosting environment: Development
+2026-04-27 21:35:35.132 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-27 21:35:41.210 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-27 21:35:41.494 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-27 21:35:41.513 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 307.6177ms
+2026-04-27 21:35:41.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-27 21:35:41.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-27 21:35:41.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 11.8156ms
+2026-04-27 21:35:41.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 21.2852ms
+2026-04-27 21:35:41.601 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-27 21:35:41.635 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.7153ms
+2026-04-27 21:35:49.639 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/v1/users/regiseration - application/json 130
+2026-04-27 21:35:49.647 +03:00 [INF] CORS policy execution failed.
+2026-04-27 21:35:49.650 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-27 21:35:49.662 +03:00 [INF] Executing endpoint 'HTTP: POST /v1/users/regiseration'
+2026-04-27 21:35:49.696 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-27 21:35:51.643 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[IsActive] = CAST(1 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-27 21:35:52.233 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32), @p11='?' (DbType = Guid), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 100), @p15='?' (DbType = Boolean), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+INSERT INTO [StudentProfiles] ([ID], [Bio], [CVPath], [FullName], [IsActive], [IsDeleted], [University], [UserID])
+VALUES (@p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2026-04-27 21:35:52.314 +03:00 [INF] Executed endpoint 'HTTP: POST /v1/users/regiseration'
+2026-04-27 21:35:52.331 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/v1/users/regiseration - 200 null application/json; charset=utf-8 2691.732ms

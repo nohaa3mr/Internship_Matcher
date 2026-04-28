@@ -1,0 +1,157 @@
+2026-04-28 17:18:11.658 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 17:18:11.974 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 17:18:11.979 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 17:18:12.143 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 17:18:12.144 +03:00 [INF] Hosting environment: Development
+2026-04-28 17:18:12.146 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:19:37.826 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 17:19:38.323 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 17:19:38.326 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 17:19:38.427 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 17:19:38.429 +03:00 [INF] Hosting environment: Development
+2026-04-28 17:19:38.430 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:19:38.516 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 17:19:38.943 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 17:19:38.963 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 461.6043ms
+2026-04-28 17:19:38.985 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 17:19:38.985 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 17:19:39.020 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 34.8479ms
+2026-04-28 17:19:39.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 44.8535ms
+2026-04-28 17:19:39.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 17:19:39.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.9671ms
+2026-04-28 17:19:52.899 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 17:19:52.911 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:19:52.914 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:19:52.922 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:19:52.958 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 17:19:57.383 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 17:24:18.934 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 17:24:19.547 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 17:24:19.549 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 17:24:19.609 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 17:24:19.611 +03:00 [INF] Hosting environment: Development
+2026-04-28 17:24:19.612 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:25:12.312 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 17:25:12.480 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:25:12.496 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:25:12.679 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:25:12.720 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 17:25:22.354 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 18:02:10.170 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 18:02:10.587 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 18:02:10.588 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 18:02:10.641 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 18:02:10.642 +03:00 [INF] Hosting environment: Development
+2026-04-28 18:02:10.644 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 18:02:19.034 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 18:02:19.238 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 18:02:19.256 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 223.0545ms
+2026-04-28 18:02:19.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 18:02:19.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 18:02:19.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 28.1111ms
+2026-04-28 18:02:19.317 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 35.1655ms
+2026-04-28 18:02:19.391 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 18:02:19.418 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.6908ms
+2026-04-28 18:02:37.369 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 18:02:37.376 +03:00 [INF] CORS policy execution failed.
+2026-04-28 18:02:37.378 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 18:02:37.384 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 18:02:37.413 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 18:02:38.819 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 18:02:38.943 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 18:02:38.954 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 200 null application/json; charset=utf-8 1584.8315ms
+2026-04-28 18:09:01.504 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 18:09:01.932 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 18:09:01.936 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 18:09:02.151 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 18:09:02.155 +03:00 [INF] Hosting environment: Development
+2026-04-28 18:09:02.160 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 18:18:18.289 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 18:18:18.570 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 18:18:18.573 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 18:18:18.732 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 18:18:18.734 +03:00 [INF] Hosting environment: Development
+2026-04-28 18:18:18.736 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 18:18:26.294 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 18:18:26.615 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 18:18:26.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 348.1795ms
+2026-04-28 18:18:26.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 18:18:26.666 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 18:18:26.693 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 29.7975ms
+2026-04-28 18:18:26.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 37.6623ms
+2026-04-28 18:18:26.790 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 18:18:26.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.2943ms
+2026-04-28 18:18:42.586 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 18:18:42.605 +03:00 [INF] CORS policy execution failed.
+2026-04-28 18:18:42.609 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 18:18:42.618 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 18:18:42.660 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 18:18:44.913 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[@hashed='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @hashed
+2026-04-28 18:18:44.981 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 18:18:44.996 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 200 null application/json; charset=utf-8 2410.6814ms
+2026-04-28 18:26:47.423 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 18:26:47.917 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 18:26:47.919 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 18:26:48.202 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 18:26:48.255 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 18:26:48.258 +03:00 [INF] Hosting environment: Development
+2026-04-28 18:26:48.261 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 18:26:48.489 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 18:26:48.511 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 310.4272ms
+2026-04-28 18:26:48.524 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 18:26:48.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 18:26:48.535 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 10.9614ms
+2026-04-28 18:26:48.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 14.2667ms
+2026-04-28 18:26:48.646 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 18:26:48.687 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.3235ms
+2026-04-28 18:29:08.834 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 18:29:09.281 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 18:29:09.282 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 18:29:09.345 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 18:29:09.346 +03:00 [INF] Hosting environment: Development
+2026-04-28 18:29:09.347 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 18:29:09.497 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 18:29:09.821 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 18:29:09.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 342.9696ms
+2026-04-28 18:29:09.870 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 18:29:09.877 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 18:29:09.929 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 59.6817ms
+2026-04-28 18:29:09.969 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 91.5775ms
+2026-04-28 18:29:10.378 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 18:29:10.407 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.3684ms
+2026-04-28 18:29:31.357 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 18:29:31.722 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 18:29:31.724 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 18:29:31.891 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 18:29:31.916 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 18:29:31.928 +03:00 [INF] Hosting environment: Development
+2026-04-28 18:29:31.929 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 18:29:32.099 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 18:29:32.112 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 223.1525ms
+2026-04-28 18:29:32.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 18:29:32.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 18:29:32.136 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 10.8413ms
+2026-04-28 18:29:32.138 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 12.6015ms
+2026-04-28 18:29:32.225 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 18:29:32.250 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.2793ms
+2026-04-28 18:29:41.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 18:29:41.122 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 18:29:41.131 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 42.817ms
+2026-04-28 18:29:41.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 18:29:41.178 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 7.5677ms
+2026-04-28 18:29:41.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 18:29:41.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 8.9276ms
+2026-04-28 18:29:41.249 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 18:29:41.280 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.2985ms

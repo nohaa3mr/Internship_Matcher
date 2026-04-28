@@ -1,0 +1,1095 @@
+2026-04-28 14:51:15.778 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 14:51:17.696 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 14:51:17.725 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 14:51:17.991 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 14:51:18.257 +03:00 [INF] Hosting environment: Development
+2026-04-28 14:51:18.259 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 14:53:19.498 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/login - null null
+2026-04-28 14:53:19.614 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:53:19.635 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/login - 204 null null 139.8705ms
+2026-04-28 14:53:19.641 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/login - application/json 51
+2026-04-28 14:53:19.664 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:53:19.754 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/login - 404 0 null 113.0225ms
+2026-04-28 14:53:19.770 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/login, Response status code: 404
+2026-04-28 14:56:57.221 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 14:56:57.514 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 14:56:57.515 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 14:56:57.557 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 14:56:57.558 +03:00 [INF] Hosting environment: Development
+2026-04-28 14:56:57.559 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 14:57:05.223 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/login - null null
+2026-04-28 14:57:05.350 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:57:05.376 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/login - 204 null null 159.3282ms
+2026-04-28 14:57:05.384 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/login - application/json 51
+2026-04-28 14:57:05.395 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:57:05.452 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/login - 404 0 null 67.3707ms
+2026-04-28 14:57:05.464 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/login, Response status code: 404
+2026-04-28 14:58:07.054 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 14:58:07.466 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 14:58:07.468 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 14:58:07.679 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 14:58:07.682 +03:00 [INF] Hosting environment: Development
+2026-04-28 14:58:07.684 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 14:58:11.740 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/login - null null
+2026-04-28 14:58:11.817 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:58:11.831 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/login - 204 null null 94.1642ms
+2026-04-28 14:58:11.841 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/login - application/json 51
+2026-04-28 14:58:11.856 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:58:11.907 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/login'
+2026-04-28 14:58:11.947 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 14:58:14.463 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/login'
+2026-04-28 14:58:14.497 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/login - 200 null application/json; charset=utf-8 2655.8396ms
+2026-04-28 14:58:14.519 +03:00 [ERR] Failed executing DbCommand (57ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-28 14:58:14.561 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-04-28 14:58:45.998 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 14:58:46.022 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:58:46.025 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 27.0324ms
+2026-04-28 14:58:46.742 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:58:46.757 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:58:46.775 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 33.2397ms
+2026-04-28 14:58:46.795 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:10.788 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 14:59:10.804 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:10.813 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 25.4655ms
+2026-04-28 14:59:10.818 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:10.830 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:10.840 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 21.5785ms
+2026-04-28 14:59:10.847 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:12.879 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:12.891 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:12.894 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 15.0673ms
+2026-04-28 14:59:12.906 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:13.457 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:13.466 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:13.478 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 21.3502ms
+2026-04-28 14:59:13.492 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:13.601 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:13.606 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:13.611 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 10.283ms
+2026-04-28 14:59:13.618 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:13.734 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:13.741 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:13.744 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 9.9553ms
+2026-04-28 14:59:13.754 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:13.885 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:13.891 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:13.894 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 8.7248ms
+2026-04-28 14:59:13.904 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:14.012 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:14.020 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:14.024 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 12.1443ms
+2026-04-28 14:59:14.031 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:14.243 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:14.256 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:14.260 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 16.836ms
+2026-04-28 14:59:14.274 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:18.611 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 14:59:18.648 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:18.656 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 45.0548ms
+2026-04-28 14:59:18.659 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:18.678 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:18.682 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 22.6637ms
+2026-04-28 14:59:18.699 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:19.604 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:19.637 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:19.643 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 39.3756ms
+2026-04-28 14:59:19.648 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 14:59:23.717 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 14:59:23.730 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:23.737 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 16.9393ms
+2026-04-28 14:59:23.743 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 14:59:23.760 +03:00 [INF] CORS policy execution successful.
+2026-04-28 14:59:23.762 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 19.8292ms
+2026-04-28 14:59:23.770 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:00:09.903 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:00:10.339 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:00:10.343 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:00:10.568 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:00:10.571 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:00:10.575 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 15:00:17.573 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:00:17.667 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:00:17.683 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 114.8545ms
+2026-04-28 15:00:17.693 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 15:00:17.710 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:00:17.768 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 74.0543ms
+2026-04-28 15:00:17.799 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:00:18.911 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 15:00:18.926 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:00:18.931 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 20.294ms
+2026-04-28 15:00:18.943 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:12:28.773 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:12:29.076 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:12:29.078 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:12:29.250 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:12:29.251 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:12:29.252 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 15:12:39.825 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:12:39.929 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:12:39.949 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 127.9151ms
+2026-04-28 15:12:39.968 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 15:12:39.983 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:12:40.044 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 76.226ms
+2026-04-28 15:12:40.055 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:12:41.227 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 15:12:41.238 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:12:41.248 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 20.4318ms
+2026-04-28 15:12:41.263 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:13:01.951 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:13:02.349 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:13:02.352 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:13:02.412 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:13:02.417 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:13:02.424 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 15:13:04.286 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:13:04.374 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:04.397 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 113.1013ms
+2026-04-28 15:13:04.403 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 15:13:04.429 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:04.479 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 76.3739ms
+2026-04-28 15:13:04.498 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:13:05.573 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 15:13:05.596 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:05.609 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 35.2113ms
+2026-04-28 15:13:05.630 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:13:06.378 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 110
+2026-04-28 15:13:06.393 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:06.409 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 30.2117ms
+2026-04-28 15:13:06.427 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:13:29.252 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:13:29.268 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:29.277 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 24.575ms
+2026-04-28 15:13:29.281 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:13:29.303 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:29.310 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 28.9782ms
+2026-04-28 15:13:29.326 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:13:29.775 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:13:29.794 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:29.798 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 22.7609ms
+2026-04-28 15:13:29.818 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:13:31.646 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:13:31.666 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:31.669 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 22.8643ms
+2026-04-28 15:13:31.685 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:13:32.308 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:13:32.324 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:13:32.327 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 18.9502ms
+2026-04-28 15:13:32.345 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:12.083 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:14:12.097 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:12.109 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 26.0915ms
+2026-04-28 15:14:12.113 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:12.124 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:12.127 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 13.9567ms
+2026-04-28 15:14:12.142 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:12.904 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:12.918 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:12.923 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 18.5756ms
+2026-04-28 15:14:12.943 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:13.057 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:13.067 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:13.071 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 13.9455ms
+2026-04-28 15:14:13.080 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:13.198 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:13.213 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:13.216 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 18.3113ms
+2026-04-28 15:14:13.232 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:13.349 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:13.358 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:13.363 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 14.3799ms
+2026-04-28 15:14:13.369 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:13.489 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:13.497 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:13.500 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 10.5852ms
+2026-04-28 15:14:13.510 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:13.639 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:13.655 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:13.660 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 21.16ms
+2026-04-28 15:14:13.671 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:13.780 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:13.788 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:13.793 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 12.2888ms
+2026-04-28 15:14:13.801 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:13.939 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:13.951 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:13.955 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 15.7975ms
+2026-04-28 15:14:13.966 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:14.087 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:14.098 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:14.101 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 14.2924ms
+2026-04-28 15:14:14.119 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:39.880 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:14:39.892 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:39.894 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 13.3846ms
+2026-04-28 15:14:39.900 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:39.908 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:39.911 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 10.7914ms
+2026-04-28 15:14:39.925 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:40.782 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:40.800 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:40.807 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 24.3472ms
+2026-04-28 15:14:40.818 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:14:42.100 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:14:42.128 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:14:42.129 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 29.2641ms
+2026-04-28 15:14:42.150 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:20:27.744 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:20:28.162 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:20:28.165 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:20:28.377 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:20:28.380 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:20:28.384 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 15:22:06.194 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:22:06.276 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:22:06.292 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 99.784ms
+2026-04-28 15:22:06.297 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:22:06.310 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:22:06.357 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 60.3696ms
+2026-04-28 15:22:06.373 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:22:07.611 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:22:07.624 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:22:07.634 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 22.4864ms
+2026-04-28 15:22:07.644 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:22:15.734 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:22:15.744 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:22:15.751 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 16.6847ms
+2026-04-28 15:22:15.755 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/registration - application/json 108
+2026-04-28 15:22:15.770 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:22:15.778 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/registration - 404 0 null 22.4636ms
+2026-04-28 15:22:15.789 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7102/api/auth/registration, Response status code: 404
+2026-04-28 15:23:58.488 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:23:58.505 +03:00 [INF] CORS policy execution failed.
+2026-04-28 15:23:58.508 +03:00 [INF] Request origin http://localhost:8081 does not have permission to access the resource.
+2026-04-28 15:23:58.512 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 23.9046ms
+2026-04-28 15:24:00.393 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:24:00.405 +03:00 [INF] CORS policy execution failed.
+2026-04-28 15:24:00.408 +03:00 [INF] Request origin http://localhost:8081 does not have permission to access the resource.
+2026-04-28 15:24:00.418 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 25.2598ms
+2026-04-28 15:25:47.771 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:25:48.605 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:25:48.608 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:25:48.870 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:25:48.874 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:25:48.875 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 15:26:22.784 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - null null
+2026-04-28 15:26:22.928 +03:00 [INF] CORS policy execution failed.
+2026-04-28 15:26:22.932 +03:00 [INF] Request origin http://localhost:8081 does not have permission to access the resource.
+2026-04-28 15:26:22.983 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/registration - 204 null null 219.3974ms
+2026-04-28 15:30:14.997 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:30:15.398 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:30:15.400 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:30:15.617 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:30:15.620 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:30:15.624 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 15:30:27.730 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/ - null null
+2026-04-28 15:30:27.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/ - 404 null null 187.0399ms
+2026-04-28 15:30:27.928 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7102/, Response status code: 404
+2026-04-28 15:30:34.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 15:30:34.695 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 15:30:34.711 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 210.5018ms
+2026-04-28 15:30:34.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 15:30:34.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 15:30:34.818 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 57.8359ms
+2026-04-28 15:30:34.831 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 64.7327ms
+2026-04-28 15:30:34.975 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 15:30:35.035 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.4581ms
+2026-04-28 15:31:15.065 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/register - application/json 128
+2026-04-28 15:31:15.080 +03:00 [INF] CORS policy execution failed.
+2026-04-28 15:31:15.084 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 15:31:15.096 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:31:15.150 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 15:31:17.502 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[IsActive] = CAST(1 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-28 15:31:18.159 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32), @p11='?' (DbType = Guid), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 100), @p15='?' (DbType = Boolean), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+INSERT INTO [StudentProfiles] ([ID], [Bio], [CVPath], [FullName], [IsActive], [IsDeleted], [University], [UserID])
+VALUES (@p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2026-04-28 15:31:18.258 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:31:18.280 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/register - 200 null application/json; charset=utf-8 3215.2382ms
+2026-04-28 15:32:54.762 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/register - null null
+2026-04-28 15:32:54.778 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:32:54.783 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/register - 204 null null 21.2046ms
+2026-04-28 15:32:54.788 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/register - application/json 110
+2026-04-28 15:32:54.806 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:32:54.809 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:32:54.970 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[IsActive] = CAST(1 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-28 15:32:55.210 +03:00 [ERR] Failed executing DbCommand (38ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32), @p11='?' (DbType = Guid), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 100), @p17='?' (DbType = Boolean), @p18='?' (DbType = Boolean), @p19='?' (Size = 4000), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+INSERT INTO [RecruiterProfiles] ([ID], [CompanyDescription], [CompanyLogoPath], [CompanyName], [CompanyWebsite], [FullName], [IsActive], [IsDeleted], [Position], [UserID])
+VALUES (@p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-04-28 15:32:55.268 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CompanyDescription', table 'Internship_Matcher_DB.dbo.RecruiterProfiles'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:39776fc0-39aa-4174-b8c9-7a2e164e365e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CompanyDescription', table 'Internship_Matcher_DB.dbo.RecruiterProfiles'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:39776fc0-39aa-4174-b8c9-7a2e164e365e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-28 15:32:55.291 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:32:55.295 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CompanyDescription', table 'Internship_Matcher_DB.dbo.RecruiterProfiles'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:39776fc0-39aa-4174-b8c9-7a2e164e365e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at InternshipMatcher.Application.Features.Users.CreateUserOrchestrotor.CreateUserOrchestratorHandler.Handle(CreateUserOrchestrator request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\Features\Users\CreateUserOrchestrotor\CreateUserOrchestrator.cs:line 89
+   at InternshipMatcher.Application.Behaviours.BehaviourValidation`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Behaviours\BehaviourValidation.cs:line 14
+   at InternshipMatcher.API.MinimalAPIs.UserEndpoints.<>c.<<MapUsersEndpoints>b__0_0>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\UserEndpoints.cs:line 21
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteTaskOfT>g__ExecuteAwaited|134_0[T](Task`1 task, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-28 15:32:55.413 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/register - 500 null application/problem+json 624.4053ms
+2026-04-28 15:32:58.992 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/register - application/json 110
+2026-04-28 15:32:59.001 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:32:59.014 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:32:59.096 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[IsActive] = CAST(1 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-28 15:32:59.228 +03:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32), @p11='?' (DbType = Guid), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 100), @p17='?' (DbType = Boolean), @p18='?' (DbType = Boolean), @p19='?' (Size = 4000), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+INSERT INTO [RecruiterProfiles] ([ID], [CompanyDescription], [CompanyLogoPath], [CompanyName], [CompanyWebsite], [FullName], [IsActive], [IsDeleted], [Position], [UserID])
+VALUES (@p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-04-28 15:32:59.236 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CompanyDescription', table 'Internship_Matcher_DB.dbo.RecruiterProfiles'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:39776fc0-39aa-4174-b8c9-7a2e164e365e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CompanyDescription', table 'Internship_Matcher_DB.dbo.RecruiterProfiles'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:39776fc0-39aa-4174-b8c9-7a2e164e365e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-28 15:32:59.251 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:32:59.259 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CompanyDescription', table 'Internship_Matcher_DB.dbo.RecruiterProfiles'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:39776fc0-39aa-4174-b8c9-7a2e164e365e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at InternshipMatcher.Application.Features.Users.CreateUserOrchestrotor.CreateUserOrchestratorHandler.Handle(CreateUserOrchestrator request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\Features\Users\CreateUserOrchestrotor\CreateUserOrchestrator.cs:line 89
+   at InternshipMatcher.Application.Behaviours.BehaviourValidation`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Behaviours\BehaviourValidation.cs:line 14
+   at InternshipMatcher.API.MinimalAPIs.UserEndpoints.<>c.<<MapUsersEndpoints>b__0_0>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\UserEndpoints.cs:line 21
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteTaskOfT>g__ExecuteAwaited|134_0[T](Task`1 task, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-28 15:32:59.299 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/register - 500 null application/problem+json 307.1859ms
+2026-04-28 15:34:30.479 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:34:30.925 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:34:30.927 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:34:31.155 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:34:31.157 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:34:31.158 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 15:34:54.344 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/register - null null
+2026-04-28 15:34:54.679 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:34:54.748 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/register - 204 null null 417.8427ms
+2026-04-28 15:34:54.764 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/register - application/json 110
+2026-04-28 15:34:54.791 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:34:54.844 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:34:55.062 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 15:34:57.663 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[IsActive] = CAST(1 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-28 15:34:58.384 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 255), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32), @p11='?' (DbType = Guid), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 100), @p17='?' (DbType = Boolean), @p18='?' (DbType = Boolean), @p19='?' (Size = 4000), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([ID], [DateOfBirth], [Email], [FirstName], [IsActive], [IsDeleted], [LastName], [Password], [RefreshToken], [RememberMe], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+INSERT INTO [RecruiterProfiles] ([ID], [CompanyDescription], [CompanyLogoPath], [CompanyName], [CompanyWebsite], [FullName], [IsActive], [IsDeleted], [Position], [UserID])
+VALUES (@p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-04-28 15:34:58.489 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/register'
+2026-04-28 15:34:58.508 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/login - null null
+2026-04-28 15:34:58.517 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/register - 200 null application/json; charset=utf-8 3752.7779ms
+2026-04-28 15:34:58.520 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:34:58.526 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/login - 204 null null 18.7448ms
+2026-04-28 15:34:58.530 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/login - application/json 54
+2026-04-28 15:34:58.544 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:34:58.553 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/login'
+2026-04-28 15:34:58.727 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/login'
+2026-04-28 15:34:58.733 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-28 15:34:58.778 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/login - 200 null application/json; charset=utf-8 247.648ms
+2026-04-28 15:34:58.801 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'AppDbContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'AppDbContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-04-28 15:35:46.149 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/auth/login - null null
+2026-04-28 15:35:46.175 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:35:46.179 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/auth/login - 204 null null 30.8318ms
+2026-04-28 15:35:46.186 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/login - application/json 51
+2026-04-28 15:35:46.223 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:35:46.232 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/login'
+2026-04-28 15:35:46.296 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/login'
+2026-04-28 15:35:46.311 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/login - 200 null application/json; charset=utf-8 124.9452ms
+2026-04-28 15:35:46.324 +03:00 [ERR] Failed executing DbCommand (26ms) [Parameters=[@request_DTO_Email='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Email] = @request_DTO_Email
+2026-04-28 15:35:46.354 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-04-28 15:48:14.318 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7102/api/internships - null null
+2026-04-28 15:48:14.329 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:48:14.332 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7102/api/internships - 204 null null 14.1853ms
+2026-04-28 15:48:14.346 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/api/internships - application/json null
+2026-04-28 15:48:14.362 +03:00 [INF] CORS policy execution successful.
+2026-04-28 15:48:14.367 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-28 15:48:14.370 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-28 15:48:14.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/api/internships - 405 0 null 31.2131ms
+2026-04-28 15:49:04.614 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 15:49:05.047 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 15:49:05.050 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 15:49:05.274 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 15:49:05.277 +03:00 [INF] Hosting environment: Development
+2026-04-28 15:49:05.280 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 16:21:05.175 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 16:21:05.577 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 16:21:05.579 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 16:21:05.622 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 16:21:05.624 +03:00 [INF] Hosting environment: Development
+2026-04-28 16:21:05.625 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:09:26.509 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 17:09:26.771 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 17:09:26.782 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 274.8455ms
+2026-04-28 17:09:26.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 17:09:26.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 17:09:26.901 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 51.6597ms
+2026-04-28 17:09:26.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 57.6627ms
+2026-04-28 17:09:26.965 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 17:09:26.996 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.7865ms
+2026-04-28 17:09:46.184 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 17:09:46.193 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:09:46.198 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:09:46.205 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:09:46.236 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 17:09:47.667 +03:00 [ERR] Failed executing DbCommand (48ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 17:09:47.701 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:09:47.710 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:db3fb8d2-67af-4673-ade7-39f9279a3f16
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:db3fb8d2-67af-4673-ade7-39f9279a3f16
+Error Number:207,State:1,Class:16
+2026-04-28 17:09:47.716 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 200 null application/json; charset=utf-8 1532.6149ms
+2026-04-28 17:11:09.605 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 17:11:09.934 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 17:11:09.936 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 17:11:09.983 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 17:11:09.984 +03:00 [INF] Hosting environment: Development
+2026-04-28 17:11:09.986 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:11:17.468 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 17:11:17.635 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 17:11:17.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 180.7341ms
+2026-04-28 17:11:17.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 17:11:17.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 17:11:17.691 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 10.2788ms
+2026-04-28 17:11:17.691 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 11.1963ms
+2026-04-28 17:11:17.761 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 17:11:17.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.9507ms
+2026-04-28 17:11:23.193 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 113
+2026-04-28 17:11:23.203 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:11:23.205 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:11:23.209 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:11:23.237 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 17:11:24.469 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:11:24.472 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Mapster.CompileException: Error while compiling
+source=System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.Application.Features.Users.RefreshToken.RefreshTokenResponseDTO],InternshipMatcher.Application.Behaviours.BehaviourValidation`2+<Handle>d__2[InternshipMatcher.Application.Features.Users.RefreshToken.RefreshTokenCommand,InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.Application.Features.Users.RefreshToken.RefreshTokenResponseDTO]]]
+destination=InternshipMatcher.API.Common.ResponseStructure.Result`1[InternshipMatcher.Application.Features.Users.RefreshToken.TokenRefreshResponseViewModel]
+type=Map
+ ---> System.InvalidOperationException: No default constructor for type 'Result`1', please use 'ConstructUsing' or 'MapWith'
+   at Mapster.Adapters.BaseAdapter.CreateInstantiationExpression(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.ClassAdapter.CreateInstantiationExpression(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateInstantiationExpression(Expression source, CompileArgument arg)
+   at Mapster.Adapters.ClassAdapter.CreateInlineExpression(Expression source, CompileArgument arg, Boolean IsRequiredOnly)
+   at Mapster.Adapters.BaseAdapter.CreateInlineExpressionBody(Expression source, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+   at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   --- End of inner exception stack trace ---
+   at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+   at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+   at Mapster.TypeAdapterConfig.CreateDynamicMapExpression(TypeTuple tuple)
+   at Mapster.TypeAdapterConfig.<GetDynamicMapFunction>b__71_0[TDestination](TypeTuple tuple)
+   at Mapster.TypeAdapterConfig.<>c__DisplayClass60_0`1.<AddToHash>b__0(TypeTuple types)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+   at Mapster.TypeAdapterConfig.GetDynamicMapFunction[TDestination](Type sourceType)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+   at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+   at InternshipMatcher.API.MinimalAPIs.UserEndpoints.<>c.<<MapUsersEndpoints>b__0_2>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\UserEndpoints.cs:line 39
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteTaskOfT>g__ExecuteAwaited|134_0[T](Task`1 task, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-28 17:11:24.483 +03:00 [ERR] Failed executing DbCommand (33ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 17:11:24.524 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:e90d24d7-7fbb-421f-aed4-09aaf625b025
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:e90d24d7-7fbb-421f-aed4-09aaf625b025
+Error Number:207,State:1,Class:16
+2026-04-28 17:11:24.580 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 500 null application/problem+json 1386.5109ms
+2026-04-28 17:12:22.053 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 17:12:22.350 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 17:12:22.352 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 17:12:22.489 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 17:12:22.491 +03:00 [INF] Hosting environment: Development
+2026-04-28 17:12:22.492 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:12:29.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 17:12:29.940 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 17:12:29.952 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 213.4166ms
+2026-04-28 17:12:29.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 17:12:29.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 17:12:29.989 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 10.4ms
+2026-04-28 17:12:29.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 18.5183ms
+2026-04-28 17:12:30.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 17:12:30.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.9322ms
+2026-04-28 17:12:48.453 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 17:12:48.462 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:12:48.464 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:12:48.470 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:12:48.496 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 17:12:49.798 +03:00 [ERR] Failed executing DbCommand (31ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 17:12:49.823 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:5d4afebe-3561-4304-9980-00fb12110e45
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:5d4afebe-3561-4304-9980-00fb12110e45
+Error Number:207,State:1,Class:16
+2026-04-28 17:12:49.824 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:12:49.844 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 200 null application/json; charset=utf-8 1391.2333ms
+2026-04-28 17:13:46.864 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 17:13:47.455 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 17:13:47.457 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 17:13:47.508 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 17:13:47.509 +03:00 [INF] Hosting environment: Development
+2026-04-28 17:13:47.513 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:13:56.963 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - null null
+2026-04-28 17:13:57.238 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-04-28 17:13:57.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - 200 null text/html;charset=utf-8 310.9731ms
+2026-04-28 17:13:57.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-28 17:13:57.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/index.js - null null
+2026-04-28 17:13:57.347 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/index.js - 200 null application/javascript;charset=utf-8 61.7964ms
+2026-04-28 17:13:57.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - 200 14946 application/javascript; charset=utf-8 106.6028ms
+2026-04-28 17:13:57.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - null null
+2026-04-28 17:13:57.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.3597ms
+2026-04-28 17:14:05.986 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 17:14:06.007 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:14:06.012 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:14:06.017 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:14:06.041 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 17:14:07.754 +03:00 [ERR] Failed executing DbCommand (55ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 17:14:07.792 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:63a0b91b-1c65-4d1f-85b1-fd5c775b0e4a
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:63a0b91b-1c65-4d1f-85b1-fd5c775b0e4a
+Error Number:207,State:1,Class:16
+2026-04-28 17:14:07.801 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:14:08.309 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 200 null application/json; charset=utf-8 2322.4299ms
+2026-04-28 17:14:48.995 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 17:14:49.003 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:14:49.004 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:14:49.010 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:15:32.432 +03:00 [ERR] Failed executing DbCommand (36,326ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 17:15:33.036 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:15:33.037 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:63a0b91b-1c65-4d1f-85b1-fd5c775b0e4a
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:63a0b91b-1c65-4d1f-85b1-fd5c775b0e4a
+Error Number:207,State:1,Class:16
+2026-04-28 17:15:33.039 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7102/api/auth/refresh-token - 200 null application/json; charset=utf-8 44044.0382ms
+2026-04-28 17:16:47.932 +03:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-28 17:16:48.465 +03:00 [INF] Now listening on: https://localhost:7102
+2026-04-28 17:16:48.467 +03:00 [INF] Now listening on: http://localhost:5119
+2026-04-28 17:16:48.523 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-28 17:16:48.525 +03:00 [INF] Hosting environment: Development
+2026-04-28 17:16:48.526 +03:00 [INF] Content root path: C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API
+2026-04-28 17:17:01.485 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7102/api/auth/refresh-token - application/json 112
+2026-04-28 17:17:01.550 +03:00 [INF] CORS policy execution failed.
+2026-04-28 17:17:01.552 +03:00 [INF] Request origin https://localhost:7102 does not have permission to access the resource.
+2026-04-28 17:17:01.629 +03:00 [INF] Executing endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:17:01.654 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-28 17:17:14.800 +03:00 [ERR] Failed executing DbCommand (36ms) [Parameters=[@request_RefreshToken='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[RememberMe], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[RefreshToken] = @request_RefreshToken
+2026-04-28 17:17:14.829 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'InternshipMatcher.Infra.DbContext.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c71e2c85-89e7-4e1e-887f-40d8a7f6eb31
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c71e2c85-89e7-4e1e-887f-40d8a7f6eb31
+Error Number:207,State:1,Class:16
+2026-04-28 17:17:15.125 +03:00 [INF] Executed endpoint 'HTTP: POST /api/auth/refresh-token'
+2026-04-28 17:17:15.194 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (Invalid column name 'RefreshTokenExpiryTime'.)
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpiryTime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at InternshipMatcher.Infra.Services.GeneralRepository`1.GetByPredicateAsync(Expression`1 predicate, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Services\GeneralRepository.cs:line 58
+   at InternshipMatcher.Application.Features.Users.RefreshToken.RefreshTokenCommandHandler.Handle(RefreshTokenCommand request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Application\Features\Users\RefreshToken\RefreshTokenCommand.cs:line 29
+   at InternshipMatcher.Application.Behaviours.BehaviourValidation`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.Infra\Behaviours\BehaviourValidation.cs:line 14
+ClientConnectionId:c71e2c85-89e7-4e1e-887f-40d8a7f6eb31
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at InternshipMatcher.API.MinimalAPIs.UserEndpoints.<>c.<<MapUsersEndpoints>b__0_2>d.MoveNext() in C:\Users\HP\source\repos\InternshipMatcher\src\InternshipMatcher.API\MinimalAPIs\UserEndpoints.cs:line 39
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteTaskOfT>g__ExecuteAwaited|134_0[T](Task`1 task, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-28 17:18:11.424 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 17:18:11.476 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-04-28 17:18:11.521 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-04-28 17:18:11.605 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-04-28 17:18:11.613 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-28 17:18:11.614 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-28 17:18:11.620 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-28 17:18:11.631 +03:00 [INF] Applying migration '20260428141759_AddNewCoulmnIntoUsers'.
+2026-04-28 17:18:11.694 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Users] ADD [RefreshTokenExpiryTime] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2026-04-28 17:18:11.696 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260428141759_AddNewCoulmnIntoUsers', N'10.0.7');
+2026-04-28 17:18:11.706 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result

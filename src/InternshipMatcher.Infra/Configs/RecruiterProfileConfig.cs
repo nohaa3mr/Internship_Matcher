@@ -18,9 +18,6 @@ public class RecruiterProfileConfig : IEntityTypeConfiguration<RecruiterProfile>
         builder.HasOne(r => r.User).WithOne()
             .HasForeignKey<RecruiterProfile>(r => r.UserID)
             .OnDelete(DeleteBehavior.Cascade);
-        builder.Property(x => x.Position).IsRequired();
-        builder.Property(r => r.CompanyName)
-            .IsRequired()
-            .HasMaxLength(100);
+
     }
 }

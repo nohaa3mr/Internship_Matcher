@@ -19,8 +19,4 @@
     <ProjectReference Include="..\InternshipMatcher.Domain\InternshipMatcher.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Students\Queries\" />
-  </ItemGroup>
-
 </Project>
