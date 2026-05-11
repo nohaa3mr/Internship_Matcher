@@ -1,6 +1,6 @@
 # InternLink 🔗
 ### AI-Powered Internship Matching Platform
-### UI Link:{https://github.com/nohaa3mr/internlink-ui}
+### UI Link: [https://github.com/nohaa3mr/internlink-ui]
  
 InternLink is a Minimal API that intelligently matches students to internships based on skill compatibility using Google Gemini. Built with Clean Architecture, CQRS, and JWT authentication.
  
